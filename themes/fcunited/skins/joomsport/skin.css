@@ -1,0 +1,256 @@
+/* Skin-specific styles
+----------------------- */
+#joomsport-container table.cansorttbl td {
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  line-height: 1.4em !important;
+  border: none !important;
+  padding: 17px 25px !important;
+  text-align: left !important;
+  background: transparent !important;
+  letter-spacing: 0 !important;
+}
+
+#joomsport-container .table > thead > tr > th {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1.2px !important;
+  padding: 10px 25px !important;
+}
+
+#joomsport-container .table-striped > tbody > tr:nth-of-type(even),
+#joomsport-container .table-striped > tbody > tr:nth-of-type(odd) {
+  background: transparent !important;
+}
+
+#joomsport-container .table > thead > tr > th {
+  border-bottom-width: 1px !important;
+}
+
+#joomsport-container .table-striped > tbody > tr {
+  border-bottom: 1px solid red;
+}
+
+.jsmainscroll .jsmatchdate,
+#joomsport-container.jsSliderContainer .jsmainscroll .jsview2 li .jsmatchseason {
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  text-transform: capitalize;
+}
+
+.jsmainscroll table .jsScoreDiv {
+  font-size: 40px !important;
+  font-weight: 700 !important;
+  padding: 5px 10px !important;
+}
+
+#joomsport-container a:hover, #joomsport-container a:focus {
+  text-decoration: none !important;
+}
+
+#joomsport-container.jsSliderContainer .jsmainscroll .jsview2 li {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.jsmainscroll table .js_div_particName {
+  font-size: 18px !important;
+  letter-spacing: 1.5px;
+}
+
+#joomsport-container img.img-thumbnail {
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
+#joomsport-container.jsSliderContainer button[class^="js"] {
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+
+#joomsport-container .btn:active:focus {
+  outline: none !important;
+}
+
+#joomsport-container .btn {
+  font-size: 10px !important;
+}
+
+.jsmainscroll .jsmatchseason {
+  padding: 10px 5px 0 !important;
+}
+
+#joomsport-container .navbar-nav .btn {
+  font-size: 14px !important;
+  -webkit-border-radius: 25px;
+  -ms-border-radius: 25px;
+  border-radius: 25px;
+  padding: 10px 15px !important;
+}
+
+#joomsport-container .nav-tabs > li > a {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.jsMatchTeam .jsMatchPartName span {
+  font-size: 22px !important;
+}
+
+#jsMatchViewID .jsMatchStatHeader h3 {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+#stab_players .jsplayerCart .innerjsplayerCart img.img-thumbnail,
+#stab_photos ul li .jsLightLink img.img-thumbnail {
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+}
+
+#stab_photos ul li .jsLightLink img.img-thumbnail {
+  width: 100%;
+}
+
+#joomsport-container .data .select2-container--default .select2-selection--single {
+  width: 140px;
+  padding-left: 14px;
+}
+
+#joomsport-container .select2 {
+  height: auto !important;
+  -webkit-border-radius: 25px;
+  -ms-border-radius: 25px;
+  border-radius: 25px;
+}
+
+.imgPlayerCart {
+  height: auto !important;
+}
+.imgPlayerCart .innerjsplayerCart {
+  min-height: 248px !important;
+  line-height: 1 !important;
+  margin: 0 !important;
+}
+
+.namePlayerCart {
+  border-top: none !important;
+}
+
+#joomsport-container table.cansorttbl td.jsTextAlignCenter {
+  text-align: center !important;
+}
+
+#joomsport-container #stab_main .table > thead > tr > th,
+#joomsport-container #stab_main table.cansorttbl td {
+  padding: 17px 15px !important;
+}
+
+#joomsport-container .paginationJS span {
+  background-color: transparent;
+}
+
+#jsFilterMatches .srcTeam #partic + .select2 {
+  margin-bottom: 15px;
+}
+#jsFilterMatches .form-group button {
+  font-size: 14px !important;
+  font-weight: 500;
+  line-height: 18px;
+  padding: 1.38em 3.5em;
+  border-width: 0 !important;
+  border-radius: 30px;
+  outline: none !important;
+  text-shadow: none;
+}
+
+#jsFilterMatches .btn i.fa-search {
+  margin-right: 9px;
+  font-weight: 400;
+}
+#jsFilterMatches .btn i.fa-search:before {
+  content: '\e968';
+  font-family: "fontello";
+}
+
+#joomsport-container .pull-right .data a,
+#joomsport-container .searchMatchesDiv label {
+  font-size: 15px;
+}
+
+#joomsport-container .select2-container--default .select2-selection--single {
+  padding-left: 14px;
+}
+
+.elementor-shortcode #joomsport-container {
+  margin-bottom: 0;
+}
+
+.jsmainscroll .jsmatchseason {
+  text-transform: capitalize !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+}
+
+.display_flex .jsmatchcont table tbody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.display_flex .jsmatchcont table tbody tr:first-child {
+  order: 3;
+}
+
+.namePlayerCart .PlayerCardFIO {
+  min-height: auto !important;
+}
+
+.namePlayerCart > div {
+  padding: 15px 0 15px 10px !important;
+}
+
+#joomsport-container .jsmainscroll table tr,
+#joomsport-container .jsmainscroll table td {
+  background-color: transparent !important;
+}
+
+#joomsport-container .paginationJS > li > a, #joomsport-container .paginationJS > li > span {
+  width: 33px;
+  height: 33px;
+  line-height: 20px;
+}
+
+#joomsport-container .paginationJS span {
+  line-height: 17px;
+}
+
+#joomsport-container .seasonTable .jsalignleft {
+  text-align: center !important;
+}
+
+#joomsport-container .seasonTable table.cansorttbl td {
+  text-align: center !important;
+}
+
+.matchdtime img {
+  display: none !important;
+}
+
+#joomsport-container .searchMatchesDiv label {
+  min-width: 50px !important;
+}
+
+.widget_area .post_item .post_categories,
+aside .post_item .post_categories {
+  margin-top: 0;
+}
+
+.jsmainscroll .jsview2 table td.jstdhometeam > div {
+  flex-direction: inherit;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=skin.css.map */
