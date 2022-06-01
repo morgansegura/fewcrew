@@ -38,10 +38,9 @@ module.exports = {
       host: domain,
       logLevel: 'debug',
       injectChanges: true,
-      // browser: 'Google Chrome',
-      open: false,
-      notify: false,
-      ghost: false,
+      browser: 'Google Chrome',
+      open: 'external',
+      notify: true,
       https: {
         key: homedir + '/.config/valet/Certificates/' + domain + '.key',
         cert: homedir + '/.config/valet/Certificates/' + domain + '.crt'

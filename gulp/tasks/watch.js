@@ -50,7 +50,10 @@ function watchFiles(done) {
   })
 
   // Lint styles
-  watch(config.styles.watch.development, series('lintstyles'))
+  // watch(config.styles.watch.development, series('lintstyles'), function (cb) {
+  watch(config.styles.watch.development, function (cb) {
+    cb()
+  })
 
   // Finish task
   done()

@@ -10,7 +10,7 @@
   --color-blue-chalk: #ece6f2;
   --color-east-bay: #545773;
   --color-pattens-blue: #eaf1f8;
-  --color-science-blue: #0049d1;
+  --color-science-blue: green;
   --color-scorpion: #5f5f5f;
   --color-valhalla: #2a2d3e;
   --color-white: #fff;
@@ -47,8 +47,8 @@
   --color-blockquote: var(--color-science-blue);
   --color-comment-text: var(--color-east-bay);
   --color-comment-author-text: var(--color-east-bay);
-  --color-tag-border: rgb(6 22 41 / .1);
-  --color-tag-border-hover: rgb(6 22 41 / .4);
+  --color-tag-border: rgb(6 22 41 / 0.1);
+  --color-tag-border-hover: rgb(6 22 41 / 0.4);
   --color-tag-text: var(--color-black);
   --color-category-border: #cdcfd4;
   --color-category-text: var(--color-black);
