@@ -24,7 +24,7 @@ get_header(); ?>
 <main class="site-main">
   <?php
     the_content();
-    air_edit_link();
+    fewcrew_edit_link();
   ?>
 </main>
 

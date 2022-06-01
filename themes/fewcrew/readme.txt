@@ -7,7 +7,7 @@ Bundled header image, Copyright Brady Bellini
 License: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
 Source: https://stocksnap.io/photo/nature-mountains-3T1GEXSD0R
 
-Contributors: Digitoimisto Dude Oy
+Contributors: Morgan Segura
 Tags: one-column, accessibility-ready, translation-ready
 
 Requires at least: 5.9

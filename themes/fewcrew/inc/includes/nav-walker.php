@@ -4,7 +4,7 @@
  *
  * Version: 4.3.4
  * Based on version: 4.3.0
- * Author: Digitoimisto Dude Oy
+ * Author: Morgan Segura
  * Original Author: Edward McIntyre - @twittem, WP Bootstrap, William Patton - @pattonwebz
  * GitHub Plugin URI: https://github.com/wp-bootstrap/wp-bootstrap-navwalker
  * GitHub Branch: master

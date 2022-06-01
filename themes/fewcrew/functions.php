@@ -62,7 +62,7 @@ add_action( 'after_setup_theme', function() {
     'social_media_accounts'  => [
       // 'twitter' => [
       //   'title' => 'Twitter',
-      //   'url'   => 'https://twitter.com/digitoimistodude',
+      //   'url'   => 'https://twitter.com/fewcrew',
       // ],
     ],
 
@@ -87,7 +87,6 @@ add_action( 'after_setup_theme', function() {
      * Taxonomies
      *
      * See the instructions:
-     * https://github.com/digitoimistodude/fewcrew#custom-taxonomies
      */
     'taxonomies' => [
       // 'your-taxonomy' => [
@@ -100,7 +99,6 @@ add_action( 'after_setup_theme', function() {
      * Post types
      *
      * See the instructions:
-     * https://github.com/digitoimistodude/fewcrew#custom-post-types
      */
     'post_types' => [
       // 'your-post-type' => 'Your_Post_Type',
