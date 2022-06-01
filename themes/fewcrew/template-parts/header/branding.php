@@ -2,13 +2,10 @@
 /**
  * Site branding & logo
  *
- * @Date:   2022-05-26
- * @Last Modified by:   Morgan Segura
- * @Last Modified time: 2022-05-26 15:13:28
- *
- * @package fewcrew
+ * @package air-light
  */
-namespace FewCrew;
+
+namespace Air_Light;
 
 $description = get_bloginfo( 'description', 'display' );
 ?>

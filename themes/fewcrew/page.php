@@ -7,15 +7,15 @@
  * and that other 'pages' on your WordPress site may use a
  * different template.
  *
- * @Date:   2022-05-26
- * @Last Modified by:   Morgan Segura
- * @Last Modified time: 2022-05-26 15:13:28
+ * @Date:   2019-10-15 12:30:02
+ * @Last Modified by:   Roni Laukkarinen
+ * @Last Modified time: 2022-02-08 17:03:18
  *
- * @package fewcrew
+ * @package air-light
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  */
 
-namespace FewCrew;
+namespace Air_Light;
 
 the_post();
 
@@ -24,7 +24,7 @@ get_header(); ?>
 <main class="site-main">
   <?php
     the_content();
-    fewcrew_edit_link();
+    air_edit_link();
   ?>
 </main>
 

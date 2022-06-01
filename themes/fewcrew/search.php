@@ -2,14 +2,16 @@
 /**
  * The template for displaying search results pages
  *
- * @Date:   2022-05-26
- * @Last Modified by:   Morgan Segura
- * @Last Modified time: 2022-05-26 15:13:28
- *
- * @package fewcrew
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
+ *
+ * @Date:   2019-10-15 12:30:02
+ * @Last Modified by:   Roni Laukkarinen
+ * @Last Modified time: 2022-02-08 17:03:23
+ *
+ * @package air-light
  */
-namespace FewCrew;
+
+namespace Air_Light;
 
 $results = [];
 

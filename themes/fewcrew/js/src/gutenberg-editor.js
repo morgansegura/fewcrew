@@ -1,24 +1,21 @@
 /**
- * @Author: Morgan Segura
+ * @Author: Roni Laukkarinen
  * @Date:   2022-02-11 15:38:14
- * @Last Modified by:   Morgan Segura
+ * @Last Modified by:   Roni Laukkarinen
  * @Last Modified time: 2022-05-12 17:49:01
  */
 /* eslint-disable camelcase, prefer-arrow-callback, no-unused-vars, no-undef, vars-on-top, no-var, func-names, max-len, import/no-unresolved */
-import {
-  setFigureWidths,
-  setLazyLoadedFigureWidth
-} from './modules/gutenberg-helpers'
+import { setFigureWidths, setLazyLoadedFigureWidth } from './modules/gutenberg-helpers';
 
 // Declare the block you'd like to style.
 wp.blocks.registerBlockStyle('core/paragraph', {
   name: 'boxed',
-  label: 'Laatikko'
-})
+  label: 'Laatikko',
+});
 
-var FewCrew_LazyLoad = new LazyLoad({
-  callback_loaded: setLazyLoadedFigureWidth
-})
+var air_light_LazyLoad = new LazyLoad({
+  callback_loaded: setLazyLoadedFigureWidth,
+});
 
 // When document is ready as in when blocks are fully loaded
 window.addEventListener('load', function () {
@@ -37,18 +34,18 @@ window.addEventListener('load', function () {
    * @source https://www.advancedcustomfields.com/resources/acf_register_block_type/
    */
   var initializeBlock = function ($block) {
-    FewCrew_LazyLoad.update()
-  }
+    air_light_LazyLoad.update();
+  };
 
   // Initialize each block on page load (front end).
-  FewCrew_LazyLoad.update()
+  air_light_LazyLoad.update();
 
   // Set non-lazyloaded figures width so captions in aligned images will be same width as image
-  const figures = document.querySelectorAll('figure')
-  setFigureWidths(figures)
+  const figures = document.querySelectorAll('figure');
+  setFigureWidths(figures);
 
   // Initialize dynamic block preview (editor).
   if (window.acf) {
-    window.acf.addAction('render_block_preview', initializeBlock)
+    window.acf.addAction('render_block_preview', initializeBlock);
   }
-})
+});

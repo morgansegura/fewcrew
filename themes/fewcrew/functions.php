@@ -5,18 +5,19 @@
  * hooks and functions - please split those to their
  * own files under /inc and just require here.
  *
- * @Date:   2022-05-26
- * @Last Modified by:   Morgan Segura
- * @Last Modified time: 2022-05-26 15:13:28
+ * @Date: 2019-10-15 12:30:02
+ * @Last Modified by:   Elias Kautto
+ * @Last Modified time: 2022-05-27 10:37:08
  *
- * @package fewcrew
+ * @package air-light
  */
-namespace FewCrew;
+
+namespace Air_Light;
 
 /**
  * The current version of the theme.
  */
-define( 'FewCrew_VERSION', '1.0.0' );
+define( 'AIR_LIGHT_VERSION', '9.0.2' );
 
 // We need to have some defaults as comments or empties so let's allow this:
 // phpcs:disable Squiz.Commenting.InlineComment.SpacingBefore, WordPress.Arrays.ArrayDeclarationSpacing.SpaceInEmptyArray
@@ -29,7 +30,7 @@ add_action( 'after_setup_theme', function() {
     /**
      * Theme textdomain
      */
-    'textdomain' => 'fewcrew',
+    'textdomain' => 'air-light',
 
     /**
      * Image and content sizes
@@ -62,7 +63,7 @@ add_action( 'after_setup_theme', function() {
     'social_media_accounts'  => [
       // 'twitter' => [
       //   'title' => 'Twitter',
-      //   'url'   => 'https://twitter.com/fewcrew',
+      //   'url'   => 'https://twitter.com/digitoimistodude',
       // ],
     ],
 
@@ -72,21 +73,22 @@ add_action( 'after_setup_theme', function() {
      */
     'external_link_domains_exclude' => [
       'localhost:3000',
-      'fewcrewdev.test',
-      'fewcrewwptheme.com',
+      'airdev.test',
+      'airwptheme.com',
     ],
 
     /**
      * Menu locations
      */
     'menu_locations' => [
-      'primary' => __( 'Primary Menu', 'fewcrew' ),
+      'primary' => __( 'Primary Menu', 'air-light' ),
     ],
 
     /**
      * Taxonomies
      *
      * See the instructions:
+     * https://github.com/digitoimistodude/air-light#custom-taxonomies
      */
     'taxonomies' => [
       // 'your-taxonomy' => [
@@ -99,6 +101,7 @@ add_action( 'after_setup_theme', function() {
      * Post types
      *
      * See the instructions:
+     * https://github.com/digitoimistodude/air-light#custom-post-types
      */
     'post_types' => [
       // 'your-post-type' => 'Your_Post_Type',
@@ -124,7 +127,7 @@ add_action( 'after_setup_theme', function() {
 
     // Custom ACF block default settings
     'acf_block_defaults' => [
-      'category'          => 'fewcrew',
+      'category'          => 'air-light',
       'mode'              => 'auto',
       'align'             => 'full',
       'post_types'        => [
@@ -187,7 +190,7 @@ add_action( 'after_setup_theme', function() {
     'my_custom_setting' => true,
   ];
 
-  $theme_settings = apply_filters( 'FewCrew_theme_settings', $theme_settings );
+  $theme_settings = apply_filters( 'air_light_theme_settings', $theme_settings );
 
   define( 'THEME_SETTINGS', $theme_settings );
 } ); // end action after_setup_theme

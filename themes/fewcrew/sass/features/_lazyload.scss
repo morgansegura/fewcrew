@@ -1,5 +1,6 @@
 // Styling lazy loading images
-.has-lazyload > [loading='lazy'] {
+// @link https://github.com/digitoimistodude/air-helper#image-lazyloading-1
+.has-lazyload > [loading="lazy"] {
   height: 100%;
   left: 0;
   object-fit: cover;

@@ -2,15 +2,15 @@
 /**
  * The template for displaying 404 pages (not found)
  *
- * @Date:   2022 5/25
- * @Last Modified by:   Morgan Segura
- * @Last Modified time: 2022-05-26 15:13:28
+ * @Date:   2019-10-15 12:30:02
+ * @Last Modified by:   Timi Wahalahti
+ * @Last Modified time: 2021-01-12 15:13:28
  *
- * @package fewcrew
+ * @package air-light
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  */
 
-namespace FewCrew;
+namespace Air_Light;
 
 get_header(); ?>
 

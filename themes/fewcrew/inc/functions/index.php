@@ -4,12 +4,12 @@
  *
  * Nothing to see here.
  *
- * @Author:		Morgan Segura
+ * @Author:		Roni Laukkarinen
  * @Date:   		2022-01-03 14:27:00
- * @Last Modified by:   Morgan Segura
+ * @Last Modified by:   Roni Laukkarinen
  * @Last Modified time: 2022-01-03 15:35:25
  *
- * @package fewcrew
+ * @package air-light
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  */
 

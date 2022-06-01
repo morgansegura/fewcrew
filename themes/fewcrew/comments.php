@@ -5,15 +5,15 @@
  * This is the template that displays the area of the page that contains both the current comments
  * and the comment form.
  *
- * @Date:   2022-05-26
- * @Last Modified by:   Morgan Segura
- * @Last Modified time: 2022-05-26 15:13:28
+ * @Date:   2019-10-15 12:30:02
+ * @Last Modified by:   Timi Wahalahti
+ * @Last Modified time: 2021-01-12 17:30:20
  *
- * @package fewcrew
+ * @package air-light
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  */
 
-namespace FewCrew;
+namespace Air_Light;
 
  /*
  * If the current post is protected by a password and
@@ -33,13 +33,13 @@ if ( post_password_required() ) {
       if ( '1' === $comment_count ) {
         printf(
           /* translators: 1: title. */
-          esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'fewcrew' ),
+          esc_html__( 'One thought on &ldquo;%1$s&rdquo;', 'air-light' ),
           '<span>' . wp_kses_post( get_the_title() ) . '</span>'
         );
       } else {
         printf(
           /* translators: 1: comment count number, 2: title. */
-          esc_html( _nx( '%1$s comment %2$s', '%1$s comments %2$s', $comment_count, 'comments title', 'fewcrew' ) ),
+          esc_html( _nx( '%1$s comment %2$s', '%1$s comments %2$s', $comment_count, 'comments title', 'air-light' ) ),
           esc_html( number_format_i18n( $comment_count ) ),
           '<span class="screen-reader-text">on &ldquo;' . wp_kses_post( get_the_title() ) . '&rdquo;</span>'
         );
@@ -49,11 +49,11 @@ if ( post_password_required() ) {
 
     <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
       <nav id="comment-nav-above" class="navigation comment-navigation" role="navigation">
-        <h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'fewcrew' ); ?></h2>
+        <h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'air-light' ); ?></h2>
         <div class="nav-links">
 
-          <div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'fewcrew' ) ); ?></div>
-          <div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'fewcrew' ) ); ?></div>
+          <div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'air-light' ) ); ?></div>
+          <div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'air-light' ) ); ?></div>
 
         </div><!-- .nav-links -->
       </nav><!-- #comment-nav-above -->
@@ -71,11 +71,11 @@ if ( post_password_required() ) {
 
     <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // Are there comments to navigate through? ?>
       <nav id="comment-nav-below" class="navigation comment-navigation" role="navigation">
-        <h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'fewcrew' ); ?></h2>
+        <h2 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'air-light' ); ?></h2>
         <div class="nav-links">
 
-          <div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'fewcrew' ) ); ?></div>
-          <div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'fewcrew' ) ); ?></div>
+          <div class="nav-previous"><?php previous_comments_link( esc_html__( 'Older Comments', 'air-light' ) ); ?></div>
+          <div class="nav-next"><?php next_comments_link( esc_html__( 'Newer Comments', 'air-light' ) ); ?></div>
 
         </div><!-- .nav-links -->
       </nav><!-- #comment-nav-below -->
@@ -86,7 +86,7 @@ if ( post_password_required() ) {
 
   // If comments are closed and there are comments, let's leave a little note, shall we?
   if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
-    <p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'fewcrew' ); ?></p>
+    <p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'air-light' ); ?></p>
   <?php endif;
 
   comment_form();

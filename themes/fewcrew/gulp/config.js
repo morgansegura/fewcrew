@@ -1,6 +1,7 @@
 // Set theme dir
 const themeDir = './'
-const proxyUrl = 'https://fewcrew.test'
+const proxyUrl = 'https://localhost:3000'
+const certPath = './gulp/certs/'
 
 module.exports = {
   cssnano: {
@@ -39,11 +40,11 @@ module.exports = {
       browser: 'Google Chrome',
       open: false,
       notify: true,
-      // brew install mkcrt
-      // Generate with: mkdir -p /var/www/certs && cd /var/www/certs && sudo mkcert localhost 192.168.x.xxx ::1
+      // Generate with: mkdir -p ./gulp/certs && cd ./gulp/certs && mkcert localhost 192.168.x.xxx ::1
+      // .gitignore ./gulp/certs
       https: {
-        key: '/var/www/certs/localhost-key.pem',
-        cert: '/var/www/certs/localhost.pem'
+        key: `${certPath}/localhost+2-key.pem`,
+        cert: `${certPath}/localhost+2.pem`
       }
     }
   },

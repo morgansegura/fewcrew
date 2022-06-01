@@ -1,22 +1,22 @@
-=== fewcrew ===
+=== air-light ===
 
-FewCrew WordPress Theme, Copyright 2022 Rober Romero
-FewCrew is distributed under the terms of the MIT License
+Air-light WordPress Theme, Copyright 2018 Digitoimisto Dude Oy, Roni Laukkarinen
+Air-light is distributed under the terms of the MIT License
 
 Bundled header image, Copyright Brady Bellini
 License: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
 Source: https://stocksnap.io/photo/nature-mountains-3T1GEXSD0R
 
-Contributors: Morgan Segura
+Contributors: Digitoimisto Dude Oy
 Tags: one-column, accessibility-ready, translation-ready
 
 Requires at least: 5.9
 Tested up to: 6.0.0
-Stable tag: 9.0.1
+Stable tag: 9.0.2
 License: MIT License
 License URI: https://opensource.org/licenses/MIT
 
-A starter theme called fewcrew.
+A starter theme called air-light.
 
 == Description ==
 
@@ -28,13 +28,13 @@ Air starter theme is built to be very straightforward, front end developer frien
 2. Click Upload Theme and Choose File, then select the theme's .zip file. Click Install Now.
 3. Click Activate to use your new theme right away.
 
-Or just get from GitHub: https://github.com/morgansegura/fewcrew
+Or just get from GitHub: https://github.com/digitoimistodude/air-light
 
 == Frequently Asked Questions ==
 
 = Does this theme support any plugins? =
 
-Yes. There's also a extender, helper plugin Air Helper: https://github.com/morgansegura/fewcrew-helper
+Yes. There's also a extender, helper plugin Air Helper: https://github.com/digitoimistodude/air-helper
 
 == Changelog ==
 

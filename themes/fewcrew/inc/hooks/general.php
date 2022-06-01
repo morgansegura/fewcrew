@@ -2,15 +2,15 @@
 /**
  * General hooks.
  *
- * @Author: Morgan Segura
- * @Date:   2022-05-26
- * @Last Modified by:   Morgan Segura
- * @Last Modified time: 2022-05-26 15:13:28
+ * @Author: Niku Hietanen
+ * @Date: 2020-02-20 13:46:50
+ * @Last Modified by:   Elias Kautto
+ * @Last Modified time: 2022-02-01 11:42:49
  *
- * @package fewcrew
+ * @package air-light
  */
 
-namespace FewCrew;
+namespace Air_Light;
 
 /**
  * Register widget area.
@@ -19,9 +19,9 @@ namespace FewCrew;
  */
 function widgets_init() {
   register_sidebar( array(
-    'name'          => esc_html__( 'Sidebar', 'fewcrew' ),
+    'name'          => esc_html__( 'Sidebar', 'air-light' ),
     'id'            => 'sidebar-1',
-    'description'   => esc_html__( 'Add widgets here.', 'fewcrew' ),
+    'description'   => esc_html__( 'Add widgets here.', 'air-light' ),
     'before_widget' => '<section id="%1$s" class="widget %2$s">',
     'after_widget'  => '</section>',
     'before_title'  => '<h2 class="widget-title">',

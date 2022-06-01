@@ -1,19 +1,19 @@
 <?php
-
 /**
  * Template tags and helpers
  *
  * File for template related things.
  *
- * @Date:   2022-05-26
- * @Last Modified by:   Morgan Segura
- * @Last Modified time: 2022-05-26 15:13:28
+ * @Author:		Roni Laukkarinen
+ * @Date:   		2021-05-18 10:29:32
+ * @Last Modified by:   Roni Laukkarinen
+ * @Last Modified time: 2022-02-08 17:18:22
  *
- * @package fewcrew
+ * @package air-light
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  */
 
-namespace FewCrew;
+namespace Air_Light;
 
 require get_theme_file_path( '/inc/template-tags/acf-blocks.php' );
 require get_theme_file_path( '/inc/template-tags/entry-footer.php' );

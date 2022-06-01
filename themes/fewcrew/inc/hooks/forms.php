@@ -1,14 +1,14 @@
 <?php
 /**
- * @Author: Morgan Segura
+ * @Author: Roni Laukkarinen
  * @Date:   2021-02-04 18:15:59
- * @Last Modified by:   Morgan Segura
+ * @Last Modified by:   Roni Laukkarinen
  * @Last Modified time: 2021-06-22 09:33:02
  *
- * @package fewcrew
+ * @package air-light
  */
 
-namespace FewCrew;
+namespace Air_Light;
 
 // Always set Output CSS setting to No. We want to use our own _gravity-forms.scss
 function dequeue_gf_stylesheets() {

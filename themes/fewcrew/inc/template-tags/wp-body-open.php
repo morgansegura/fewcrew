@@ -2,13 +2,13 @@
 /**
  * @Author: Niku Hietanen
  * @Date: 2020-03-02 10:57:56
- * @Last Modified by:   Morgan Segura
+ * @Last Modified by:   Roni Laukkarinen
  * @Last Modified time: 2021-05-04 11:13:43
  *
- * @package fewcrew
+ * @package air-light
  */
 
-namespace FewCrew;
+namespace Air_Light;
 
 if ( ! function_exists( 'wp_body_open' ) ) {
 	/**

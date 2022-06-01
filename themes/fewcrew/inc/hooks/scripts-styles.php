@@ -3,14 +3,14 @@
  * Enqueue and localize theme scripts and styles
  *
  * @Author: Niku Hietanen
- * @Date:   2022-05-26
- * @Last Modified by:   Morgan Segura
- * @Last Modified time: 2022-05-26 15:13:28
+ * @Date: 2020-02-20 13:46:50
+ * @Last Modified by:   Timi Wahalahti
+ * @Last Modified time: 2022-04-08 13:04:00
  *
- * @package fewcrew
+ * @package air-light
  */
 
-namespace FewCrew;
+namespace Air_Light;
 
 /**
  * Move jQuery to footer
@@ -21,7 +21,7 @@ function move_jquery_into_footer( $wp_scripts ) {
     $wp_scripts->add_data( 'jquery-core',    'group', 1 );
     $wp_scripts->add_data( 'jquery-migrate', 'group', 1 );
   }
-} // end FewCrew_move_jquery_into_footer
+} // end air_light_move_jquery_into_footer
 
 /**
  * Enqueue scripts and styles.
@@ -49,7 +49,7 @@ function enqueue_theme_scripts() {
     wp_enqueue_script( 'comment-reply' );
   }
 
-  wp_localize_script( 'scripts', 'FewCrew_screenReaderText', [
+  wp_localize_script( 'scripts', 'air_light_screenReaderText', [
     'expand'          => get_default_localization( 'Open child menu' ),
     'collapse'        => get_default_localization( 'Close child menu' ),
     'expand_for'      => get_default_localization( 'Open child menu for' ),
@@ -61,8 +61,8 @@ function enqueue_theme_scripts() {
   ] );
 
   // Add domains/hosts to disable external link indicators
-  wp_localize_script( 'scripts', 'FewCrew_externalLinkDomains', THEME_SETTINGS['external_link_domains_exclude'] );
-} // end FewCrew_scripts
+  wp_localize_script( 'scripts', 'air_light_externalLinkDomains', THEME_SETTINGS['external_link_domains_exclude'] );
+} // end air_light_scripts
 
 /**
  * Load polyfills for legacy browsers
@@ -86,9 +86,9 @@ function enqueue_polyfills() {
   }';
 
   if ( file_exists( get_theme_file_path( get_asset_file( 'legacy.js' ) ) ) ) {
-    wp_register_script( 'FewCrew_legacy', '', [], filemtime( get_theme_file_path( get_asset_file( 'legacy.js' ) ) ), false );
-    wp_enqueue_script( 'FewCrew_legacy' );
-    wp_add_inline_script( 'FewCrew_legacy', $script, true );
+    wp_register_script( 'air_light_legacy', '', [], filemtime( get_theme_file_path( get_asset_file( 'legacy.js' ) ) ), false );
+    wp_enqueue_script( 'air_light_legacy' );
+    wp_add_inline_script( 'air_light_legacy', $script, true );
   }
 } // end enqueue_polyfills
 

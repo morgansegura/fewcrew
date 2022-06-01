@@ -2,14 +2,15 @@
 /**
  * The template for displaying all single posts
  *
- * @Date:   2022-05-26
- * @Last Modified by:   Morgan Segura
- * @Last Modified time: 2022-05-26 15:13:28
+ * @Date:   2019-10-15 12:30:02
+ * @Last Modified by:   Roni Laukkarinen
+ * @Last Modified time: 2022-02-08 17:03:18
  *
- * @package fewcrew
+ * @package air-light
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  */
-namespace FewCrew;
+
+namespace Air_Light;
 
 the_post();
 get_header(); ?>
@@ -24,12 +25,12 @@ get_header(); ?>
       <?php the_content();
 
       // Required by WordPress Theme Check, feel free to remove as it's rarely used in starter themes
-      wp_link_pages( array( 'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'fewcrew' ), 'after' => '</div>' ) );
+      wp_link_pages( array( 'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'air-light' ), 'after' => '</div>' ) );
 
       entry_footer();
 
       if ( get_edit_post_link() ) {
-        edit_post_link( sprintf( wp_kses( __( 'Edit <span class="screen-reader-text">%s</span>', 'fewcrew' ), [ 'span' => [ 'class' => [] ] ] ), get_the_title() ), '<p class="edit-link">', '</p>' );
+        edit_post_link( sprintf( wp_kses( __( 'Edit <span class="screen-reader-text">%s</span>', 'air-light' ), [ 'span' => [ 'class' => [] ] ] ), get_the_title() ), '<p class="edit-link">', '</p>' );
       }
 
       the_post_navigation();

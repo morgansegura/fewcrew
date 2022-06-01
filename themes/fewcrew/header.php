@@ -1,15 +1,18 @@
 <?php
 /**
- * Template for Header
+ * Template for header
  *
- * @Date:   2022-05-26
- * @Last Modified by:   Morgan Segura
- * @Last Modified time: 2022-05-26 15:13:28
+ * <head> section and everything up until <div id="content">
  *
- * @package fewcrew
+ * @Author: Roni Laukkarinen
+ * @Date: 2020-05-11 13:17:32
+ * @Last Modified by:   Roni Laukkarinen
+ * @Last Modified time: 2022-05-16 16:50:17
+ *
+ * @package air-light
  */
 
-namespace FewCrew;
+namespace Air_Light;
 
 ?>
 

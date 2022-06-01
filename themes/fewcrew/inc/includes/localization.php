@@ -2,13 +2,13 @@
 /**
  * @Author: Timi Wahalahti
  * @Date:   2019-12-03 11:03:31
- * @Last Modified by:   Morgan Segura
+ * @Last Modified by:   Roni Laukkarinen
  * @Last Modified time: 2022-02-08 17:08:22
  *
- * @package fewcrew
+ * @package air-light
  */
 
-namespace FewCrew;
+namespace Air_Light;
 
 add_filter( 'air_helper_pll_register_strings', function() {
   $strings = [
@@ -16,7 +16,7 @@ add_filter( 'air_helper_pll_register_strings', function() {
   ];
 
   /**
-   * Uncomment if you need to have default fewcrew accessibility strings
+   * Uncomment if you need to have default air-light accessibility strings
    * translatable via Polylang string translations.
    */
   // foreach ( get_default_localization_strings() as $key => $value ) {
@@ -29,25 +29,25 @@ add_filter( 'air_helper_pll_register_strings', function() {
 function get_default_localization_strings( $language = 'en' ) {
   $strings = [
     'en'  => [
-      'Add a menu'                                   => __( 'Add a menu', 'fewcrew' ),
-      'Open main menu'                               => __( 'Open main menu', 'fewcrew' ),
-      'Close main menu'                              => __( 'Close main menu', 'fewcrew' ),
-      'Main navigation'                              => __( 'Main navigation', 'fewcrew' ),
-      'Back to top'                                  => __( 'Back to top', 'fewcrew' ),
-      'Open child menu'                              => __( 'Open child menu', 'fewcrew' ),
-      'Open child menu for'                          => __( 'Open child menu for', 'fewcrew' ),
-      'Close child menu'                             => __( 'Close child menu', 'fewcrew' ),
-      'Close child menu for'                         => __( 'Close child menu for', 'fewcrew' ),
-      'Skip to content'                              => __( 'Skip to content', 'fewcrew' ),
-      'External site'                                => __( 'External site', 'fewcrew' ),
-      'opens in a new window'                        => __( 'opens in a new window', 'fewcrew' ),
-      'Page not found.'                              => __( 'Page not found.', 'fewcrew' ),
-      'The reason might be mistyped or expired URL.' => __( 'The reason might be mistyped or expired URL.', 'fewcrew' ),
-      'Search'                                       => __( 'Search', 'fewcrew' ),
-      'Block missing required data'                  => __( 'Block missing required data', 'fewcrew' ),
-      'This error is shown only for logged in users' => __( 'This error is shown only for logged in users', 'fewcrew' ),
-      'No results found for your search'             => __( 'No results found for your search', 'fewcrew' ),
-      'Edit'                                         => __( 'Edit', 'fewcrew' ),
+      'Add a menu'                                   => __( 'Add a menu', 'air-light' ),
+      'Open main menu'                               => __( 'Open main menu', 'air-light' ),
+      'Close main menu'                              => __( 'Close main menu', 'air-light' ),
+      'Main navigation'                              => __( 'Main navigation', 'air-light' ),
+      'Back to top'                                  => __( 'Back to top', 'air-light' ),
+      'Open child menu'                              => __( 'Open child menu', 'air-light' ),
+      'Open child menu for'                          => __( 'Open child menu for', 'air-light' ),
+      'Close child menu'                             => __( 'Close child menu', 'air-light' ),
+      'Close child menu for'                         => __( 'Close child menu for', 'air-light' ),
+      'Skip to content'                              => __( 'Skip to content', 'air-light' ),
+      'External site'                                => __( 'External site', 'air-light' ),
+      'opens in a new window'                        => __( 'opens in a new window', 'air-light' ),
+      'Page not found.'                              => __( 'Page not found.', 'air-light' ),
+      'The reason might be mistyped or expired URL.' => __( 'The reason might be mistyped or expired URL.', 'air-light' ),
+      'Search'                                       => __( 'Search', 'air-light' ),
+      'Block missing required data'                  => __( 'Block missing required data', 'air-light' ),
+      'This error is shown only for logged in users' => __( 'This error is shown only for logged in users', 'air-light' ),
+      'No results found for your search'             => __( 'No results found for your search', 'air-light' ),
+      'Edit'                                         => __( 'Edit', 'air-light' ),
     ],
     'fi'  => [
       'Add a menu'                                   => 'Luo uusi valikko',

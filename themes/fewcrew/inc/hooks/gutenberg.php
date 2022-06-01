@@ -2,15 +2,15 @@
 /**
  * Gutenberg related settings
  *
- * @Author: Morgan Segura
- * @Date:   2022-05-26
- * @Last Modified by:   Morgan Segura
- * @Last Modified time: 2022-05-26 15:13:28
+ * @Author: Niku Hietanen
+ * @Date: 2020-02-20 13:46:50
+ * @Last Modified by:   Roni Laukkarinen
+ * @Last Modified time: 2022-03-16 15:35:47
  *
- * @package fewcrew
+ * @package air-light
  */
 
-namespace FewCrew;
+namespace Air_Light;
 
 /**
  * Restrict blocks to only allowed blocks in the settings

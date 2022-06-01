@@ -1,18 +1,21 @@
 <?php
 /**
+ * Edit link
+ *
  * This function shows edit links.
  *
- * @Date:   2022-05-26
- * @Last Modified by:   Morgan Segura
- * @Last Modified time: 2022-05-26 15:13:28
+ * @Author:		Roni Laukkarinen
+ * @Date:   		2022-02-08 17:18:33
+ * @Last Modified by:   Roni Laukkarinen
+ * @Last Modified time: 2022-02-08 17:26:27
  *
- * @package fewcrew
+ * @package air-light
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  */
-namespace FewCrew;
 
-function fewcrew_edit_link() {
+namespace Air_Light;
+
+function air_edit_link() {
 
   if ( ! get_edit_post_link() ) {
     return;

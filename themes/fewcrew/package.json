@@ -2,7 +2,7 @@
   "name": "air-light",
   "version": "9.0.2",
   "description": "A minimalist WordPress starter theme.",
-  "author": "Morgan Segura (https://fewcrew.com)",
+  "author": "Digitoimisto Dude Oy (moro@dude.fi)",
   "devDependencies": {
     "@babel/core": "^7.17.9",
     "@babel/eslint-parser": "^7.17.0",
@@ -25,7 +25,7 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.4.0",
-    "gulp": "^4.0.2",
+    "gulp": "4.0.2",
     "gulp-eslint-new": "^1.4.2",
     "gulp-exec": "^5.0.0",
     "gulp-notify": "^4.0.0",

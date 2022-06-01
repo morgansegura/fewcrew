@@ -4,17 +4,17 @@
  *
  * Version: 4.3.4
  * Based on version: 4.3.0
- * Author: Morgan Segura
+ * Author: Digitoimisto Dude Oy
  * Original Author: Edward McIntyre - @twittem, WP Bootstrap, William Patton - @pattonwebz
  * GitHub Plugin URI: https://github.com/wp-bootstrap/wp-bootstrap-navwalker
  * GitHub Branch: master
  * License: GPL-3.0+
  * License URI: http://www.gnu.org/licenses/gpl-3.0.txt
  *
- * @package fewcrew
+ * @package air-light
  */
 
-namespace FewCrew;
+namespace Air_Light;
 
 /**
  * A custom WordPress nav walker class, using the WordPress built in menu manager.
@@ -188,7 +188,7 @@ class Nav_Walker extends \Walker_Nav_Menu {
 		}
 
 		// Add some additional default classes to the item.
-		$classes[] = 'fewcrew-menu-item menu-item-' . $item->ID;
+		$classes[] = 'air-light-menu-item menu-item-' . $item->ID;
 		$classes[] = 'nav-item';
 
 		// Allow filtering the classes.
@@ -370,7 +370,7 @@ class Nav_Walker extends \Walker_Nav_Menu {
 			$class            = $args['menu_class'] ? ' class="menu-fallback-menu ' . esc_attr( $args['menu_class'] ) . '"' : ' class="menu-fallback-menu"';
 			$id               = $args['menu_id'] ? ' id="' . esc_attr( $args['menu_id'] ) . '"' : '';
 			$fallback_output .= '<ul' . $id . $class . '>';
-			$fallback_output .= '<li class="nav-item"><a href="' . esc_url( admin_url( 'nav-menus.php' ) ) . '" class="nav-link" title="' . esc_attr__( 'Add a menu', 'fewcrew' ) . '">' . esc_html__( 'Add a menu', 'fewcrew' ) . '</a></li>';
+			$fallback_output .= '<li class="nav-item"><a href="' . esc_url( admin_url( 'nav-menus.php' ) ) . '" class="nav-link" title="' . esc_attr__( 'Add a menu', 'air-light' ) . '">' . esc_html__( 'Add a menu', 'air-light' ) . '</a></li>';
 			$fallback_output .= '</ul>';
 
 			// Menu container closing tag.
