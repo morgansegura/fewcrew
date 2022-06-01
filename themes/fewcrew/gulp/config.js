@@ -1,24 +1,24 @@
 // Set theme dir
-const themeDir = './';
-const proxyUrl = 'https://airdev.test';
+const themeDir = './'
+const proxyUrl = 'https://fewcrew.test'
 
 module.exports = {
   cssnano: {
-    "preset": [
-      "cssnano-preset-advanced",
+    preset: [
+      'cssnano-preset-advanced',
       {
-        "discardComments": {
-          "removeAll": true
+        discardComments: {
+          removeAll: true
         }
       }
-    ],
+    ]
   },
   size: {
     gzip: true,
     uncompressed: true,
     pretty: true,
     showFiles: true,
-    showTotal: false,
+    showTotal: false
   },
   rename: {
     min: {
@@ -39,12 +39,13 @@ module.exports = {
       browser: 'Google Chrome',
       open: false,
       notify: true,
-      // Generate with: mkdir -p /var/www/certs && cd /var/www/certs && mkcert localhost 192.168.x.xxx ::1
+      // brew install mkcrt
+      // Generate with: mkdir -p /var/www/certs && cd /var/www/certs && sudo mkcert localhost 192.168.x.xxx ::1
       https: {
-        key: "/var/www/certs/localhost-key.pem",
-        cert: "/var/www/certs/localhost.pem",
+        key: '/var/www/certs/localhost-key.pem',
+        cert: '/var/www/certs/localhost.pem'
       }
-    },
+    }
   },
   styles: {
     src: themeDir + 'sass/*.scss',
@@ -52,19 +53,21 @@ module.exports = {
     production: themeDir + 'css/prod/',
     watch: {
       development: themeDir + 'sass/**/*.scss',
-      production: themeDir + 'css/dev/*.css',
+      production: themeDir + 'css/dev/*.css'
     },
     stylelint: {
       src: themeDir + 'sass/**/*.scss',
       opts: {
         fix: false,
-        reporters: [{
-          formatter: 'string',
-          console: true,
-          failAfterError: false,
-          debug: false
-        }]
-      },
+        reporters: [
+          {
+            formatter: 'string',
+            console: true,
+            failAfterError: false,
+            debug: false
+          }
+        ]
+      }
     },
     opts: {
       development: {
@@ -74,7 +77,7 @@ module.exports = {
         debugInfo: true,
         errLogToConsole: true,
         includePaths: [themeDir + 'node_modules/'],
-        quietDeps: true,
+        quietDeps: true
       },
       production: {
         verbose: false,
@@ -83,7 +86,7 @@ module.exports = {
         debugInfo: false,
         errLogToConsole: false,
         includePaths: [themeDir + 'node_modules/'],
-        quietDeps: true,
+        quietDeps: true
       }
     }
   },
@@ -91,7 +94,7 @@ module.exports = {
     src: themeDir + 'js/src/*.js',
     watch: themeDir + 'js/src/**/*',
     production: themeDir + 'js/prod/',
-    development: themeDir + 'js/dev/',
+    development: themeDir + 'js/dev/'
   },
   php: {
     watch: [
@@ -108,4 +111,4 @@ module.exports = {
       warningSeverity: 0
     }
   }
-};
+}
