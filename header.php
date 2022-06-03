@@ -34,10 +34,12 @@ namespace Few_Crew;
   <div id="page" class="site">
 
     <div class="nav-container">
-      <header class="site-header">
+      <header class="contain-xxl">
 
-        <?php get_template_part( 'template-parts/header/branding' ); ?>
-        <?php get_template_part( 'template-parts/header/navigation' ); ?>
+        <div class="site-header contain-xl">
+          <?php get_template_part( 'template-parts/header/branding' ); ?>
+          <?php get_template_part( 'template-parts/header/navigation' ); ?>
+        </div>
 
       </header>
     </div><!-- .nav-container -->

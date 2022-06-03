@@ -17,14 +17,13 @@ namespace Few_Crew;
 /**
  * The current version of the theme.
  */
-define( 'Few_Crew_VERSION', '9.0.2' );
-
-// We need to have some defaults as comments or empties so let's allow this:
-// phpcs:disable Squiz.Commenting.InlineComment.SpacingBefore, WordPress.Arrays.ArrayDeclarationSpacing.SpaceInEmptyArray
+define( 'Few_Crew_VERSION', '1.0.0' );
 
 /**
  * Theme settings
  */
+// We need to have some defaults as comments or empties so let's allow this:
+// phpcs:disable Squiz.Commenting.InlineComment.SpacingBefore, WordPress.Arrays.ArrayDeclarationSpacing.SpaceInEmptyArray
 add_action( 'after_setup_theme', function() {
   $theme_settings = [
     /**
@@ -36,17 +35,19 @@ add_action( 'after_setup_theme', function() {
      * Image and content sizes
      */
     'image_sizes' => [
-      'small'   => 300,
-      'medium'  => 700,
-      'large'   => 1200,
+      'small'   => 414,
+      'medium'  => 768,
+      'large'   => 1024,
+      'xlarge'   => 1800,
     ],
-    'content_width' => 800,
+    'content_width' => 1800,
 
     /**
      * Logo and featured image
      */
     'default_featured_image'  => null,
-    'logo'                    => '/svg/logo.svg',
+    'logo'                    => '/svg/fewcrew-logo.svg',
+    'width'                   => null,
 
     /**
      * Custom setting group settings when using Air setting groups plugin.
@@ -111,19 +112,19 @@ add_action( 'after_setup_theme', function() {
      * Gutenberg -related settings
      */
     // Register custom ACF Blocks
-    'acf_blocks' => [
+    // 'acf_blocks' => [
       // [
-      //   'name'           => 'block-file-slug',
-      //   'title'          => 'Block Visible Name',
-      //   // You can safely remove lines below if you find no use for them
-      //   'prevent_cache'  => false, // Defaults to false,
-      //   // Icon defaults to svg file inside svg/block-icons named after the block name,
-      //   // eg. svg/block-icons/block-file-slug.svg
-      //   //
-      //   // Icon setting defines the dashicon equivalent: https://developer.wordpress.org/resource/dashicons/#block-default
-      //   // 'icon'  => 'block-default',
+        // 'name'           => 'swiper',
+        // 'title'          => 'Hero Swiper',
+        // You can safely remove lines below if you find no use for them
+        // 'prevent_cache'  => false, // Defaults to false,
+        // Icon defaults to svg file inside svg/block-icons named after the block name,
+        // eg. svg/block-icons/block-file-slug.svg
+        //
+        // Icon setting defines the dashicon equivalent: https://developer.wordpress.org/resource/dashicons/#block-default
+        // 'icon'  => 'block-default',
       // ],
-    ],
+    // ],
 
     // Custom ACF block default settings
     'acf_block_defaults' => [
@@ -194,6 +195,16 @@ add_action( 'after_setup_theme', function() {
 
   define( 'THEME_SETTINGS', $theme_settings );
 } ); // end action after_setup_theme
+
+
+/**
+ * Theme Custom Image Sizes
+ */
+add_theme_support('post-thumbnails');
+add_image_size('post-thumbnail size', 800, 240);
+add_image_size('homepage-thumb size', 220, 180);
+add_image_size('fullpage-thumb size', 590, 790);
+
 
 /**
  * Required files

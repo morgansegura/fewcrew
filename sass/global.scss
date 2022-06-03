@@ -7,6 +7,8 @@
 // Helpers
 @import 'helpers/animations';
 @import 'helpers/typography';
+@import 'helpers/utilities';
+@import 'helpers/web';
 
 // Variables
 @import 'variables/colors';
@@ -19,6 +21,9 @@
 
 // Accessibility
 @import 'base/accessibility';
+
+// Vendors
+@import 'vendor/swiper-bundle';
 
 // Style components
 @import 'components/components';
