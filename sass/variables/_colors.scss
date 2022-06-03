@@ -14,6 +14,25 @@
   --color-scorpion: #5f5f5f;
   --color-valhalla: #2a2d3e;
   --color-white: #fff;
+  // Theme
+  --theme-dark-accent-ruby: #f92552;
+  --theme-dark-accent-emerald: #0fe3ab;
+  --theme-dark-accent-navy: #3b5998;
+  --theme-dark-accent-royal: #1da1f2;
+  --theme-dark-accent-yellow: #ffbf13;
+  --theme-dark-accent-scarlet: #e12a4c;
+
+  --theme-dark-grey100: #938fa4;
+  --theme-dark-grey200: #999ea6;
+  --theme-dark-grey300: #7f7e8c;
+
+  --theme-dark-white: #ffffff;
+  --theme-dark-black: #1e202f;
+  --theme-dark-text: var(--theme-dark-grey100);
+  --theme-dark-body: var(--theme-dark-black);
+  --theme-dark-paper: #282840;
+  --theme-dark-card: #323150;
+  --theme-dark-text: #323150;
 
   // Main element colors
   --color-heading: var(--color-main);

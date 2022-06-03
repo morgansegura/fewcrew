@@ -82,7 +82,10 @@ add_action( 'after_setup_theme', function() {
      * Menu locations
      */
     'menu_locations' => [
-      'primary' => __( 'Primary Menu', 'fewcrew' ),
+      'header_primary' => __( 'Account Menu', 'fewcrew' ),
+      'header_secondary' => __( 'Sales Menu', 'fewcrew' ),
+      'header_tertiary' => __( 'Navigation Menu', 'fewcrew' ),
+      'footer' => __( 'Footer Menu', 'fewcrew' ),
     ],
 
     /**

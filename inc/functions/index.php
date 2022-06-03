@@ -14,3 +14,7 @@
  */
 
  // Silence is golden.
+
+function add_google_fonts() {
+wp_enqueue_style( ' add_google_fonts ', ' https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,700;1,500&family=Roboto:ital,wght@0,300;0,700;1,400&display=swap', false );}
+add_action( 'wp_enqueue_scripts', 'add_google_fonts' );

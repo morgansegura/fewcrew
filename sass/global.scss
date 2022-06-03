@@ -13,11 +13,11 @@
 // Variables
 @import 'variables/colors';
 @import 'variables/breakpoints';
-@import 'variables/font-face';
+// @import 'variables/font-face';
 @import 'variables/font-family';
 @import 'variables/font-size';
-@import 'variables/forms';
-@import 'variables/spacings';
+// @import 'variables/forms';
+// @import 'variables/spacings';
 
 // Accessibility
 @import 'base/accessibility';
@@ -29,32 +29,33 @@
 @import 'components/components';
 
 // Navigation
-@import 'navigation/nav-desktop';
-@import 'navigation/nav-mobile';
+// @import 'navigation/nav-desktop';
+// @import 'navigation/nav-mobile';
 
 // Structure
-@import 'layout/general';
+// @import 'layout/general';
 @import 'layout/print';
 @import 'layout/typography';
 @import 'layout/site-header';
 @import 'layout/site-footer';
-@import 'layout/forms';
-@import 'layout/blog';
-@import 'layout/wordpress';
+// @import 'layout/forms';
+// @import 'layout/blog';
+// @import 'layout/wordpress';
 
 // Global features
-@import 'features/top';
-@import 'features/gallery';
-@import 'features/lazyload';
-@import 'features/pagination';
-@import 'features/gravity-forms';
+// @import 'features/top';
+// @import 'features/gallery';
+// @import 'features/lazyload';
+// @import 'features/pagination';
+// @import 'features/gravity-forms';
 // @import 'features/sticky-nav';
 
 // Views
-@import 'views/front-page';
-@import 'views/search';
-@import 'views/404';
-@import 'views/comments';
+@import 'views/base';
+// @import 'views/front-page';
+// @import 'views/search';
+// @import 'views/404';
+// @import 'views/comments';
 
 // Gutenberg layout outside blocks
 @import 'gutenberg/layout/content';

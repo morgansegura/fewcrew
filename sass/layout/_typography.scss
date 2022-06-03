@@ -15,7 +15,7 @@ body {
   font-size: var(--font-size-default);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-weight: var(--font-weight-paragraphs);
+  font-weight: 400;
   // stylelint-disable-next-line value-keyword-case
   text-rendering: geometricPrecision;
 }
