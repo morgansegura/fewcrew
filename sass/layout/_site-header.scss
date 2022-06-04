@@ -25,7 +25,7 @@
 
 .backdrop {
   position: fixed;
-  background-color: rgba(red, 0.75);
+  background-color: rgba(#000, 0.65);
   top: 0;
   right: 0;
   bottom: 0;
@@ -39,24 +39,37 @@
   bottom: 0;
   height: 100vh;
   display: flex;
+  min-width: 200px;
   flex-direction: column;
   background-color: var(--theme-dark-paper);
+  transform: translateX(-100%);
 
   &.animate-left {
+    z-index: 1;
     transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
   }
 
   &.animate-right {
+    z-index: 1001;
     transform: translateX(0);
+    transition: transform 0.3s ease-out;
   }
 
   @include lg {
     position: relative;
-    top: 0;
-    bottom: 0;
+    top: auto;
+    bottom: auto;
     height: auto;
     display: unset;
     background-color: transparent;
+
+    &.animate-left,
+    &.animate-right {
+      z-index: 1;
+      transform: unset;
+      transition: transform 0.3s ease-out;
+    }
   }
 }
 
@@ -207,9 +220,19 @@
   width: 62px;
   height: 62px;
   line-height: 62px;
-  background-color: #38a9ff;
+  background-color: var(--theme-dark-secondary);
   vertical-align: top;
   position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
+
+  &:hover {
+    background-color: rgba(#1da1f2, 0.5);
+  }
+
+  @include lg {
+    display: none;
+  }
 }
 
 .pushy-panel__toggle.desktop {
@@ -217,7 +240,7 @@
   width: 62px;
   height: 62px;
   line-height: 62px;
-  background-color: #38a9ff;
+  background-color: var(--theme-dark-secondary);
   vertical-align: top;
   position: relative;
 }
