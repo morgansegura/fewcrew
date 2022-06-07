@@ -65,6 +65,28 @@ $brand-primary-black: #181d36;
 $brand-primary-ebony: #191a1b;
 $brand-primary-white: #fff;
 $brand-primary: #00b3e5;
+
+$theme-dark-accent-ruby: #f92552;
+$theme-dark-accent-emerald: #0fe3ab;
+$theme-dark-accent-navy: #3b5998;
+$theme-dark-accent-royal: #1da1f2;
+$theme-dark-accent-yellow: #ffbf13;
+$theme-dark-accent-scarlet: #e12a4c;
+
+$theme-dark-grey100: #938fa4;
+$theme-dark-grey200: #999ea6;
+$theme-dark-grey300: #7f7e8c;
+$theme-dark-white: #ffffff;
+$theme-dark-black: #1e202f;
+$theme-dark-text: $theme-dark-grey100;
+$theme-dark-body: $theme-dark-black;
+$theme-dark-paper: #282840;
+$theme-dark-panel: #3c3b5b;
+$theme-dark-card: #323150;
+$theme-dark-text: #938fa4;
+$theme-dark-primary: $theme-dark-accent-ruby;
+$theme-dark-secondary: $theme-dark-accent-royal;
+
 // System Neutral
 $system-neutral-00: $brand-primary-white;
 $system-neutral-05: #f9fafc;
@@ -250,6 +272,13 @@ $radius-none: 0;
 
 // Mixins
 
+@mixin below($amount) {
+  // Above inclusive
+  @media screen and (max-width: $amount) {
+    @content;
+  }
+}
+
 @mixin above($amount) {
   // Above inclusive
   @media screen and (min-width: $amount) {
@@ -293,7 +322,7 @@ $radius-none: 0;
 
 // Questionable Methods
 @function toRem($size) {
-  @return ($size / $font-base) * 1rem;
+  @return math.div($size, $font-base) * 1rem;
 }
 
 @function lh($line-height, $font-size) {
@@ -316,6 +345,59 @@ $radius-none: 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: var(--grid-gutter);
+}
+
+@mixin containXL {
+  max-width: $contain-xl;
+  margin-right: $sp-2;
+  margin-left: $sp-2;
+
+  @include md {
+    margin-right: $sp-5;
+    margin-left: $sp-5;
+  }
+
+  @include xl {
+    margin-right: $sp-14;
+    margin-left: $sp-14;
+  }
+
+  @include xxl {
+    margin-right: $sp-20;
+    margin-left: $sp-20;
+  }
+
+  @include above($contain-offset) {
+    max-width: calc(#{$contain-xxl} - #{$sp-40});
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@mixin containXXL {
+  max-width: $contain-xxl;
+  margin-right: $sp-1;
+  margin-left: $sp-1;
+
+  @include md {
+    margin-right: $sp-3;
+    margin-left: $sp-3;
+  }
+
+  @include xl {
+    margin-right: $sp-6;
+    margin-left: $sp-6;
+  }
+
+  @include xxl {
+    margin-right: $sp-8;
+    margin-left: $sp-8;
+  }
+
+  @include above($contain-offset) {
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 @mixin shadow-card {

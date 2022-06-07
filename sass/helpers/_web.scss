@@ -1,5 +1,4 @@
-@import 'utilities';
-
+/* stylelint-disable at-rule-no-unknown */
 .contain-xs,
 .contain-sm,
 .contain-md,
@@ -26,54 +25,9 @@
 }
 
 .contain-xl {
-  max-width: $contain-xl;
-  margin-right: $sp-2;
-  margin-left: $sp-2;
-
-  @include md {
-    margin-right: $sp-5;
-    margin-left: $sp-5;
-  }
-
-  @include xl {
-    margin-right: $sp-14;
-    margin-left: $sp-14;
-  }
-
-  @include xxl {
-    margin-right: $sp-20;
-    margin-left: $sp-20;
-  }
-
-  @include above($contain-offset) {
-    max-width: calc(#{$contain-xxl} - #{$sp-40});
-    margin-right: auto;
-    margin-left: auto;
-  }
+  @include containXXL();
 }
 
 .contain-xxl {
-  max-width: $contain-xxl;
-  margin-right: $sp-1;
-  margin-left: $sp-1;
-
-  @include md {
-    margin-right: $sp-3;
-    margin-left: $sp-3;
-  }
-
-  @include xl {
-    margin-right: $sp-6;
-    margin-left: $sp-6;
-  }
-
-  @include xxl {
-    margin-right: $sp-8;
-    margin-left: $sp-8;
-  }
-
-  @include above($contain-offset) {
-    margin-right: auto;
-    margin-left: auto;
-  }
+  @include containXXL();
 }

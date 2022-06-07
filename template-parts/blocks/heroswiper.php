@@ -182,35 +182,29 @@ if( have_rows('swiper') ):
     $images_src = $wpdb->get_results( $qstr, 'OBJECT_K' );
 endif;
 ?>
-<div class="slider-main">
-    <div class="swiper-container slider-main__slides gallery-top" data-role="carousel" id="js-main-slider">
-        <div class="swiper-wrapper">
-            <?php
-            $uploads = wp_upload_dir();
-            foreach($section1 as $item) :
-						?>
-                <div class="swiper-slide slider-main__slide"><a href="<?php echo $item->link; ?>">
-                        <picture class="slider-main__picture">
-                            <source data-srcset="<?php echo $uploads['baseurl'] . '/' . $images_src[$item->mobile_image_id['ID']]->meta_value; ?>"
-                                    media="(max-width: 767px)" type="image/jpeg">
-                            <img class="slider-main__img swiper-lazy img-fluid"
-                                 data-src="<?php echo $uploads['baseurl'] . '/' . $images_src[$item->image_id['ID']]->meta_value; ?>"
-                                 alt="<?php echo $item->description; ?>" /></picture>
-                        <div class="swiper-lazy-preloader"></div>
-                    </a></div>
-            <?php endforeach; ?>
-        </div>
-        <div class="swiper-pagination"></div>
-    </div>
-		<div class="contain-xxl">
-			<div class="contain-xl">
-					<div class="swiper-container slider-main__nav gallery-thumbs" data-role="carousel-nav" id="js-main-slider-thumbs">
-							<div class="swiper-wrapper slider-main__thumbs-wrapper">
-									<?php foreach($section1 as $item) : ?>
-											<div class="swiper-slide slider-main__nav-button"><?php echo $item->description; ?></div>
-									<?php endforeach; ?>
-							</div>
-					</div>
-			</div>
+<div id="swiperHeroHome" class="hero-swiperhome">
+	<div class="contain-xxl">
+		<div class="hero-swiperhome">
+
+		    <div class="swiper-container hero-swiperhome-slides" data-role="carousel" id="hero-swiperhome-slides">
+		        <div class="swiper-wrapper">
+		            <?php
+		            $uploads = wp_upload_dir();
+		            foreach($section1 as $item) :
+								?>
+		                <div class="swiper-slide hero-swiperhome-slide" style="background-image: url('<?php echo $uploads['baseurl'] . '/' . $images_src[$item->image_id['ID']]->meta_value; ?>');">
+											<a href="<?php echo $item->link; ?>">
+														<div class="hero-swiperhome-description">
+															<div class="contain-xl">
+																	<div class="swiper-slide hero-swiperhome-description-text"><?php echo $item->description; ?></div>
+															</div>
+														</div>
+		                    </a>
+											</div>
+		            <?php endforeach; ?>
+		        </div>
+		    </div>
+
 		</div>
+	</div>
 </div>
