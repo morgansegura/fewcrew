@@ -6,7 +6,7 @@
 
 .content-wrapper {
   flex: 1 0 auto;
-  background-color: $theme-dark-paper;
+  background-color: $theme-color-paper;
 }
 
 .header {
@@ -22,7 +22,7 @@
 }
 
 .header-container {
-  background-color: $theme-dark-paper;
+  background-color: $theme-color-paper;
 
   .contain-xl {
     position: relative;
@@ -47,7 +47,7 @@
   display: flex;
   min-width: 200px;
   flex-direction: column;
-  background-color: $theme-dark-paper;
+  background-color: $theme-color-paper;
   transform: translateX(-100%);
 
   &.animate-left {
@@ -120,7 +120,7 @@
   a {
     @include fontSizing(14px, 30px);
     font-weight: 700;
-    color: $theme-dark-white;
+    color: $theme-color-white;
     text-transform: uppercase;
     text-decoration: none;
     display: flex;
@@ -133,27 +133,27 @@
       padding-top: $sp-1_5;
       padding-bottom: $sp-1_5;
       border-right: 4px solid transparent;
-      border-bottom: 1px solid $theme-dark-panel;
+      border-bottom: 1px solid $theme-color-panel;
       border-left: 4px solid transparent;
 
       &:hover {
-        border-left: 4px solid $theme-dark-secondary;
+        border-left: 4px solid $theme-color-secondary;
         background-color: rgba(#000, 0.065);
       }
 
       .active & {
-        border-left: 4px solid $theme-dark-secondary;
+        border-left: 4px solid $theme-color-secondary;
         background-color: rgba(#fff, 0.065);
       }
     }
 
     @include lg {
       &:hover {
-        color: $theme-dark-secondary;
+        color: $theme-color-secondary;
       }
 
       span {
-        color: $theme-dark-secondary;
+        color: $theme-color-secondary;
       }
     }
   }
@@ -161,7 +161,7 @@
 
 .header-menu-admin {
   @include lg {
-    background-color: $theme-dark-card;
+    background-color: $theme-color-card;
     padding-top: $sp-1;
     padding-bottom: $sp-1;
   }
@@ -175,7 +175,7 @@
 
 .header-menu-ads {
   @include lg {
-    background-color: $theme-dark-paper;
+    background-color: $theme-color-paper;
 
     .nav-item a {
       @include fontSizing(14px, 42px);
@@ -209,48 +209,48 @@
         z-index: 2;
         font-family: var(--font-heading);
         font-weight: 700;
-        color: $theme-dark-white;
+        color: $theme-color-white;
         padding-top: $sp-1_5;
         padding-right: $sp-3;
         padding-left: $sp-3;
         padding-bottom: $sp-1_5;
         border-top: 2px solid transparent;
         border-bottom: 2px solid transparent;
-        border-right: 1px solid $theme-dark-panel;
+        border-right: 1px solid $theme-color-panel;
         transition: background-color 0.3s ease-out, color 0.3s ease-out,
           border-color 0.3s ease-out;
 
         &:first-child {
-          border-left: 1px solid $theme-dark-panel;
+          border-left: 1px solid $theme-color-panel;
         }
 
         &:hover,
         .active & {
-          border-bottom-color: $theme-dark-accent-ruby;
-          background-color: $theme-dark-paper;
-          color: $theme-dark-white;
+          border-bottom-color: $theme-color-accent-ruby;
+          background-color: $theme-color-paper;
+          color: $theme-color-white;
         }
 
         span {
-          color: $theme-dark-secondary;
+          color: $theme-color-secondary;
         }
       }
     }
   }
 
   @include lg {
-    background-color: $theme-dark-card;
+    background-color: $theme-color-card;
 
-    &::after {
-      content: '';
-      background-color: $theme-dark-paper;
-      transform: skewX(-13deg);
-      position: absolute;
-      top: 0;
-      left: -1%;
-      width: 21%;
-      height: 100%;
-    }
+    // &::after {
+    //   content: '';
+    //   background-color: $theme-color-paper;
+    //   transform: skewX(-13deg);
+    //   position: absolute;
+    //   top: 0;
+    //   left: -1%;
+    //   width: 21%;
+    //   height: 100%;
+    // }
   }
 }
 
@@ -270,7 +270,7 @@
     transform: unset;
 
     svg {
-      width: 150px;
+      // width: 150px;
     }
   }
 }
@@ -311,7 +311,7 @@
   width: 80px;
   height: 80px;
   line-height: 80px;
-  background-color: $theme-dark-secondary;
+  background-color: $theme-color-secondary;
   vertical-align: top;
   position: relative;
   cursor: pointer;
@@ -331,7 +331,7 @@
   width: 62px;
   height: 62px;
   line-height: 62px;
-  background-color: $theme-dark-secondary;
+  background-color: $theme-color-secondary;
   vertical-align: top;
   position: relative;
 }

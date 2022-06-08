@@ -66,26 +66,27 @@ $brand-primary-ebony: #191a1b;
 $brand-primary-white: #fff;
 $brand-primary: #00b3e5;
 
-$theme-dark-accent-ruby: #f92552;
-$theme-dark-accent-emerald: #0fe3ab;
-$theme-dark-accent-navy: #3b5998;
-$theme-dark-accent-royal: #1da1f2;
-$theme-dark-accent-yellow: #ffbf13;
-$theme-dark-accent-scarlet: #e12a4c;
+$theme-color-accent-ruby: #f92552;
+$theme-color-accent-emerald: #0fe3ab;
+$theme-color-accent-navy: #3b5998;
+$theme-color-accent-royal: #1da1f2;
+$theme-color-accent-yellow: #ffbf13;
+$theme-color-accent-scarlet: #e12a4c;
+$theme-color-accent-purple: #9e69ee;
 
-$theme-dark-grey100: #938fa4;
-$theme-dark-grey200: #999ea6;
-$theme-dark-grey300: #7f7e8c;
-$theme-dark-white: #ffffff;
-$theme-dark-black: #1e202f;
-$theme-dark-text: $theme-dark-grey100;
-$theme-dark-body: $theme-dark-black;
-$theme-dark-paper: #282840;
-$theme-dark-panel: #3c3b5b;
-$theme-dark-card: #323150;
-$theme-dark-text: #938fa4;
-$theme-dark-primary: $theme-dark-accent-ruby;
-$theme-dark-secondary: $theme-dark-accent-royal;
+$theme-color-grey100: #938fa4;
+$theme-color-grey200: #999ea6;
+$theme-color-grey300: #7f7e8c;
+$theme-color-white: #ffffff;
+$theme-color-black: #16171a;
+$theme-color-text: $theme-color-grey100;
+$theme-color-body: $theme-color-black;
+$theme-color-paper: #1e2024;
+$theme-color-card: #292c31;
+$theme-color-panel: #2e2f31;
+$theme-color-text: #6b6d70;
+$theme-color-primary: $theme-color-accent-ruby;
+$theme-color-secondary: $theme-color-accent-royal;
 
 // System Neutral
 $system-neutral-00: $brand-primary-white;
@@ -318,6 +319,75 @@ $radius-none: 0;
 
 @mixin base {
   font-size: $font-base;
+}
+
+@mixin h1 {
+  font-size: rem(32px);
+  line-height: 1.15;
+  font-weight: 600;
+
+  @include md {
+    font-size: rem(48px);
+  }
+
+  @include lg {
+    font-size: rem(52px);
+  }
+}
+
+@mixin h2 {
+  font-size: rem(28px);
+  line-height: 1.15;
+  font-weight: 600;
+
+  @include md {
+    font-size: rem(40px);
+  }
+
+  @include lg {
+    font-size: rem(41px);
+  }
+}
+
+@mixin h3 {
+  font-size: rem(25px);
+  line-height: 1.15;
+  font-weight: 600;
+
+  @include lg {
+    font-size: rem(32px);
+  }
+}
+
+@mixin h4 {
+  font-size: rem(22px);
+  line-height: 1.2;
+  font-weight: 600;
+
+  @include md {
+    font-size: rem(25px);
+  }
+}
+
+@mixin h5 {
+  font-size: rem(18px);
+  line-height: 1.2;
+  font-weight: 600;
+
+  @include md {
+    font-size: rem(20px);
+    line-height: 1.4;
+  }
+}
+
+@mixin body-large {
+  font-size: rem(25px);
+  line-height: 1.5;
+  font-weight: 400;
+
+  @include lg {
+    font-size: rem(28px);
+  }
 }
 
 // Questionable Methods

@@ -1,4 +1,4 @@
-if (document.getElementById('swiperHeroHome')) {
+if (document.getElementById('heroFullScreen')) {
   // var galleryThumbs = new Swiper('#hero-swiperhome-description', {
   //   slidesPerView: 1.5,
   //   watchSlidesVisibility: true,
@@ -17,7 +17,7 @@ if (document.getElementById('swiperHeroHome')) {
   //   }
   // })
 
-  var galleryTop = new Swiper('#hero-swiperhome-slides', {
+  var galleryTop = new Swiper('#heroFullScreen', {
     effect: 'fade',
     fadeEffect: {
       crossFade: true

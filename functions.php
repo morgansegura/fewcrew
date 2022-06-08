@@ -209,6 +209,14 @@ add_image_size('homepage-thumb size', 220, 180);
 add_image_size('fullpage-thumb size', 590, 790);
 
 
+function funny($arr=[], $options='') {
+  if ($options == 'dump') {
+    return '<pre>' . var_dump($arr) . '</pre>';
+  } else {
+    return '<pre>' . print_r($arr) . '</pre>';
+  }
+}
+
 /**
  * Required files
  */

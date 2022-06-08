@@ -1,11 +1,11 @@
 {
     "key": "group_6297f137e2623",
-    "title": "Hero Slider",
+    "title": "Hero Full Screen",
     "fields": [
         {
             "key": "field_6297f140ac759",
-            "label": "swiper",
-            "name": "swiper",
+            "label": "Hero Full Screen",
+            "name": "hero_full_screen",
             "type": "flexible_content",
             "instructions": "",
             "required": 0,
@@ -23,8 +23,30 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_629ff390bd4cc",
+                            "label": "Theme Mode",
+                            "name": "theme_mode",
+                            "type": "button_group",
+                            "instructions": "Should the text and contents be light or dark for this slide? (Dark Mode is dark body and light text, Light Mode is Light body and Dark text.)",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "light": "light",
+                                "dark": "dark"
+                            },
+                            "allow_null": 0,
+                            "default_value": "dark",
+                            "layout": "horizontal",
+                            "return_format": "value"
+                        },
+                        {
                             "key": "field_6297f161ac75a",
-                            "label": "link",
+                            "label": "Link",
                             "name": "link",
                             "type": "text",
                             "instructions": "",
@@ -43,7 +65,7 @@
                         },
                         {
                             "key": "field_6297f177ac75b",
-                            "label": "image",
+                            "label": "Image",
                             "name": "image",
                             "type": "image",
                             "instructions": "",
@@ -67,7 +89,7 @@
                         },
                         {
                             "key": "field_6297f186ac75c",
-                            "label": "mobile image",
+                            "label": "Mobile Image",
                             "name": "mobile_image",
                             "type": "image",
                             "instructions": "",
@@ -90,9 +112,66 @@
                             "mime_types": ""
                         },
                         {
+                            "key": "field_629ff373bd4cb",
+                            "label": "Super Title",
+                            "name": "supertitle",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_629fd11abd4ca",
+                            "label": "Title",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
                             "key": "field_6297f1a1ac75d",
-                            "label": "description",
-                            "name": "description",
+                            "label": "Copy",
+                            "name": "copy",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_62a0d02a30c0a",
+                            "label": "Subtitle",
+                            "name": "subtitle",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -136,5 +215,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1654127546
+    "modified": 1654706655
 }
