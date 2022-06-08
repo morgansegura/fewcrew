@@ -15,7 +15,7 @@ import backToTop from './modules/top'
 import 'what-input'
 import './modules/navigation'
 import './modules/vendor/swiper-bundle'
-import './modules/herofullscreen'
+import './modules/carouselfullscreen'
 // import './modules/sticky-nav';
 
 // Define Javascript is active by changing the body class

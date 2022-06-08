@@ -1,11 +1,11 @@
 {
     "key": "group_6297f137e2623",
-    "title": "Hero Full Screen",
+    "title": "Carousel Full Screen",
     "fields": [
         {
             "key": "field_6297f140ac759",
-            "label": "Hero Full Screen",
-            "name": "hero_full_screen",
+            "label": "CarouselFullScreen",
+            "name": "carouselfullscreen",
             "type": "flexible_content",
             "instructions": "",
             "required": 0,
@@ -215,5 +215,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1654706655
+    "modified": 1654707785
 }

@@ -19,16 +19,17 @@ function add_google_fonts() {
 wp_enqueue_style( ' add_google_fonts ', ' https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,700;1,500&family=Roboto:ital,wght@0,700;1,900&display=swap', false );}
 
 add_action( 'wp_enqueue_scripts', 'add_google_fonts' );
-if( function_exists('acf_hero_full_screen') ):
 
-    acf_hero_full_screen(array(
+if( function_exists('acf_carousel_full_screen') ):
+
+    acf_carousel_full_screen(array(
       'key' => 'group_6297f137e2623',
-      'title' => 'Hero Slider',
+      'title' => 'Carousel Full Screen',
       'fields' => array(
         array(
           'key' => 'field_6297f140ac759',
-          'label' => 'Hero Full Screen',
-          'name' => 'hero_full_screen',
+          'label' => 'CarouselFullScreen',
+          'name' => 'carouselfullscreen',
           'type' => 'flexible_content',
           'instructions' => '',
           'required' => 0,
