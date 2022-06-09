@@ -1,22 +1,4 @@
 if (document.getElementById('carouselFullScreen')) {
-  // var galleryThumbs = new Swiper('#hero-swiperhome-description', {
-  //   slidesPerView: 1.5,
-  //   watchSlidesVisibility: true,
-  //   watchSlidesProgress: true,
-  //   spaceBetween: 0,
-  //   breakpoints: {
-  //     768: {
-  //       slidesPerView: 3
-  //     },
-  //     1200: {
-  //       slidesPerView: 5
-  //     },
-  //     1024: {
-  //       slidesPerView: 5
-  //     }
-  //   }
-  // })
-
   var galleryTop = new Swiper('#carouselFullScreen', {
     effect: 'fade',
     fadeEffect: {

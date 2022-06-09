@@ -11,16 +11,6 @@
   overflow: visible;
   width: 100%;
   z-index: 100;
-
-  &.is-fixed {
-    animation-duration: 300ms;
-    animation-iteration-count: 1;
-    animation-name: roll-in;
-    background-color: var(--color-sticky-navigation-background);
-    left: 0;
-    position: fixed;
-    top: 0;
-  }
 }
 
 @keyframes roll-in {

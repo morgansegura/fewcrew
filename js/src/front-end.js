@@ -14,6 +14,7 @@ import initAnchors from './modules/anchors'
 import backToTop from './modules/top'
 import 'what-input'
 import './modules/navigation'
+import './modules/sticky-nav'
 import './modules/vendor/swiper-bundle'
 import './modules/carouselfullscreen'
 // import './modules/sticky-nav';

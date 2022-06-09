@@ -1,0 +1,174 @@
+.content-imagegrid {
+}
+
+.content-imagegrid-heading {
+  margin-top: $sp-4;
+}
+
+.content-imagegrid-title {
+  @include fontSizing(28px, 34px);
+
+  margin-top: $sp-5;
+  color: $theme-color-white;
+  font-family: var(--font-sans);
+}
+
+.content-imagegrid-container {
+  @include grid;
+
+  margin-top: $sp-4;
+  gap: $sp-2;
+}
+
+.content-imagegrid-item {
+  &:nth-child(1) {
+    grid-column: 1 / 13;
+
+    @include lg {
+      grid-column: 1 / 5;
+    }
+
+    .card-blocktitle {
+      color: $theme-color-accent-purple;
+    }
+  }
+  &:nth-child(2) {
+    grid-column: 1 / 13;
+
+    @include md {
+      grid-column: 1 / 7;
+    }
+
+    @include lg {
+      grid-column: 5 / 9;
+    }
+
+    .card-blocktitle {
+      color: $theme-color-accent-emerald;
+    }
+  }
+  &:nth-child(3) {
+    grid-column: 1 / 13;
+
+    @include md {
+      grid-column: 7 / 13;
+    }
+
+    @include lg {
+      grid-column: 9 / 13;
+    }
+
+    .card-blocktitle {
+      color: $theme-color-accent-yellow;
+    }
+  }
+  .card-content {
+    min-height: 70px;
+  }
+}
+
+.card {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $theme-color-panel;
+  border-radius: 8px;
+  background-color: $theme-color-card;
+  overflow: hidden;
+
+  &:hover {
+  }
+}
+
+.card-heading {
+  padding: $sp-3;
+}
+
+.card-image {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: saturate(1.3);
+  transition: filter 0.3s ease-out;
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(
+      90deg,
+      rgba($theme-color-body, 0.9) 25.68%,
+      rgba($theme-color-body, 0.62) 47.71%,
+      rgba($theme-color-body, 0) 67.47%
+    );
+  }
+}
+
+.card-blocktitle {
+  @include fontSizing(40px, 48px);
+
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.card-blocksubtitle {
+  @include fontSizing(40px, 30px);
+
+  color: $theme-color-white;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.card-date {
+  @include fontSizing(13px, 24px);
+
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.card-content {
+  flex: 1 0 auto;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: $sp-1 $sp-3 $sp-2 $sp-3;
+}
+
+.card-cta-button {
+  @include fontSizing(13px, 24px);
+  @include shadow-form;
+
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-self: flex-end;
+  background-color: $theme-color-white;
+  color: $theme-color-black;
+  border-radius: 4px;
+  // font-family: var(--font-heading);
+  font-weight: 700;
+  padding: 2px $sp-1;
+  transition: background-color 0.3s ease-out;
+
+  svg {
+    margin-left: 4px;
+    width: 15px;
+  }
+
+  &:hover {
+    background-color: rgba($theme-color-white, 0.85);
+  }
+}

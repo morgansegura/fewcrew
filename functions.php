@@ -46,7 +46,8 @@ add_action( 'after_setup_theme', function() {
      * Logo and featured image
      */
     'default_featured_image'  => null,
-    'logo'                    => '/svg/fewcrew-logo.svg',
+    'logo'                    => '/svg/fewcrew-logo-text.svg',
+    'logo_mobile'             => '/svg/fewcrew-logo-text.svg',
     'width'                   => null,
 
     /**
@@ -148,8 +149,7 @@ add_action( 'after_setup_theme', function() {
     // Restrict to only selected blocks
     // Set the value to 'all' to allow all blocks everywhere
    'allowed_blocks' => [
-      'default' => [
-      ],
+      'default' => [],
       'post' => [
         'core/archives',
         'core/audio',

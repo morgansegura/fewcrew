@@ -21,7 +21,6 @@ namespace Few_Crew;
   </div>
 
   <div class="header-nav-control">
-
       <div class="pushy-panel__back-btn-block pushy-panel--dark">
         <div class="pushy-panel__back-btn"></div>
       </div>
@@ -95,6 +94,6 @@ namespace Few_Crew;
         </div>
       </div>
   </div>
-
-</nav><!-- #nav -->
+</nav>
+<div class="colorbar-before"></div>
 

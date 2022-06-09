@@ -15,18 +15,18 @@
 
 namespace Few_Crew;
 
-function air_edit_link() {
+function few_edit_link() {
 
   if ( ! get_edit_post_link() ) {
     return;
   } ?>
 
-    <p class="edit-link">
-      <a href="<?php echo esc_url( get_edit_post_link() ); ?>">
-        <?php echo esc_html( get_default_localization( 'Edit' ) ); ?>
-        <span class="screen-reader-text"><?php echo esc_html( get_the_title() ); ?></span>
-      </a>
-    </p>
-  <?php
+<p class="edit-link">
+  <a href="<?php echo esc_url( get_edit_post_link() ); ?>">
+    <?php echo esc_html( get_default_localization( 'Edit' ) ); ?>
+    <span class="screen-reader-text"><?php echo esc_html( get_the_title() ); ?></span>
+  </a>
+</p>
+<?php
 
 }

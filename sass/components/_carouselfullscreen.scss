@@ -1,13 +1,52 @@
-// Swipper
-
-.swiper-container {
-}
 .swiper-wrapper {
   position: relative;
 }
 .swiper-slide {
   width: 100%;
   height: 100%;
+}
+
+.swiper-pagination {
+  display: flex;
+  gap: 8px;
+  left: 50%;
+  bottom: 40px;
+  transform: translate3d(0, 0, 0) translateX(-50%);
+
+  &-bullet {
+    background: $system-neutral-00;
+  }
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-prev,
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-next {
+  color: $theme-color-white;
+  display: flex;
+  height: 45px;
+  width: 45px;
+  border-radius: 9999px;
+  border: 1px solid transparent;
+  transform: scale(1);
+
+  &::after {
+    font-size: 20px;
+    font-weight: 800;
+  }
+
+  &:hover {
+  }
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  left: 20px;
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  right: 20px;
 }
 
 .swiper-lazy-loaded {
@@ -18,6 +57,7 @@
 .swiper-lazy-preloader {
   margin-top: 145px;
 }
+
 .swiper-pagination-bullet {
   width: 14px;
   height: 14px;
@@ -30,7 +70,59 @@
   background: #fff;
 }
 
-// Swiper Home
+.colorbar {
+  &-after,
+  &-before {
+    position: relative;
+    height: 1px;
+  }
+
+  &-after::before,
+  &-after::after,
+  &-before::before,
+  &-before::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    top: 0;
+  }
+
+  &-before::before,
+  &-after::before {
+    left: 0;
+    background-color: rgba($theme-color-secondary, 1);
+
+    @include lg {
+      background-color: rgba($theme-color-primary, 1);
+    }
+  }
+
+  &-before::after,
+  &-after::after {
+    right: 0;
+    background-color: rgba($theme-color-primary, 1);
+
+    @include lg {
+      background-color: rgba($theme-color-secondary, 1);
+    }
+  }
+
+  &-before::before {
+    width: 75%;
+  }
+
+  &-before::after {
+    width: 25%;
+  }
+
+  &-after::before {
+    width: 25%;
+  }
+
+  &-after::after {
+    width: 75%;
+  }
+}
 
 .carousel-fullscreen {
   position: relative;
@@ -58,8 +150,9 @@
 
     background: linear-gradient(
       180deg,
-      rgba($theme-color-body, 0) 19.04%,
-      rgba($theme-color-body, 0.9) 58.64%
+      rgba($theme-color-body, 0.95) 20%,
+      rgba($theme-color-body, 0) 75%,
+      rgba($theme-color-body, 0) 100%
     );
 
     @include lg {
@@ -78,68 +171,83 @@
 }
 
 .carousel-fullscreen-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   box-sizing: border-box;
-  padding-top: $sp-6;
-  padding-bottom: 567px;
+  padding-left: 80px;
+  height: 556px;
 
   @include md {
-    padding-bottom: 774px;
+    height: 774px;
   }
 
   @include lg {
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 24px;
-    max-width: 440px;
-    height: 768px;
-
-    display: flex;
-    flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
+    padding-left: 100px;
+    height: 556px;
   }
 
   @include xl {
-    padding-left: 80px;
-    height: 965px;
+    padding-left: 150px;
+    height: 660px;
   }
 
   @include xxl {
     padding-left: 392px;
     max-width: 900px;
-    height: 1380px;
   }
 }
 
 .carousel-fullscreen-description {
-  position: absolute;
-  z-index: 2;
+  position: relative;
+  z-index: 1;
   user-select: none;
-  top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 414px;
+
+  @include md {
+    max-width: 600px;
+    margin-right: unset;
+    margin-left: unset;
+  }
 }
 
 .carousel-fullscreen-description-supertitle {
-  @include fontSizing(25px, 33px);
+  @include fontSizing(20px, 40px);
 
-  margin-bottom: $sp-1;
+  text-transform: capitalize;
 }
 
 .carousel-fullscreen-description-title {
-  @include fontSizing(28px, 34px);
+  @include fontSizing(50px, 58px);
 
   font-family: var(--font-heading);
-  // text-transform: uppercase;
+  text-transform: uppercase;
   font-weight: 900;
 
   @include md {
-    @include fontSizing(40px, 48px);
+    @include fontSizing(70px, 78px);
   }
+}
 
-  @include lg {
-    max-width: 417px;
+.carousel-fullscreen-description-subtitle {
+  @include fontSizing(40px, 48px);
+
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  font-weight: 900;
+  color: $theme-color-primary;
+
+  @include md {
+    @include fontSizing(50px, 58px);
   }
 }
 
 .carousel-fullscreen-description-copy {
+  max-width: 75%;
 }
 
 .swiper-slide-light {
