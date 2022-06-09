@@ -22,10 +22,11 @@
   // Custom Gutenberg block styles
   @import 'gutenberg/blocks/boxed';
   @import 'gutenberg/blocks/button-file';
-
-  // Add here those ACF Gutenberg blocks you want to use inside article-content
-  // @import 'gutenberg/blocks/your-new-acf-block';
 }
+
+// Add here those ACF Gutenberg blocks you want to use inside article-content
+@import 'gutenberg/blocks/carouselfullscreen';
+@import 'gutenberg/blocks/contentcardgrid';
 
 // Blocks only meant for outside article-content
 .editor-styles-wrapper,

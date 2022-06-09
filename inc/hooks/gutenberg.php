@@ -150,7 +150,7 @@ function block_editor_title_input_styles() {
     font-size: 20px;
     font-weight: 600;
     margin: 0 auto;
-    padding: 4rem 2rem;
+    padding: 1rem 2rem;
   }
 
   .block-editor .editor-styles-wrapper .editor-post-title::before {

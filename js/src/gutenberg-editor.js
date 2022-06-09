@@ -4,7 +4,9 @@
  * @Last Modified by:   Morgan Segura
  * @Last Modified time: 2022-05-12 17:49:01
  */
+
 /* eslint-disable camelcase, prefer-arrow-callback, no-unused-vars, no-undef, vars-on-top, no-var, func-names, max-len, import/no-unresolved */
+
 import {
   setFigureWidths,
   setLazyLoadedFigureWidth

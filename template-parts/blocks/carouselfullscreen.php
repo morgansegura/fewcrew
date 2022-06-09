@@ -1,9 +1,12 @@
 <?php
 /**
- * Block Name: CarouselFullScreen
+ * Block Name: Carousel Full Screen
  *
- * This is the template that displays the testimonial block.
+ * @package fewcrew
  */
+
+// namespace Few_Crew;
+
 if( have_rows('carouselfullscreen') ):
     $section1 = array();
     $images_ids = array();
@@ -18,6 +21,7 @@ if( have_rows('carouselfullscreen') ):
             $item->copy = get_sub_field('copy');
             $item->image_id = get_sub_field('image');
             $item->mobile_image_id = get_sub_field('mobile_image');
+            $item->button_group = get_sub_field('button_group');
             $images_ids[] = $item->image_id['ID'];
             $images_ids[] = $item->mobile_image_id['ID'];
             $section1[] = $item;
@@ -57,7 +61,7 @@ endif;
 
               <img class="carousel-fullscreen-slide-img swiper-lazy img-fluid"
                 data-src="<?php echo $uploads['baseurl'] . '/' . $images_src[$item->image_id['ID']]->meta_value; ?>"
-                alt="<?php echo $item->description; ?>" />
+                alt="<?php echo $item->title; ?>" />
 
             </picture>
 

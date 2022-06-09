@@ -1,11 +1,11 @@
-.content-imagegrid {
+.content-cardgrid {
 }
 
-.content-imagegrid-heading {
+.content-cardgrid-heading {
   margin-top: $sp-4;
 }
 
-.content-imagegrid-title {
+.content-cardgrid-title {
   @include fontSizing(28px, 34px);
 
   margin-top: $sp-5;
@@ -13,14 +13,14 @@
   font-family: var(--font-sans);
 }
 
-.content-imagegrid-container {
+.content-cardgrid-container {
   @include grid;
 
   margin-top: $sp-4;
   gap: $sp-2;
 }
 
-.content-imagegrid-item {
+.content-cardgrid-item {
   &:nth-child(1) {
     grid-column: 1 / 13;
 

@@ -12,7 +12,6 @@
  * @Last Modified time: 2022-02-08 17:03:18
  *
  * @package fewcrew
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  */
 
 namespace Few_Crew;

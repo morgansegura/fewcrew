@@ -116,19 +116,20 @@ add_action( 'after_setup_theme', function() {
      * Gutenberg -related settings
      */
     // Register custom ACF Blocks
-    // 'acf_blocks' => [
-      // [
-        // 'name'           => 'swiper',
-        // 'title'          => 'Hero Swiper',
-        // You can safely remove lines below if you find no use for them
-        // 'prevent_cache'  => false, // Defaults to false,
-        // Icon defaults to svg file inside svg/block-icons named after the block name,
-        // eg. svg/block-icons/block-file-slug.svg
-        //
-        // Icon setting defines the dashicon equivalent: https://developer.wordpress.org/resource/dashicons/#block-default
-        // 'icon'  => 'block-default',
-      // ],
-    // ],
+    'acf_blocks' => [
+      [
+        'name'           => 'carouselfullscreen',
+        'title'          => 'Carousel Full Screen',
+        'prevent_cache'  => false,
+        'icon'  => 'slides',
+      ],
+      [
+        'name'           => 'contentcardgrid',
+        'title'          => 'ContentCard Grid',
+        'prevent_cache'  => false,
+        'icon'  => 'layout',
+      ],
+    ],
 
     // Custom ACF block default settings
     'acf_block_defaults' => [

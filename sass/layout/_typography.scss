@@ -51,45 +51,33 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--color-heading);
   font-family: var(--font-heading);
-  font-weight: var(--font-weight-headings);
-  margin-bottom: var(--margin-between-paragraphs);
-  margin-top: var(--margin-between-paragraphs);
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-  line-height: var(--line-height-headings);
-}
-
-// Define heading scales
-// Current: Perfect fourth: https://type-scale.com/
 h1 {
-  font-size: var(--font-size-h1);
+  @include h1;
 }
 
 h2 {
-  font-size: var(--font-size-h2);
+  @include h2;
 }
 
 h3 {
-  font-size: var(--font-size-h3);
+  @include h3;
 }
 
 h4 {
-  font-size: var(--font-size-h4);
+  @include h4;
 }
 
 h5 {
-  font-size: var(--font-size-h5);
+  @include h5;
 }
 
-h6 {
-  font-size: var(--font-size-h6);
+.text-light,
+.text-light > *,
+.text-light ~ * {
+  color: $system-neutral-00;
 }
 
 h1:first-child,
@@ -115,8 +103,6 @@ i {
 
 // Default paragraphs
 p {
-  margin-bottom: 2.9rem;
-  margin-top: 2.9rem;
 }
 
 p:last-child {
