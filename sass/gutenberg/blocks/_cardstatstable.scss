@@ -1,0 +1,52 @@
+.card-statstable {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.card-statstable-moreblock {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    top: 0;
+    bottom: 0;
+    background-color: $theme-color-accent-yellow;
+  }
+}
+.card-statstable-moreblock-title {
+}
+.card-statstable-moreblock-button {
+}
+
+.card-statstable-table {
+}
+
+.card-statstable-tablehead {
+}
+
+.card-statstable-tablehead-col {
+}
+
+.card-statstable-tablebody {
+}
+
+.card-statstable-tablebody-col {
+}
+
+.card-statstable-table-number {
+}
+
+.card-statstable-table-icon {
+}
+
+.card-statstable-table-col-heading {
+}
+
+.card-statstable-table-title {
+}
+
+.card-statstable-table-subtitle {
+}

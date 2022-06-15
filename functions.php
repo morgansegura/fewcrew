@@ -135,6 +135,12 @@ add_action( 'after_setup_theme', function() {
         'prevent_cache'  => false,
         'icon'  => 'layout',
       ],
+      [
+        'name'           => 'cardstatstable',
+        'title'          => 'Card Stats Table',
+        'prevent_cache'  => false,
+        'icon'  => 'layout',
+      ],
     ],
 
     // Custom ACF block default settings

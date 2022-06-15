@@ -62,9 +62,9 @@ $desktop-lg: 1800px;
 // Colors
 // [Brand]
 $brand-primary-black: #181d36;
-$brand-primary-ebony: #191a1b;
 $brand-primary-white: #fff;
-$brand-primary: #00b3e5;
+$brand-primary: #f92552;
+$brand-secondary: #1da1f2;
 
 $theme-color-accent-ruby: #f92552;
 $theme-color-accent-emerald: #0fe3ab;
@@ -88,6 +88,125 @@ $theme-color-text: #6b6d70;
 $theme-color-primary: $theme-color-accent-ruby;
 $theme-color-secondary: $theme-color-accent-royal;
 
+// System Red
+$system-red-05: #fedbe2;
+$system-red-10: #fdb6c5;
+$system-red-20: #fc92a8;
+$system-red-30: #fb6e8c;
+$system-red-40: #fa496f;
+$system-red-50: #f92552;
+$system-red-60: #e80636;
+$system-red-70: #ba052b;
+$system-red-80: #8b0421;
+$system-red-90: #5d0316;
+
+// System Orange
+$system-orange-05: #fefaee;
+$system-orange-10: #fae4c4;
+$system-orange-20: #efba8d;
+$system-orange-30: #e69565;
+$system-orange-40: #d67552;
+$system-orange-50: #b5543a;
+$system-orange-60: #91362e;
+$system-orange-70: #742626;
+$system-orange-80: #57191f;
+$system-orange-90: #3b1113;
+
+// System Yellow
+$system-yellow-05: #fff4d8;
+$system-yellow-10: #ffeab0;
+$system-yellow-20: #ffdf89;
+$system-yellow-30: #ffd462;
+$system-yellow-40: #ffca3a;
+$system-yellow-50: #ffbf13;
+$system-yellow-60: #e4a600;
+$system-yellow-70: #b78500;
+$system-yellow-80: #896400;
+$system-yellow-90: #5b4300;
+
+// System Green-green-05: #f2fef0;
+$system-green-10: #d3f2cd;
+$system-green-20: #97d69c;
+$system-green-30: #60bf87;
+$system-green-40: #4fa478;
+$system-green-50: #3a8060;
+$system-green-60: #2b6146;
+$system-green-70: #204b3c;
+$system-green-80: #173634;
+$system-green-90: #0e2227;
+
+// System Turquoise
+$system-turquoise-05: #ecfbfe;
+$system-turquoise-10: #b9eff7;
+$system-turquoise-20: #87deea;
+$system-turquoise-30: #4cc1d1;
+$system-turquoise-40: #1f9cad;
+$system-turquoise-50: #097d8d;
+$system-turquoise-60: #00626f;
+$system-turquoise-70: #004d58;
+$system-turquoise-80: #00363e;
+$system-turquoise-90: #002930;
+
+// System Cyan
+$system-cyan-05: #effcfc;
+$system-cyan-10: #ccf1fa;
+$system-cyan-20: #91d1ea;
+$system-cyan-30: #69b4e2;
+$system-cyan-40: #5496cf;
+$system-cyan-50: #3678b4;
+$system-cyan-60: #245791;
+$system-cyan-70: #1b4575;
+$system-cyan-80: #15314f;
+$system-cyan-90: #0b2131;
+
+// System Blue
+$system-blue-05: #f5fbff;
+$system-blue-10: #d9ecfd;
+$system-blue-20: #acccfb;
+$system-blue-30: #85aaf1;
+$system-blue-40: #728ce6;
+$system-blue-50: #5869cd;
+$system-blue-60: #404ca6;
+$system-blue-70: #313c86;
+$system-blue-80: #232c61;
+$system-blue-90: #131e3f;
+
+// System Violet
+$system-violet-05: #f8f9fe;
+$system-violet-10: #e6e6fa;
+$system-violet-20: #c4c3e8;
+$system-violet-30: #aca1dc;
+$system-violet-40: #9882d5;
+$system-violet-50: #7e62bc;
+$system-violet-60: #5d4897;
+$system-violet-70: #47347e;
+$system-violet-80: #332560;
+$system-violet-90: #1d174b;
+
+// System Purple
+$system-purple-05: #fdf8ff;
+$system-purple-10: #f7e1f5;
+$system-purple-20: #e6b6e1;
+$system-purple-30: #d791d8;
+$system-purple-40: #bd72cb;
+$system-purple-50: #9855af;
+$system-purple-60: #713c92;
+$system-purple-70: #552d7d;
+$system-purple-80: #3b1e66;
+$system-purple-90: #280f52;
+
+// System Tan
+$system-tan-05: #f9f7f1;
+$system-tan-10: #efe8db;
+$system-tan-20: #d7cab0;
+$system-tan-30: #ba8;
+$system-tan-40: #a3916e;
+$system-tan-50: #816f4d;
+$system-tan-60: #645537;
+$system-tan-70: #504329;
+$system-tan-80: #3b311c;
+$system-tan-90: #251e11;
+
 // System Neutral
 $system-neutral-00: $brand-primary-white;
 $system-neutral-05: #f9fafc;
@@ -103,7 +222,8 @@ $system-neutral-50: #6b7384;
 $system-neutral-60: #4f5669;
 $system-neutral-70: #3e4054;
 $system-neutral-80: #2a2f44;
-$system-neutral-90: $brand-primary-ebony;
+$system-neutral-90: $brand-primary-black;
+
 // System Neutral Alpha (Light on Dark BG)
 $system-neutral-00-a05: rgba($system-neutral-00, 0.05);
 $system-neutral-00-a10: rgba($system-neutral-00, 0.1);
@@ -126,116 +246,6 @@ $system-neutral-90-a60: rgba($system-neutral-90, 0.6);
 $system-neutral-90-a70: rgba($system-neutral-90, 0.7);
 $system-neutral-90-a80: rgba($system-neutral-90, 0.8);
 $system-neutral-90-a90: rgba($system-neutral-90, 0.9);
-// System Red
-$system-red-05: #fef8f4;
-$system-red-10: #f9e3de;
-$system-red-20: #f1b8b5;
-$system-red-30: #ea898c;
-$system-red-40: #dc6878;
-$system-red-50: #be4967;
-$system-red-60: #972a4e;
-$system-red-70: #751f40;
-$system-red-80: #561739;
-$system-red-90: #3c0a27;
-// System Orange
-$system-orange-05: #fefaee;
-$system-orange-10: #fae4c4;
-$system-orange-20: #efba8d;
-$system-orange-30: #e69565;
-$system-orange-40: #d67552;
-$system-orange-50: #b5543a;
-$system-orange-60: #91362e;
-$system-orange-70: #742626;
-$system-orange-80: #57191f;
-$system-orange-90: #3b1113;
-// System Yellow
-$system-yellow-05: #fbf9eb;
-$system-yellow-10: #f5e5bd;
-$system-yellow-20: #e8c281;
-$system-yellow-30: #d99d52;
-$system-yellow-40: #cb7d33;
-$system-yellow-50: #af5922;
-$system-yellow-60: #8d3d17;
-$system-yellow-70: #6c2f14;
-$system-yellow-80: #502211;
-$system-yellow-90: #351609;
-// System Green
-$system-green-05: #f2fef0;
-$system-green-10: #d3f2cd;
-$system-green-20: #97d69c;
-$system-green-30: #60bf87;
-$system-green-40: #4fa478;
-$system-green-50: #3a8060;
-$system-green-60: #2b6146;
-$system-green-70: #204b3c;
-$system-green-80: #173634;
-$system-green-90: #0e2227;
-// System Turquoise
-$system-turquoise-05: #ecfbfe;
-$system-turquoise-10: #b9eff7;
-$system-turquoise-20: #87deea;
-$system-turquoise-30: #4cc1d1;
-$system-turquoise-40: #1f9cad;
-$system-turquoise-50: #097d8d;
-$system-turquoise-60: #00626f;
-$system-turquoise-70: #004d58;
-$system-turquoise-80: #00363e;
-$system-turquoise-90: #002930;
-// System Cyan
-$system-cyan-05: #effcfc;
-$system-cyan-10: #ccf1fa;
-$system-cyan-20: #91d1ea;
-$system-cyan-30: #69b4e2;
-$system-cyan-40: #5496cf;
-$system-cyan-50: #3678b4;
-$system-cyan-60: #245791;
-$system-cyan-70: #1b4575;
-$system-cyan-80: #15314f;
-$system-cyan-90: #0b2131;
-// System Blue
-$system-blue-05: #f5fbff;
-$system-blue-10: #d9ecfd;
-$system-blue-20: #acccfb;
-$system-blue-30: #85aaf1;
-$system-blue-40: #728ce6;
-$system-blue-50: #5869cd;
-$system-blue-60: #404ca6;
-$system-blue-70: #313c86;
-$system-blue-80: #232c61;
-$system-blue-90: #131e3f;
-// System Violet
-$system-violet-05: #f8f9fe;
-$system-violet-10: #e6e6fa;
-$system-violet-20: #c4c3e8;
-$system-violet-30: #aca1dc;
-$system-violet-40: #9882d5;
-$system-violet-50: #7e62bc;
-$system-violet-60: #5d4897;
-$system-violet-70: #47347e;
-$system-violet-80: #332560;
-$system-violet-90: #1d174b;
-// System Purple
-$system-purple-05: #fdf8ff;
-$system-purple-10: #f7e1f5;
-$system-purple-20: #e6b6e1;
-$system-purple-30: #d791d8;
-$system-purple-40: #bd72cb;
-$system-purple-50: #9855af;
-$system-purple-60: #713c92;
-$system-purple-70: #552d7d;
-$system-purple-80: #3b1e66;
-$system-purple-90: #280f52;
-// System Tan
-$system-tan-05: #f9f7f1;
-$system-tan-10: #efe8db;
-$system-tan-20: #d7cab0;
-$system-tan-30: #ba8;
-$system-tan-40: #a3916e;
-$system-tan-50: #816f4d;
-$system-tan-60: #645537;
-$system-tan-70: #504329;
-$system-tan-80: #3b311c;
-$system-tan-90: #251e11;
 
 // State Colors
 // Success
