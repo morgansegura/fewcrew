@@ -21,12 +21,14 @@ function few_edit_link() {
     return;
   } ?>
 
-<p class="edit-link">
-  <a href="<?php echo esc_url( get_edit_post_link() ); ?>">
-    <?php echo esc_html( get_default_localization( 'Edit' ) ); ?>
-    <span class="screen-reader-text"><?php echo esc_html( get_the_title() ); ?></span>
-  </a>
-</p>
+<div class="contain-xxl">
+  <p class="edit-link">
+    <a href="<?php echo esc_url( get_edit_post_link() ); ?>">
+      <?php echo esc_html( get_default_localization( 'Edit' ) ); ?>
+      <span class="screen-reader-text"><?php echo esc_html( get_the_title() ); ?></span>
+    </a>
+  </p>
+</div>
 <?php
 
 }

@@ -47,3 +47,4 @@ namespace Few_Crew;
 
 
       <div class="content-wrapper">
+        <div class="colorbar-dark"></div>

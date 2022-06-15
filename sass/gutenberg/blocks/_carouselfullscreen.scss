@@ -8,6 +8,7 @@
 
 .swiper-pagination {
   display: flex;
+  justify-content: center;
   gap: 8px;
   left: 50%;
   bottom: 40px;
@@ -68,60 +69,6 @@
 
 .swiper-pagination-bullet-active {
   background: #fff;
-}
-
-.colorbar {
-  &-after,
-  &-before {
-    position: relative;
-    height: 1px;
-  }
-
-  &-after::before,
-  &-after::after,
-  &-before::before,
-  &-before::after {
-    content: '';
-    position: absolute;
-    height: 100%;
-    top: 0;
-  }
-
-  &-before::before,
-  &-after::before {
-    left: 0;
-    background-color: rgba($theme-color-secondary, 1);
-
-    @include lg {
-      background-color: rgba($theme-color-primary, 1);
-    }
-  }
-
-  &-before::after,
-  &-after::after {
-    right: 0;
-    background-color: rgba($theme-color-primary, 1);
-
-    @include lg {
-      background-color: rgba($theme-color-secondary, 1);
-    }
-  }
-
-  &-before::before {
-    width: 75%;
-  }
-
-  &-before::after {
-    width: 25%;
-  }
-
-  &-after::before {
-    width: 25%;
-  }
-
-  &-after::after {
-    width: 75%;
-  }
 }
 
 .carousel-fullscreen {

@@ -22,18 +22,35 @@
   // Custom Gutenberg block styles
   @import 'gutenberg/blocks/boxed';
   @import 'gutenberg/blocks/button-file';
+  // Add here those ACF Gutenberg blocks you want to use inside article-content
+}
+.block-editor-block-list__layout
+  .block-editor-block-list__block:not([contenteditable]):after,
+.is-root-container > .wp-block.block-editor-rich-text__editable:after {
+  box-shadow: 0 0 0 var(--wp-admin-border-width-focus) transparent !important;
 }
 
-// Add here those ACF Gutenberg blocks you want to use inside article-content
-@import 'gutenberg/blocks/carouselfullscreen';
-@import 'gutenberg/blocks/contentcardgrid';
+.block-editor-block-list__layout
+  .block-editor-block-list__block:not([contenteditable]):focus:after,
+.is-root-container > .wp-block.block-editor-rich-text__editable:focus:after {
+  color: var(--theme-color-text);
+  box-shadow: 0 0 0 var(--wp-admin-border-width-focus) transparent !important;
+  border-radius: 8px;
+}
 
 // Blocks only meant for outside article-content
 .editor-styles-wrapper,
 .site-main {
+  position: relative;
   // Error block styles
   @import 'gutenberg/blocks/error';
 
   // ACF blocks
-  // @import 'gutenberg/blocks/your-new-acf-block';
+  @import 'gutenberg/blocks/carouselfullscreen';
+  @import 'gutenberg/blocks/contentcardgrid';
+  @import 'gutenberg/blocks/contentsectiontitle';
+}
+
+html :where(.editor-styles-wrapper) {
+  background-color: var(--theme-color-body);
 }

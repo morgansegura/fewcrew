@@ -16,7 +16,6 @@
 .content-cardgrid-container {
   @include grid;
 
-  margin-top: $sp-4;
   gap: $sp-2;
 }
 
@@ -29,7 +28,7 @@
     }
 
     .card-blocktitle {
-      color: $theme-color-accent-purple;
+      color: $theme-color-white;
     }
   }
   &:nth-child(2) {
@@ -69,38 +68,22 @@
 
 .card {
   position: relative;
+  cursor: pointer;
   z-index: 1;
   display: flex;
   flex-direction: column;
-  border: 1px solid $theme-color-panel;
   border-radius: 8px;
+  height: 100%;
   background-color: $theme-color-card;
+  border: 1px solid $theme-color-panel;
   overflow: hidden;
 
-  &:hover {
-  }
-}
-
-.card-heading {
-  padding: $sp-3;
-}
-
-.card-image {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: saturate(1.3);
-  transition: filter 0.3s ease-out;
+  text-decoration: none;
 
   &::before {
     content: '';
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     top: 0;
     right: 0;
     bottom: 0;
@@ -112,6 +95,36 @@
       rgba($theme-color-body, 0) 67.47%
     );
   }
+
+  &:hover {
+    .card-cta-button {
+      background-color: rgba($theme-color-white, 0.85);
+    }
+    .card-image {
+      filter: opacity(1);
+    }
+  }
+}
+
+.card-heading {
+  position: relative;
+  z-index: 2;
+  padding: $sp-3;
+  color: var(--theme-color-white);
+}
+
+.card-image {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+  background-color: var(--theme-color-accent-ruby);
+  transition: filter 0.6s ease-out;
 }
 
 .card-blocktitle {
@@ -124,7 +137,6 @@
 .card-blocksubtitle {
   @include fontSizing(40px, 30px);
 
-  color: $theme-color-white;
   text-transform: uppercase;
   font-weight: 300;
 }
@@ -147,6 +159,20 @@
   padding: $sp-1 $sp-3 $sp-2 $sp-3;
 }
 
+.button-block {
+  display: flex;
+
+  &.button-right {
+    justify-content: flex-end;
+  }
+  &.button-left {
+    justify-content: flex-start;
+  }
+  &.button-full {
+    justify-content: stretch;
+  }
+}
+
 .card-cta-button {
   @include fontSizing(13px, 24px);
   @include shadow-form;
@@ -167,8 +193,29 @@
     margin-left: 4px;
     width: 15px;
   }
+}
 
-  &:hover {
-    background-color: rgba($theme-color-white, 0.85);
-  }
+.theme-color-light {
+  color: var(--theme-color-white) !important;
+}
+.theme-color-dark {
+  color: var(--theme-color-black) !important;
+}
+.theme-color-primary {
+  color: var(--theme-color-accent-ruby) !important;
+}
+.theme-color-secondary {
+  color: var(--theme-color-accent-royal) !important;
+}
+.theme-color-emerald {
+  color: var(--theme-color-accent-emerald) !important;
+}
+.theme-color-navy {
+  color: var(--theme-color-accent-navy) !important;
+}
+.theme-color-yellow {
+  color: var(--theme-color-accent-yellow) !important;
+}
+.theme-color-scarlet {
+  color: var(--theme-color-accent-scarlet) !important;
 }

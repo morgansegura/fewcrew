@@ -118,6 +118,12 @@ add_action( 'after_setup_theme', function() {
     // Register custom ACF Blocks
     'acf_blocks' => [
       [
+        'name'           => 'contentsectiontitle',
+        'title'          => 'Content Section Title',
+        'prevent_cache'  => false,
+        'icon'  => 'heading',
+      ],
+      [
         'name'           => 'carouselfullscreen',
         'title'          => 'Carousel Full Screen',
         'prevent_cache'  => false,
@@ -125,7 +131,7 @@ add_action( 'after_setup_theme', function() {
       ],
       [
         'name'           => 'contentcardgrid',
-        'title'          => 'ContentCard Grid',
+        'title'          => 'Content Card Grid',
         'prevent_cache'  => false,
         'icon'  => 'layout',
       ],
@@ -221,6 +227,7 @@ function funny($arr=[], $options='') {
 /**
  * Required files
  */
+require get_theme_file_path( '/inc/functions/index.php' );
 require get_theme_file_path( '/inc/hooks.php' );
 require get_theme_file_path( '/inc/includes.php' );
 require get_theme_file_path( '/inc/template-tags.php' );

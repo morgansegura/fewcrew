@@ -4,8 +4,31 @@
 // For AA: https://chir.ag/projects/name-that-color/
 // ------------------------------------------------------
 :root {
+  // Theme
+  --theme-color-accent-ruby: #f92552;
+  --theme-color-accent-emerald: #0fe3ab;
+  --theme-color-accent-navy: #3b5998;
+  --theme-color-accent-royal: #1da1f2;
+  --theme-color-accent-yellow: #ffbf13;
+  --theme-color-accent-scarlet: #e12a4c;
+
+  --theme-color-grey100: #938fa4;
+  --theme-color-grey200: #999ea6;
+  --theme-color-grey300: #7f7e8c;
+
+  --theme-color-white: #ffffff;
+  --theme-color-black: #1e202f;
+  --theme-color-text: var(--theme-color-grey100);
+  --theme-color-body: var(--theme-color-black);
+  --theme-color-paper: #282840;
+  --theme-color-panel: #3c3b5b;
+  --theme-color-card: #323150;
+  --theme-color-text: #938fa4;
+  --theme-color-primary: var(--theme-color-accent-ruby);
+  --theme-color-secondary: var(--theme-color-accent-emerald);
+
   // Brand color pool
-  --color-black: #222;
+  --color-black: var(--theme-color-white);
   --color-black-rock: #2b303c;
   --color-blue-chalk: #ece6f2;
   --color-east-bay: #545773;
@@ -13,37 +36,15 @@
   --color-science-blue: #0049d1;
   --color-scorpion: #5f5f5f;
   --color-valhalla: #2a2d3e;
-  --color-white: #fff;
-  // Theme
-  --theme-dark-accent-ruby: #f92552;
-  --theme-dark-accent-emerald: #0fe3ab;
-  --theme-dark-accent-navy: #3b5998;
-  --theme-dark-accent-royal: #1da1f2;
-  --theme-dark-accent-yellow: #ffbf13;
-  --theme-dark-accent-scarlet: #e12a4c;
-
-  --theme-dark-grey100: #938fa4;
-  --theme-dark-grey200: #999ea6;
-  --theme-dark-grey300: #7f7e8c;
-
-  --theme-dark-white: #ffffff;
-  --theme-dark-black: #1e202f;
-  --theme-dark-text: var(--theme-dark-grey100);
-  --theme-dark-body: var(--theme-dark-black);
-  --theme-dark-paper: #282840;
-  --theme-dark-panel: #3c3b5b;
-  --theme-dark-card: #323150;
-  --theme-dark-text: #938fa4;
-  --theme-dark-primary: var(--theme-dark-accent-ruby);
-  --theme-dark-secondary: var(--theme-dark-accent-emerald);
+  --color-white: var(--theme-color-black);
 
   // Main element colors
   --color-heading: var(--color-main);
   --color-main: var(--color-valhalla);
-  --color-paragraph: var(--color-east-bay);
+  --color-paragraph: var(--theme-color-text);
 
   // Modern link that has background effect on hover
-  --color-link-border-bottom: var(--color-science-blue);
+  --color-link-border-bottom: var(--theme-color-primary);
   --color-link-border-focus: var(--color-black);
   --color-link-comment: var(--color-scorpion);
   --color-link-comment-time-anchor: var(--color-east-bay);
@@ -51,7 +52,7 @@
   --color-link-edit-border: var(--color-pattens-blue);
   --color-link-edit-text: color.adjust(#eaf1f8, -20%);
   --color-link-edit-text-hover: var(--color-east-bay);
-  --color-link-text: var(--color-science-blue);
+  --color-link-text: var(--theme-color-primary);
   --color-link-text-focus: var(--color-black);
   --color-link-text-hover: var(--color-black);
   --color-link-background-hover: var(--color-link-text);
@@ -66,7 +67,7 @@
   --color-background-top: #f5f5f5;
   --color-background-top-hover: #f0f0f0;
   --color-background-tag: var(--color-pattens-blue);
-  --color-blockquote: var(--color-science-blue);
+  --color-blockquote: var(--color-pattens-blue);
   --color-comment-text: var(--color-east-bay);
   --color-comment-author-text: var(--color-east-bay);
   --color-tag-border: rgb(6 22 41 / 0.1);
