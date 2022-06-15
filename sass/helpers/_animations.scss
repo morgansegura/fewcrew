@@ -1,9 +1,39 @@
 // Transition duration and animations
-$transition-duration: .18s;
+$transition-duration: 0.18s;
 
 // Mixins
-@mixin cubic-bezier($property: color, $duration: .18s) {
-  transition: $property $duration cubic-bezier(.19, 1, .22, 1);
+@mixin cubic-bezier($property: color, $duration: 0.18s) {
+  transition: $property $duration cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@keyframes slideInDown {
+  from {
+    visibility: visible;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInDown {
+  animation: slideInDown 1s backwards;
+}
+
+@keyframes slideOutUp {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+.slideOutUp {
+  animation: slideOutUp 1s backwards;
 }
 
 // Possible keyframes here

@@ -7,10 +7,10 @@
   text-decoration: underline;
   text-decoration-color: var(--color-link-text);
   text-underline-offset: 6px;
-  transition: all .18s ease-in-out;
+  transition: all 0.18s ease-in-out;
 
   &.is-external-link::after {
-    background-image: url('../../svg/external-link-styled-links.svg');
+    // background-image: url('../../svg/external-link-styled-links.svg');
   }
 
   &:hover,
@@ -21,7 +21,7 @@
 
   &.is-external-link:hover::after,
   &.is-external-link:focus::after {
-    background-image: url('../../svg/external-link-black.svg');
+    // background-image: url('../../svg/external-link-black.svg');
   }
 
   // Make focus a little more engaging
@@ -30,7 +30,7 @@
   @media (prefers-reduced-motion: no-preference) {
     &:focus {
       outline-offset: 5px;
-      transition: outline-offset .25s ease;
+      transition: outline-offset 0.25s ease;
     }
   }
 }

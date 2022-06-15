@@ -4,24 +4,24 @@
 // WCAG 2.0 errors
 // stylelint-disable selector-class-pattern
 div.validation_error {
-  background-color: var(--color-error);
-  color: var(--color-white);
+  background-color: $system-red-70;
+  color: $system-neutral-00;
   font-size: var(--font-size-17);
-  font-weight: var(--font-weight-bold);
+  font-weight: $weight-bold;
   margin-bottom: var(--form-row-gap);
   padding: 2rem;
 
   &:focus {
-    color: var(--color-white);
+    color: $system-neutral-00;
   }
 }
 
-body *[aria-invalid="true"] {
-  border-color: var(--color-error);
+body *[aria-invalid='true'] {
+  border-color: $system-red-70;
 }
 
 .validation_message {
-  color: var(--color-error);
+  color: $system-red-70;
   font-size: var(--font-size-16);
   font-weight: var(--font-weight-regular);
 }
@@ -33,13 +33,13 @@ body *[aria-invalid="true"] {
   padding: 0;
 
   a {
-    color: var(--color-error);
+    color: $system-red-70;
     text-decoration: none;
   }
 
   li {
-    color: var(--color-error);
-    font-weight: var(--font-weight-bold);
+    color: $system-red-70;
+    font-weight: $weight-bold;
   }
 }
 
@@ -89,7 +89,7 @@ body *[aria-invalid="true"] {
 
   .gfield_label {
     display: inline-flex;
-    font-weight: var(--font-weight-bold);
+    font-weight: $weight-bold;
     gap: var(--form-required-gap);
     margin-bottom: 1rem;
     margin-top: 1rem;

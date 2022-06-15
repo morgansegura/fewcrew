@@ -18,12 +18,7 @@
 @import 'helpers/web';
 
 // Variables
-@import 'variables/colors';
-@import 'variables/breakpoints';
-@import 'variables/font-family';
-@import 'variables/font-size';
 @import 'variables/forms';
-@import 'variables/spacings';
 
 // Accessibility
 @import 'base/accessibility';
@@ -80,20 +75,6 @@
   .wp-block-text-columns,
   .wp-block-gallery,
   .wp-block.editor-post-title {
-    @media (max-width: $width-max-article + 40px) {
-      padding-left: var(--padding-container-horizontal);
-      padding-right: var(--padding-container-horizontal);
-      width: 100%;
-
-      // stylelint-disable-next-line selector-max-specificity, selector-max-class
-      &.alignleft,
-      &.alignright,
-      &.alignwide,
-      &.alignfull {
-        padding-left: 0;
-        padding-right: 0;
-      }
-    }
   }
 
   // Full width image should be always without paddings
@@ -104,13 +85,8 @@
 
   // Full width gallery should be always be with paddings
   .wp-block[data-align='full'] > .wp-block-gallery {
-    padding-left: var(--padding-container-horizontal);
-    padding-right: var(--padding-container-horizontal);
-
     // stylelint-disable-next-line no-descending-specificity, selector-max-specificity
     &.alignfull {
-      padding-left: var(--padding-container-horizontal);
-      padding-right: var(--padding-container-horizontal);
     }
   }
 
@@ -136,13 +112,13 @@
   // Hack for keeping figcaption from flowing over floated image
   // This variable is set inline to the corresponding figure with gutenberg-helpers.js
   // stylelint-disable-next-line csstools/value-no-unknown-custom-properties
-  max-width: var(--width-child-img);
+  // max-width: var(--width-child-img);
   text-align: center;
 }
 
 // Default editor blocks
 .is-root-container > .wp-block {
-  font-family: var(--font-paragraph);
+  font-family: $font-sans;
 
   // Font smoothing
   -moz-osx-font-smoothing: grayscale;
@@ -153,7 +129,7 @@
 
   // Full width block
   &[data-align='full'] {
-    max-width: $width-full;
+    // max-width: $width-full;
     padding-left: 0;
     padding-right: 0;
     width: 100%;
@@ -161,7 +137,7 @@
 
   // Wide width block
   &[data-align='wide'] {
-    max-width: $width-wide;
+    max-width: $contain-xxl;
     width: 100%;
 
     @media (min-width: 870px) {
@@ -205,7 +181,7 @@
   .editor-post-title {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  max-width: $width-max-article;
+  max-width: $contain-xl;
   // stylelint-disable-next-line value-keyword-case
   text-rendering: geometricPrecision;
 }
@@ -216,12 +192,12 @@
 .is-root-container .wp-block.wp-block-quote,
 .is-root-container .wp-block[data-type^='core'],
 .is-root-container [contenteditable] p {
-  font-family: var(--font-paragraph);
+  font-family: $font-sans;
 
   // Font smoothing
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  max-width: $width-max-article;
+  max-width: $contain-xl;
 
   // stylelint-disable-next-line value-keyword-case
   text-rendering: geometricPrecision;

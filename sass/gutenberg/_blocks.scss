@@ -27,14 +27,14 @@
 .block-editor-block-list__layout
   .block-editor-block-list__block:not([contenteditable]):after,
 .is-root-container > .wp-block.block-editor-rich-text__editable:after {
-  box-shadow: 0 0 0 var(--wp-admin-border-width-focus) transparent !important;
+  box-shadow: 0 0 0 $system-neutral-90 transparent !important;
 }
 
 .block-editor-block-list__layout
   .block-editor-block-list__block:not([contenteditable]):focus:after,
 .is-root-container > .wp-block.block-editor-rich-text__editable:focus:after {
-  color: var(--theme-color-text);
-  box-shadow: 0 0 0 var(--wp-admin-border-width-focus) transparent !important;
+  color: $system-neutral-90;
+  box-shadow: 0 0 0 $system-neutral-90 transparent !important;
   border-radius: 8px;
 }
 
@@ -53,5 +53,5 @@
 }
 
 html :where(.editor-styles-wrapper) {
-  background-color: var(--theme-color-body);
+  background-color: $system-neutral-90;
 }

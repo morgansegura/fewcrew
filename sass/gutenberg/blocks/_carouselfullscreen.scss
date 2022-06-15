@@ -23,7 +23,7 @@
 .swiper-container-rtl .swiper-button-prev,
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-next {
-  color: $theme-color-white;
+  color: $system-neutral-00;
   display: flex;
   height: 45px;
   width: 45px;
@@ -64,16 +64,16 @@
   height: 14px;
   background: transparent;
   opacity: 0.5;
-  border: 1px solid #fff;
+  border: 1px solid $system-neutral-00;
 }
 
 .swiper-pagination-bullet-active {
-  background: #fff;
+  background: $system-neutral-00;
 }
 
 .carousel-fullscreen {
   position: relative;
-  background-color: $theme-color-body;
+  background-color: $system-neutral-90;
 }
 
 .carousel-fullscreen-slides {
@@ -97,17 +97,17 @@
 
     background: linear-gradient(
       180deg,
-      rgba($theme-color-body, 0.95) 20%,
-      rgba($theme-color-body, 0) 75%,
-      rgba($theme-color-body, 0) 100%
+      rgba($system-neutral-90, 0.95) 20%,
+      rgba($system-neutral-90, 0) 75%,
+      rgba($system-neutral-90, 0) 100%
     );
 
     @include lg {
       background: linear-gradient(
         90deg,
-        rgba($theme-color-body, 0.9) 25.68%,
-        rgba($theme-color-body, 0.62) 47.71%,
-        rgba($theme-color-body, 0) 67.47%
+        rgba($system-neutral-90, 0.9) 25.68%,
+        rgba($system-neutral-90, 0.62) 47.71%,
+        rgba($system-neutral-90, 0) 67.47%
       );
     }
   }
@@ -171,7 +171,7 @@
 .carousel-fullscreen-description-title {
   @include fontSizing(50px, 58px);
 
-  font-family: var(--font-heading);
+  font-family: $font-heading;
   text-transform: uppercase;
   font-weight: 900;
 
@@ -183,10 +183,10 @@
 .carousel-fullscreen-description-subtitle {
   @include fontSizing(40px, 48px);
 
-  font-family: var(--font-heading);
+  font-family: $font-heading;
   text-transform: uppercase;
   font-weight: 900;
-  color: $theme-color-primary;
+  color: $brand-primary;
 
   @include md {
     @include fontSizing(50px, 58px);
@@ -201,7 +201,7 @@
   .carousel-fullscreen-description-supertitle,
   .carousel-fullscreen-description-title,
   .carousel-fullscreen-description-copy {
-    color: $theme-color-black;
+    color: $system-neutral-90;
   }
 }
 
@@ -209,6 +209,6 @@
   .carousel-fullscreen-description-supertitle,
   .carousel-fullscreen-description-title,
   .carousel-fullscreen-description-copy {
-    color: $theme-color-white;
+    color: $system-neutral-00;
   }
 }

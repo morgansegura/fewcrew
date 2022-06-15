@@ -9,8 +9,8 @@
   @include fontSizing(28px, 34px);
 
   margin-top: $sp-5;
-  color: $theme-color-white;
-  font-family: var(--font-sans);
+  color: $system-neutral-00;
+  font-family: $font-sans;
 }
 
 .content-cardgrid-container {
@@ -28,7 +28,7 @@
     }
 
     .card-blocktitle {
-      color: $theme-color-white;
+      color: $system-neutral-00;
     }
   }
   &:nth-child(2) {
@@ -43,7 +43,7 @@
     }
 
     .card-blocktitle {
-      color: $theme-color-accent-emerald;
+      color: $system-green-50;
     }
   }
   &:nth-child(3) {
@@ -58,7 +58,7 @@
     }
 
     .card-blocktitle {
-      color: $theme-color-accent-yellow;
+      color: $system-yellow-50;
     }
   }
   .card-content {
@@ -74,8 +74,8 @@
   flex-direction: column;
   border-radius: 8px;
   height: 100%;
-  background-color: $theme-color-card;
-  border: 1px solid $theme-color-panel;
+  background-color: $system-neutral-80;
+  border: 1px solid $system-neutral-70;
   overflow: hidden;
 
   text-decoration: none;
@@ -90,15 +90,15 @@
     left: 0;
     background: linear-gradient(
       90deg,
-      rgba($theme-color-body, 0.9) 25.68%,
-      rgba($theme-color-body, 0.62) 47.71%,
-      rgba($theme-color-body, 0) 67.47%
+      rgba($system-neutral-90, 0.9) 25.68%,
+      rgba($system-neutral-90, 0.62) 47.71%,
+      rgba($system-neutral-90, 0) 67.47%
     );
   }
 
   &:hover {
     .card-cta-button {
-      background-color: rgba($theme-color-white, 0.85);
+      background-color: rgba($system-neutral-00, 0.85);
     }
     .card-image {
       filter: opacity(1);
@@ -110,7 +110,7 @@
   position: relative;
   z-index: 2;
   padding: $sp-3;
-  color: var(--theme-color-white);
+  color: $system-neutral-00;
 }
 
 .card-image {
@@ -123,7 +123,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   filter: grayscale(100%);
-  background-color: var(--theme-color-accent-ruby);
+  background-color: $brand-primary;
   transition: filter 0.6s ease-out;
 }
 
@@ -181,8 +181,8 @@
   display: flex;
   align-items: center;
   justify-self: flex-end;
-  background-color: $theme-color-white;
-  color: $theme-color-black;
+  background-color: $system-neutral-00;
+  color: $system-neutral-90;
   border-radius: 4px;
   // font-family: var(--font-heading);
   font-weight: 700;
@@ -193,29 +193,4 @@
     margin-left: 4px;
     width: 15px;
   }
-}
-
-.theme-color-light {
-  color: var(--theme-color-white) !important;
-}
-.theme-color-dark {
-  color: var(--theme-color-black) !important;
-}
-.theme-color-primary {
-  color: var(--theme-color-accent-ruby) !important;
-}
-.theme-color-secondary {
-  color: var(--theme-color-accent-royal) !important;
-}
-.theme-color-emerald {
-  color: var(--theme-color-accent-emerald) !important;
-}
-.theme-color-navy {
-  color: var(--theme-color-accent-navy) !important;
-}
-.theme-color-yellow {
-  color: var(--theme-color-accent-yellow) !important;
-}
-.theme-color-scarlet {
-  color: var(--theme-color-accent-scarlet) !important;
 }
