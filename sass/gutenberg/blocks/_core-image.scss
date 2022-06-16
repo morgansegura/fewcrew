@@ -19,8 +19,10 @@
   }
 
   > figure {
-    display: block;
+    // display: block;
     width: auto;
+    padding: 0;
+    margin: 0;
 
     &.alignleft,
     &.alignright {

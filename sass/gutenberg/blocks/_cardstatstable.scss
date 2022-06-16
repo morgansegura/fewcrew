@@ -1,52 +1,133 @@
+/* stylelint-disable at-rule-no-unknown */
 .card-statstable {
   position: relative;
   overflow: hidden;
   border-radius: 4px;
+  border: 1px solid $system-neutral-60;
+  background-color: $system-neutral-80;
+  font-family: $font-heading;
 }
 
 .card-statstable-moreblock {
   position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: $sp-3 $sp-2 $sp-3 $sp-3;
 
   &::before {
     content: '';
     position: absolute;
-    width: 3px;
+    width: 6px;
     top: 0;
+    left: 0;
     bottom: 0;
-    background-color: $system-yellow-50;
+    background-color: $brand-secondary;
   }
 }
 .card-statstable-moreblock-title {
-}
-.card-statstable-moreblock-button {
+  @include fontSizing(18px, 24px);
+
+  color: $system-neutral-00;
+  font-weight: $weight-bold;
+  text-transform: uppercase;
 }
 
-.card-statstable-table {
+.card-statstable-moreblock-button {
+  @include fontSizing(10px, 14px);
+
+  display: flex;
+  padding-right: $sp-1_5;
+  padding-left: $sp-1_5;
+  align-items: center;
+  color: $system-neutral-10;
+  font-weight: $weight-bold;
+  border: 1px solid $system-neutral-05;
+  background-color: transparent;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.card-statstable-table-col {
+  @include fontSizing(12px, 22px);
+
+  color: $system-neutral-00;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  padding-right: $sp-1;
+  padding-left: $sp-1;
+}
+
+.card-statstable-tablerow {
+  padding: $sp-2 $sp-3;
+  border-top: 1px solid $system-neutral-70;
+  display: flex;
+  justify-content: space-between;
+  transition: background-color 0.3s ease-out;
+
+  &:hover {
+    background-color: $system-neutral-70;
+  }
+}
+
+.card-statstable-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .card-statstable-tablehead {
+  @include fontSizing(12px, 22px);
+
+  font-weight: $weight-bold;
+  text-transform: uppercase;
+  color: $system-neutral-00;
+
+  .card-statstable-table-col {
+      font-weight: $weight-bold;
+  }
 }
 
-.card-statstable-tablehead-col {
+.card-statstable-table-col-lg {
+  flex: 1 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.card-statstable-table-col {
+  @include fontSizing(12px, 22px);
+
+  color: $system-neutral-00;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  width: 35px;
 }
 
 .card-statstable-tablebody {
-}
 
-.card-statstable-tablebody-col {
 }
 
 .card-statstable-table-number {
+  @include fontSizing(12px, 14px);
+
+  color: $system-neutral-10;
 }
 
 .card-statstable-table-icon {
+  display: flex;
+  margin: 0;
+  padding-right: $sp-1_5;
+  padding-left: $sp-1_5;
 }
 
-.card-statstable-table-col-heading {
-}
 
 .card-statstable-table-title {
+  @include fontSizing(14px, 14px);
+  color: $system-neutral-00;
 }
 
 .card-statstable-table-subtitle {
+  @include fontSizing(12px, 12px);
+  color: $system-neutral-10;
 }

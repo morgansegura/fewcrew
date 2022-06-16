@@ -66,7 +66,7 @@
   }
 }
 
-.card {
+.content-cardgrid-card {
   position: relative;
   cursor: pointer;
   z-index: 1;
@@ -109,7 +109,8 @@
 .card-heading {
   position: relative;
   z-index: 2;
-  padding: $sp-3;
+  padding-top: $sp-3;
+  padding-left: $sp-3;
   color: $system-neutral-00;
 }
 

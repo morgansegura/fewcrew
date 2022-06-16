@@ -65,7 +65,7 @@ $desktop-lg: 1800px;
 
 /*** Colors ***/
 // [Brand]
-$brand-primary-black: #1e202f;
+$brand-primary-black: #1e2024;
 $brand-primary-white: #fff;
 $brand-primary: #f92552;
 $brand-secondary: #1da1f2;
@@ -86,6 +86,30 @@ $system-neutral-60: #434650;
 $system-neutral-70: #34373e;
 $system-neutral-80: #25272c;
 $system-neutral-90: $brand-primary-black;
+
+// System Neutral Alpha (Light on Dark BG)
+$system-neutral-00-a05: rgba($system-neutral-00, 0.05);
+$system-neutral-00-a10: rgba($system-neutral-00, 0.1);
+$system-neutral-00-a20: rgba($system-neutral-00, 0.2);
+$system-neutral-00-a30: rgba($system-neutral-00, 0.3);
+$system-neutral-00-a40: rgba($system-neutral-00, 0.4);
+$system-neutral-00-a50: rgba($system-neutral-00, 0.5);
+$system-neutral-00-a60: rgba($system-neutral-00, 0.6);
+$system-neutral-00-a70: rgba($system-neutral-00, 0.7);
+$system-neutral-00-a80: rgba($system-neutral-00, 0.8);
+$system-neutral-00-a90: rgba($system-neutral-00, 0.9);
+
+// System Neutral Alpha (Dark on Light BG)
+$system-neutral-90-a05: rgba($system-neutral-90, 0.05);
+$system-neutral-90-a10: rgba($system-neutral-90, 0.1);
+$system-neutral-90-a20: rgba($system-neutral-90, 0.2);
+$system-neutral-90-a30: rgba($system-neutral-90, 0.3);
+$system-neutral-90-a40: rgba($system-neutral-90, 0.4);
+$system-neutral-90-a50: rgba($system-neutral-90, 0.5);
+$system-neutral-90-a60: rgba($system-neutral-90, 0.6);
+$system-neutral-90-a70: rgba($system-neutral-90, 0.7);
+$system-neutral-90-a80: rgba($system-neutral-90, 0.8);
+$system-neutral-90-a90: rgba($system-neutral-90, 0.9);
 
 // System Red
 $system-red-05: #fedbe2;
@@ -164,29 +188,6 @@ $system-purple-70: #6017cd;
 $system-purple-80: #48119a;
 $system-purple-90: #300c67;
 $system-purple-100: #180633;
-
-// System Neutral Alpha (Light on Dark BG)
-$system-neutral-00-a05: rgba($system-neutral-00, 0.05);
-$system-neutral-00-a10: rgba($system-neutral-00, 0.1);
-$system-neutral-00-a20: rgba($system-neutral-00, 0.2);
-$system-neutral-00-a30: rgba($system-neutral-00, 0.3);
-$system-neutral-00-a40: rgba($system-neutral-00, 0.4);
-$system-neutral-00-a50: rgba($system-neutral-00, 0.5);
-$system-neutral-00-a60: rgba($system-neutral-00, 0.6);
-$system-neutral-00-a70: rgba($system-neutral-00, 0.7);
-$system-neutral-00-a80: rgba($system-neutral-00, 0.8);
-$system-neutral-00-a90: rgba($system-neutral-00, 0.9);
-// System Neutral Alpha (Dark on Light BG)
-$system-neutral-90-a05: rgba($system-neutral-90, 0.05);
-$system-neutral-90-a10: rgba($system-neutral-90, 0.1);
-$system-neutral-90-a20: rgba($system-neutral-90, 0.2);
-$system-neutral-90-a30: rgba($system-neutral-90, 0.3);
-$system-neutral-90-a40: rgba($system-neutral-90, 0.4);
-$system-neutral-90-a50: rgba($system-neutral-90, 0.5);
-$system-neutral-90-a60: rgba($system-neutral-90, 0.6);
-$system-neutral-90-a70: rgba($system-neutral-90, 0.7);
-$system-neutral-90-a80: rgba($system-neutral-90, 0.8);
-$system-neutral-90-a90: rgba($system-neutral-90, 0.9);
 
 // State Colors
 // Success
