@@ -13,10 +13,10 @@
 
 namespace Few_Crew;
 
-if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+if ( ! is_active_sidebar( 'sidebar--page' ) ) {
   return;
 } ?>
 
-<aside id="sidebar-default" class="widget-area layout-column">
-  <?php dynamic_sidebar( 'sidebar-1' ); ?>
+<aside id="sidebar-page" class="widget-area layout-column">
+  <?php dynamic_sidebar( 'sidebar-page' ); ?>
 </aside><!-- #secondary -->

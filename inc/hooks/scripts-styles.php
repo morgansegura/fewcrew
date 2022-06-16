@@ -4,7 +4,7 @@
  *
  * @Author: Niku Hietanen
  * @Date: 2020-02-20 13:46:50
- * @Last Modified by:   Timi Wahalahti
+ * @Last Modified by:   Morgan Segura
  * @Last Modified time: 2022-04-08 13:04:00
  *
  * @package fewcrew

@@ -3,6 +3,51 @@
     "title": "Content Section Title",
     "fields": [
         {
+            "key": "field_62aa8637ed252",
+            "label": "Colors",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_62a2b8d743823",
+            "label": "Text Color",
+            "name": "text_color",
+            "type": "button_group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_62a2aee3cabc5",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "light": "Light",
+                "dark": "Dark"
+            },
+            "allow_null": 0,
+            "default_value": "light",
+            "layout": "horizontal",
+            "return_format": "value"
+        },
+        {
             "key": "field_62a2aee3cabc5",
             "label": "Link",
             "name": "link",
@@ -35,34 +80,6 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
-        },
-        {
-            "key": "field_62a2b8d743823",
-            "label": "Text Color",
-            "name": "text_color",
-            "type": "button_group",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "light": "Light",
-                "dark": "Dark",
-                "primary": "Ruby",
-                "secondary": "Royal",
-                "accent1": "Emerald",
-                "accent2": "Navy",
-                "accent3": "Yellow",
-                "accent4": "Scarlet"
-            },
-            "allow_null": 0,
-            "default_value": "light",
-            "layout": "horizontal",
-            "return_format": "value"
         },
         {
             "key": "field_62a2a731c2491",
@@ -174,5 +191,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1654834605
+    "modified": 1655342783
 }

@@ -2,19 +2,19 @@
 
 // Set root size for rems
 :root {
-  font-size: 100%;
+    font-size: 100%;
 }
 
 // Start typography settings
 body {
-  color: $system-neutral-90;
-  font-family: $font-sans;
-  @include fontSizing(16px, 24px);
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-weight: $weight-normal;
-  // stylelint-disable-next-line value-keyword-case
-  text-rendering: geometricPrecision;
+    color: $system-neutral-90;
+    font-family: $font-sans;
+    @include fontSizing(16px, 24px);
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-weight: $weight-normal;
+    // stylelint-disable-next-line value-keyword-case
+    text-rendering: geometricPrecision;
 }
 
 // Defaults
@@ -37,7 +37,7 @@ td,
 table,
 tr,
 %default {
-  @include fontSizing(16px, 24px);
+    @include fontSizing(16px, 24px);
 }
 
 // Heading defaults
@@ -47,35 +47,48 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: unset;
-  margin-bottom: unset;
-  font-family: $font-heading;
+    margin-top: unset;
+    margin-bottom: unset;
+    font-family: $font-heading;
 }
 
-h1 {
-  @include h1;
-}
+.layout-container {
+    h1 {
+        @include h1;
+    }
 
-h2 {
-  @include h2;
-}
+    h2 {
+        @include h2;
+    }
 
-h3 {
-  @include h3;
-}
+    h3 {
+        @include h3;
+    }
 
-h4 {
-  @include h4;
-}
+    h4 {
+        @include h4;
+    }
 
-h5 {
-  @include h5;
+    h5 {
+        @include h5;
+    }
+}
+.layout-column {
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @include fontSizing(22px, 32px);
+
+        font-weight: $weight-bold;
+    }
 }
 
 .text-light,
 .text-light > *,
 .text-light ~ * {
-  color: $system-neutral-00;
+    color: $system-neutral-00;
 }
 
 h1:first-child,
@@ -84,19 +97,19 @@ h3:first-child,
 h4:first-child,
 h5:first-child,
 h6:first-child {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 // Bold
 b,
 strong {
-  font-weight: $weight-bold;
+    font-weight: $weight-bold;
 }
 
 // Italic
 em,
 i {
-  font-style: italic;
+    font-style: italic;
 }
 
 // Default paragraphs
@@ -104,5 +117,5 @@ p {
 }
 
 p:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }

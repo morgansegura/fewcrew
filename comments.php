@@ -5,8 +5,8 @@
  * This is the template that displays the area of the page that contains both the current comments
  * and the comment form.
  *
- * @Date:   2019-10-15 12:30:02
- * @Last Modified by:   Timi Wahalahti
+ * @Date:   2022-6-16 9:27:42
+ * @Last Modified by:   Morgan Segura
  * @Last Modified time: 2021-01-12 17:30:20
  *
  * @package fewcrew
