@@ -308,3 +308,26 @@
         }
     }
 }
+
+.edit-link {
+    @include fontSizing(14px, 24px);
+
+    position: absolute;
+    z-index: 2;
+    font-weight: $weight-bold;
+    color: $system-neutral-00;
+    top: $sp-3;
+    right: $sp-3;
+    border: 3px dashed $system-yellow-50;
+    background-color: $system-neutral-90-a60;
+    padding: $sp-0_5 $sp-2;
+    text-decoration: none;
+    border-radius: $radius-circle;
+    opacity: 0.5;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+        border-color: $system-yellow-50;
+        opacity: 1;
+    }
+}

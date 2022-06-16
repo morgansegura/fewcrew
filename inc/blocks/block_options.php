@@ -9,6 +9,4 @@ if( have_rows('options') ) :
 endif;
 
 $contain = (isset($option->width) && $option->width != 'default' ) ? 'contain-' . $option->width : 'contain-xl';
-$wrapper = ($contain == 'contain-full') ? 'contain-full' : 'contain-xxl';
-$container = ($contain != 'contain-full') ? 'contain-' . $option->width : '';
 $spacing = (isset($option->spacing) && $option->spacing != 'default') ? 'spacing-' . $option->spacing : '';
