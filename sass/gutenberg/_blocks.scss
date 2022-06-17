@@ -45,21 +45,13 @@
     // Error block styles
     @import "gutenberg/blocks/error";
 
-<<<<<<< HEAD
-  // ACF blocks
-  @import 'gutenberg/blocks/carouselfullscreen';
-  @import 'gutenberg/blocks/contentcardgrid';
-  @import 'gutenberg/blocks/contentsectiontitle';
-  @import 'gutenberg/blocks/cardstatstable';
-  @import 'gutenberg/blocks/cardfullimage';
-=======
     // ACF blocks
     @import "gutenberg/blocks/carouselfullscreen";
     @import "gutenberg/blocks/contentcardgrid";
     @import "gutenberg/blocks/contentsectiontitle";
     @import "gutenberg/blocks/cardstatstable";
     @import "gutenberg/blocks/spacer";
->>>>>>> f87b9e63aac03193191e18f2d5f6c3a3ec60309a
+    @import 'gutenberg/blocks/cardfullimage';
 }
 
 html :where(.editor-styles-wrapper) {

@@ -367,13 +367,6 @@ $radius-none: 0;
     }
 }
 
-<<<<<<< HEAD
-=======
-@mixin font-sizing($size, $lineHeight) {
-    @include fontSizing($size, $lineHeight);
-}
->>>>>>> f87b9e63aac03193191e18f2d5f6c3a3ec60309a
-
 @mixin grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
