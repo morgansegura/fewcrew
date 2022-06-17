@@ -6,22 +6,31 @@
  */
 // If you use this module,
 // remember to comment out window.scrollTo(0, 0); from navigation.js
+let oldValue = 0;
+let newValue = 0;
+
 function stickyNav() {
     const header = document.querySelector(".header-container");
     // const navbar = document.querySelector('.header-nav')
-    const offset = 200;
-    const headerHeight = header.offsetHeight;
-    const scrollValue = window.scrollY;
+    const offset1 = 50;
+    const offset2 = 50;
+    // const scrollUpOffset = 300;
 
-    if (scrollValue > headerHeight + offset) {
-        header.classList.add("is-fixed");
-    } else if (scrollValue < headerHeight + offset) {
-        header.classList.remove("is-fixed");
+    newValue = window.pageYOffset;
+
+    if (oldValue < newValue) {
+        console.log("Up");
+
+        header.classList.remove("is-fixed", "transition-down");
+        header.classList.add("is-fixed", "transition-up");
+    } else if (oldValue > newValue) {
+        console.log("Down");
+
+        header.classList.remove("is-fixed", "transition-up");
+        header.classList.add("is-fixed", "transition-down");
     }
 
-    if (window.pageYOffset > headerHeight + offset) {
-        header.classList.add("is-fixed");
-    }
+    oldValue = newValue;
 }
 
 window.addEventListener("scroll", stickyNav);
