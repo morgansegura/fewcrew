@@ -141,6 +141,12 @@ add_action( 'after_setup_theme', function() {
         'prevent_cache'  => false,
         'icon'  => 'layout',
       ],
+      [
+        'name'           => 'cardfullimage',
+        'title'          => 'Card Full Image',
+        'prevent_cache'  => false,
+        'icon'  => 'layout',
+      ],
     ],
 
     // Custom ACF block default settings
