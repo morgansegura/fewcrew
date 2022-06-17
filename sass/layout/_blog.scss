@@ -71,18 +71,49 @@
 //   justify-content: space-between;
 // }
 
-.layout-main {}
+.layout-main {
+  position: relative;
+}
 
-.title-tag {}
+.singlephp-bgimage {
+  position: absolute;
+  padding-top: 100px;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  width: 100%;
+  height: 100px;
+}
 
-.title {}
+.title-tag {
+  font-family: $system-neutral-00;
+  font-family: $font-heading;
+  font-size: 24px;
+  font-style: italic;
+}
 
-.date-below-title {}
+.title {
+}
 
-.contact-icons {}
+.date-below-title {
+  font-size: 11px;
+  font-family: $font-sans;
+}
 
-.contact-icons > svg {
-    width: 10px;
-    height: 10px;
-    color: $system-neutral-00;
+.contact-icons {
+  display: flex;
+}
+
+.contact-icons-item {
+  color: $system-neutral-00;
+  font-size: 10px;
+}
+
+.contact-icons-item > svg {
+  width: 20px;
+  height: 20px;
+  color: $system-neutral-00;
 }
