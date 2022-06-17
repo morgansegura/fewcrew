@@ -57,7 +57,7 @@
     &.transition-down {
         transform: translateY($sp-1);
         opacity: 1;
-        transition: all 0.6s ease-out;
+        transition: transform 0.6s ease-out;
     }
 }
 
