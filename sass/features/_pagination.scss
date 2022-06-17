@@ -18,14 +18,14 @@
 
 .page-numbers {
   align-items: center;
-  background-color: var(--color-white);
-  border-bottom: 2px solid var(--color-blue-chalk);
-  border-left: 1px solid var(--color-blue-chalk);
-  border-right: 1px solid var(--color-blue-chalk);
-  border-top: 2px solid var(--color-blue-chalk);
+  background-color: $system-neutral-00;
+  border-bottom: 2px solid $system-orange-50;
+  border-left: 1px solid $system-orange-50;
+  border-right: 1px solid $system-orange-50;
+  border-top: 2px solid $system-orange-50;
   color: var(--color-pagination-text);
   display: flex;
-  font-weight: var(--font-weight-medium);
+  font-weight: $weight-heavy;
   height: 35px;
   justify-content: center;
   margin-left: 0;
@@ -55,15 +55,15 @@
 
 a.page-numbers:hover,
 a.page-numbers:focus {
-  background-color: var(--color-pagination-background-hover);
-  border-color: var(--color-pagination-border-hover);
-  color: var(--color-pagination-text-hover);
+  background-color: $system-orange-50;
+  border-color: $system-orange-50;
+  color: $system-orange-50;
 }
 
 .page-numbers.current {
-  background-color: var(--color-pagination-background-current);
-  border-color: var(--color-pagination-border-current);
-  color: var(--color-pagination-text-current);
+  background-color: $system-orange-50;
+  border-color: $system-orange-50;
+  color: $system-orange-50;
 }
 
 // Remove this if you are using version with next/prev

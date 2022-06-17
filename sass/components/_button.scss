@@ -1,5 +1,17 @@
 // stylelint-disable number-max-precision, max-line-length
-@mixin button($max-width: 230px, $color: var(--color-button), $hover: var(--color-button-hover), $background: var(--color-button-background), $background-hover: var(--color-button-background-hover), $radius: var(--border-radius-input-field), $border: var(--border-width-input-field) solid var(--color-button-background), $border-hover: var(--border-width-input-field) solid $background-hover, $weight: var(--font-weight-semibold), $arrow: false, $transition: all $transition-duration cubic-bezier(.25, .46, .45, .94)) {
+@mixin button(
+  $max-width: 230px,
+  $color: var(--color-button),
+  $hover: var(--color-button-hover),
+  $background: var(--color-button-background),
+  $background-hover: var(--color-button-background-hover),
+  $radius: var(--border-radius-input-field),
+  $border: var(--border-width-input-field) solid var(--color-button-background),
+  $border-hover: var(--border-width-input-field) solid $background-hover,
+  $weight: var(--font-weight-semibold),
+  $arrow: false,
+  $transition: all $transition-duration cubic-bezier(0.25, 0.46, 0.45, 0.94)
+) {
   // doiuse-disable
   appearance: none;
   background-color: $background;
@@ -8,7 +20,7 @@
   color: $color;
   cursor: pointer;
   display: inline-block;
-  font-family: var(--font-paragraph);
+  font-family: $font-sans;
   font-size: var(--font-size-16);
   font-weight: $weight;
   line-height: 19.6364px;

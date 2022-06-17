@@ -1,7 +1,4 @@
 // stylelint-disable declaration-property-unit-allowed-list, no-descending-specificity
-// Everything around fonts, font size definitions and typeset
-// presets. No modular scale, but a sophisticated viewport
-// based responsive mixin can be found in _helpers.scss
 
 // Set root size for rems
 :root {
@@ -10,12 +7,12 @@
 
 // Start typography settings
 body {
-  color: var(--color-paragraph);
-  font-family: var(--font-paragraph);
-  font-size: var(--font-size-default);
+  color: $system-neutral-90;
+  font-family: $font-sans;
+  @include fontSizing(16px, 24px);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-weight: 400;
+  font-weight: $weight-normal;
   // stylelint-disable-next-line value-keyword-case
   text-rendering: geometricPrecision;
 }
@@ -40,8 +37,7 @@ td,
 table,
 tr,
 %default {
-  font-size: var(--font-size-paragraphs);
-  line-height: var(--line-height-paragraphs);
+  @include fontSizing(16px, 24px);
 }
 
 // Heading defaults
@@ -53,7 +49,7 @@ h5,
 h6 {
   margin-top: unset;
   margin-bottom: unset;
-  font-family: var(--font-heading);
+  font-family: $font-heading;
 }
 
 h1 {
@@ -94,7 +90,7 @@ h6:first-child {
 // Bold
 b,
 strong {
-  font-weight: var(--font-weight-bold);
+  font-weight: $weight-bold;
 }
 
 // Italic

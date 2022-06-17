@@ -41,7 +41,7 @@ namespace Few_Crew;
 
 </footer><!-- #colophon -->
 
-</div><!-- #page -->
+</div><!-- #page Nang -->
 
 <?php wp_footer(); ?>
 
