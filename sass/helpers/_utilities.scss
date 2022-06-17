@@ -1,12 +1,12 @@
-@use 'sass:math';
+@use "sass:math";
 
-$font-heading: 'Exo 2', 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial',
-  sans-serif;
-$font-sans: 'Montserrat', 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial',
-  sans-serif;
+$font-heading: "Exo 2", "Roboto", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
+$font-sans: "Montserrat", "Roboto", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
 $font-base: 16px;
 $line-base: 4px;
-$theme-mode: 'dark';
+$theme-mode: "dark";
 
 // Spacing
 $sp-1p: 1px;
@@ -228,228 +228,232 @@ $radius-none: 0;
 
 // Functions
 @function rem($size) {
-  @return math.div($size, $font-base) * 1rem;
+    @return math.div($size, $font-base) * 1rem;
 }
 
 // Mixins
 
 @mixin below($amount) {
-  // Above inclusive
-  @media screen and (max-width: $amount) {
-    @content;
-  }
+    // Above inclusive
+    @media screen and (max-width: $amount) {
+        @content;
+    }
 }
 
 @mixin above($amount) {
-  // Above inclusive
-  @media screen and (min-width: $amount) {
-    @content;
-  }
+    // Above inclusive
+    @media screen and (min-width: $amount) {
+        @content;
+    }
 }
 
 @mixin sm {
-  @media screen and (min-width: $mobile) {
-    @content;
-  }
+    @media screen and (min-width: $mobile) {
+        @content;
+    }
 }
 
 @mixin md {
-  @media screen and (min-width: $tablet) {
-    @content;
-  }
+    @media screen and (min-width: $tablet) {
+        @content;
+    }
 }
 
 @mixin lg {
-  @media screen and (min-width: $desktop-sm) {
-    @content;
-  }
+    @media screen and (min-width: $desktop-sm) {
+        @content;
+    }
 }
 
 @mixin xl {
-  @media screen and (min-width: $desktop) {
-    @content;
-  }
+    @media screen and (min-width: $desktop) {
+        @content;
+    }
 }
 
 @mixin xxl {
-  @media screen and (min-width: $desktop-lg) {
-    @content;
-  }
+    @media screen and (min-width: $desktop-lg) {
+        @content;
+    }
 }
 
 @mixin base {
-  font-size: $font-base;
+    font-size: $font-base;
 }
 
 @mixin h1 {
-  font-size: rem(32px);
-  line-height: 1.15;
-  font-weight: 600;
+    font-size: rem(32px);
+    line-height: 1.15;
+    font-weight: 600;
 
-  @include md {
-    font-size: rem(48px);
-  }
+    @include md {
+        font-size: rem(48px);
+    }
 
-  @include lg {
-    font-size: rem(52px);
-  }
+    @include lg {
+        font-size: rem(52px);
+    }
 }
 
 @mixin h2 {
-  font-size: rem(28px);
-  line-height: 1.15;
-  font-weight: 600;
+    font-size: rem(28px);
+    line-height: 1.15;
+    font-weight: 600;
 
-  @include md {
-    font-size: rem(40px);
-  }
+    @include md {
+        font-size: rem(40px);
+    }
 
-  @include lg {
-    font-size: rem(41px);
-  }
+    @include lg {
+        font-size: rem(41px);
+    }
 }
 
 @mixin h3 {
-  font-size: rem(25px);
-  line-height: 1.15;
-  font-weight: 600;
+    font-size: rem(25px);
+    line-height: 1.15;
+    font-weight: 600;
 
-  @include lg {
-    font-size: rem(32px);
-  }
+    @include lg {
+        font-size: rem(32px);
+    }
 }
 
 @mixin h4 {
-  font-size: rem(22px);
-  line-height: 1.2;
-  font-weight: 600;
+    font-size: rem(22px);
+    line-height: 1.2;
+    font-weight: 600;
 
-  @include md {
-    font-size: rem(25px);
-  }
+    @include md {
+        font-size: rem(25px);
+    }
 }
 
 @mixin h5 {
-  font-size: rem(18px);
-  line-height: 1.2;
-  font-weight: 600;
+    font-size: rem(18px);
+    line-height: 1.2;
+    font-weight: 600;
 
-  @include md {
-    font-size: rem(20px);
-    line-height: 1.4;
-  }
+    @include md {
+        font-size: rem(20px);
+        line-height: 1.4;
+    }
 }
 
 @mixin body-large {
-  font-size: rem(25px);
-  line-height: 1.5;
-  font-weight: 400;
+    font-size: rem(25px);
+    line-height: 1.5;
+    font-weight: 400;
 
-  @include lg {
-    font-size: rem(28px);
-  }
+    @include lg {
+        font-size: rem(28px);
+    }
 }
 
 // Questionable Methods
 @function toRem($size) {
-  @return math.div($size, $font-base) * 1rem;
+    @return math.div($size, $font-base) * 1rem;
 }
 
 @function lh($line-height, $font-size) {
-  @return math.div($line-height, $font-size);
+    @return math.div($line-height, $font-size);
 }
 
 @mixin fontSizing($size, $lineHeight) {
-  font-size: toRem($size);
+    font-size: toRem($size);
 
-  @if $lineHeight {
-    line-height: lh($lineHeight, $size);
-  }
+    @if $lineHeight {
+        line-height: lh($lineHeight, $size);
+    }
 }
 
 @mixin font-sizing($size, $lineHeight) {
-  @include fontSizing($size, $lineHeight);
+    @include fontSizing($size, $lineHeight);
 }
 
 @mixin grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: var(--grid-gutter);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: var(--grid-gutter);
 }
 
 @mixin containXL {
-  max-width: $contain-xl;
-  margin-right: $sp-2;
-  margin-left: $sp-2;
+    max-width: $contain-xl;
+    margin-right: $sp-2;
+    margin-left: $sp-2;
 
-  @include md {
-    margin-right: $sp-5;
-    margin-left: $sp-5;
-  }
+    @include md {
+        margin-right: $sp-5;
+        margin-left: $sp-5;
+    }
 
-  @include xl {
-    margin-right: $sp-14;
-    margin-left: $sp-14;
-  }
+    @include xl {
+        margin-right: $sp-14;
+        margin-left: $sp-14;
+    }
 
-  @include xxl {
-    margin-right: $sp-20;
-    margin-left: $sp-20;
-  }
+    @include xxl {
+        margin-right: $sp-20;
+        margin-left: $sp-20;
+    }
 
-  @include above($contain-offset) {
-    max-width: calc(#{$contain-xxl} - #{$sp-40});
-    margin-right: auto;
-    margin-left: auto;
-  }
+    @include above($contain-offset) {
+        max-width: calc(#{$contain-xxl} - #{$sp-40});
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 @mixin containXXL {
-  max-width: $contain-xxl;
-  margin-right: $sp-1;
-  margin-left: $sp-1;
+    max-width: $contain-xxl;
+    width: calc(100% - $sp-2);
+    margin-right: $sp-1;
+    margin-left: $sp-1;
 
-  @include md {
-    margin-right: $sp-3;
-    margin-left: $sp-3;
-  }
+    @include md {
+        width: calc(100% - $sp-6);
+        margin-right: $sp-3;
+        margin-left: $sp-3;
+    }
 
-  @include xl {
-    margin-right: $sp-6;
-    margin-left: $sp-6;
-  }
+    @include xl {
+        width: calc(100% - $sp-12);
+        margin-right: $sp-6;
+        margin-left: $sp-6;
+    }
 
-  @include xxl {
-    margin-right: $sp-8;
-    margin-left: $sp-8;
-  }
+    @include xxl {
+        width: calc(100% - $sp-16);
+        margin-right: $sp-8;
+        margin-left: $sp-8;
+    }
 
-  @include above($contain-offset) {
-    margin-right: auto;
-    margin-left: auto;
-  }
+    @include above($contain-offset) {
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 @mixin shadow-card {
-  box-shadow: 0 4.581080913543701px 22.905405044555664px 0 #a4abb71f,
-    0 12.216216087341309px 18.324323654174805px 0 #6b738424,
-    0 6.108108043670654px 7.635135173797607px 0 #3e405433;
+    box-shadow: 0 4.581080913543701px 22.905405044555664px 0 #a4abb71f,
+        0 12.216216087341309px 18.324323654174805px 0 #6b738424,
+        0 6.108108043670654px 7.635135173797607px 0 #3e405433;
 }
 
 @mixin shadow-header {
-  box-shadow: 0 2.2905404567718506px 10.689188957214355px 0 #a4abb71f,
-    0 6.108108043670654px 7.635135173797607px 0 #6b738424,
-    0 3.8175675868988037px 3.8175675868988037px 0 #3e405433;
+    box-shadow: 0 2.2905404567718506px 10.689188957214355px 0 #a4abb71f,
+        0 6.108108043670654px 7.635135173797607px 0 #6b738424,
+        0 3.8175675868988037px 3.8175675868988037px 0 #3e405433;
 }
 
 @mixin shadow-form {
-  box-shadow: 0 3.8175675868988037px 16.79729652404785px 0 #a4abb71f,
-    0 9.162161827087402px 12.979729652404785px 0 #6b738424,
-    0 5.344594478607178px 6.108108043670654px 0 #3e405433;
+    box-shadow: 0 3.8175675868988037px 16.79729652404785px 0 #a4abb71f,
+        0 9.162161827087402px 12.979729652404785px 0 #6b738424,
+        0 5.344594478607178px 6.108108043670654px 0 #3e405433;
 }
 
 @mixin shadow-dropdown {
-  box-shadow: 0 4.581080913543701px 22.905405044555664px 0 #a4abb71f,
-    0 12.216216087341309px 18.324323654174805px 0 #6b738424,
-    0 6.108108043670654px 7.635135173797607px 0 #3e405433;
+    box-shadow: 0 4.581080913543701px 22.905405044555664px 0 #a4abb71f,
+        0 12.216216087341309px 18.324323654174805px 0 #6b738424,
+        0 6.108108043670654px 7.635135173797607px 0 #3e405433;
 }

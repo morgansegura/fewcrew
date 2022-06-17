@@ -23,28 +23,6 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_629ff390bd4cc",
-                            "label": "Theme Mode",
-                            "name": "theme_mode",
-                            "type": "button_group",
-                            "instructions": "Should the text and contents be light or dark for this slide? (Dark Mode is dark body and light text, Light Mode is Light body and Dark text.)",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "light": "light",
-                                "dark": "dark"
-                            },
-                            "allow_null": 0,
-                            "default_value": "dark",
-                            "layout": "horizontal",
-                            "return_format": "value"
-                        },
-                        {
                             "key": "field_6297f161ac75a",
                             "label": "Link",
                             "name": "link",
@@ -215,5 +193,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1654804442
+    "modified": 1655411666
 }

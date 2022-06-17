@@ -1,88 +1,94 @@
 .header-nav {
-  position: relative;
-  height: 65px;
-
-  @include lg {
-    height: auto;
-  }
-}
-
-.header-container {
-  background-color: $system-neutral-80;
-  top: 0;
-  right: 0;
-  left: 0;
-  transition: all 0.5s ease;
-
-  .contain-xl {
     position: relative;
-  }
+    // height: 65px;
 
-  &.is-fixed {
-    position: fixed;
-  }
+    // @include lg {
+    //     height: auto;
+    // }
 }
 
 .backdrop {
-  position: fixed;
-  background-color: rgba(#000, 0.65);
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1000;
+    position: fixed;
+    background-color: rgba(#000, 0.65);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header {
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    margin-top: $sp-1;
+    margin-bottom: $sp-1;
+}
+
+.header-container {
+    position: relative;
+    overflow: hidden;
+    height: 65px;
+    border-radius: $sp-1;
+    background-color: $system-neutral-70;
+    flex: 1 0 auto;
+
+    &.is-fixed {
+        position: fixed;
+        transform: translateY(-100%);
+    }
 }
 
 .header-branding {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 65px;
-  width: 100%;
-
-  svg {
-    width: 85px;
-  }
-
-  @include lg {
-    justify-content: unset;
-    // height: 90px;
-    transform: unset;
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
 
     svg {
-      // width: 100px;
+        width: 85px;
     }
-  }
+
+    @include lg {
+        justify-content: unset;
+        // height: 90px;
+        transform: unset;
+
+        svg {
+            // width: 100px;
+        }
+    }
 }
 
 .header-branding-block {
-  z-index: 1;
+    z-index: 1;
 
-  @include lg {
-    top: 0;
-    height: auto;
-  }
+    @include lg {
+        top: 0;
+        height: auto;
+    }
 }
 
 .header-logo {
-  align-items: center;
+    align-items: center;
 
-  &-mobile {
-    display: flex;
+    &-mobile {
+        display: flex;
 
-    @include lg {
-      display: none;
+        @include lg {
+            display: none;
+        }
     }
-  }
 
-  &-desktop {
-    display: none;
+    &-desktop {
+        display: none;
 
-    @include lg {
-      display: flex;
+        @include lg {
+            display: flex;
+        }
     }
-  }
 }
 
 .header-title {

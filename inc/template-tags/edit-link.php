@@ -21,7 +21,7 @@ function few_edit_link() {
     return;
   } ?>
 
-<div class="edit-link-container">
+<div class="edit-link-container spacing-md">
     <a href="<?php echo esc_url( get_edit_post_link() ); ?>" class="edit-link">
         <!-- <?php echo esc_html( get_default_localization( 'Edit' ) ); ?> -->
         Edit Content

@@ -25,7 +25,6 @@ require get_theme_file_path( '/inc/blocks/layout_options.php' );
 ?>
 
 <main class="site-main">
-    <?php few_edit_link(); ?>
 
     <section id="home-carouselfullscreen-slider">
         <?php require get_theme_file_path( '/template-parts/blocks/carouselfullscreen.php' ); ?>
@@ -46,6 +45,7 @@ require get_theme_file_path( '/inc/blocks/layout_options.php' );
                 </section>
                 <?php get_sidebar( 'sidebar-1' ); ?>
             </div>
+            <?php few_edit_link(); ?>
         </div>
     </div>
 </main>

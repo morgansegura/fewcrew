@@ -103,74 +103,6 @@
             "default_value": "md",
             "layout": "horizontal",
             "return_format": "value"
-        },
-        {
-            "key": "field_62a2ae8d6de53",
-            "label": "Margin Top",
-            "name": "margin_top",
-            "type": "button_group",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "yes": "Yes",
-                "no": "No"
-            },
-            "allow_null": 0,
-            "default_value": "yes",
-            "layout": "horizontal",
-            "return_format": "value"
-        },
-        {
-            "key": "field_62a2aeca6de54",
-            "label": "Margin Bottom",
-            "name": "margin_bottom",
-            "type": "button_group",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "yes": "Yes",
-                "no": "No"
-            },
-            "allow_null": 0,
-            "default_value": "yes",
-            "layout": "horizontal",
-            "return_format": "value"
-        },
-        {
-            "key": "field_62a2b7b160381",
-            "label": "Container Width",
-            "name": "container_width",
-            "type": "button_group",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "sm": "Small",
-                "md": "Medium",
-                "lg": "Large",
-                "xl": "XL"
-            },
-            "allow_null": 0,
-            "default_value": "xl",
-            "layout": "horizontal",
-            "return_format": "value"
         }
     ],
     "location": [
@@ -191,5 +123,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1655342783
+    "modified": 1655411699
 }
