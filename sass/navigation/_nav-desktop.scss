@@ -1,226 +1,227 @@
 .header-nav-control {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  height: 100vh;
-  display: flex;
-  min-width: 200px;
-  flex-direction: column;
-  background-color: $system-neutral-80;
-  transform: translateX(-100%);
-
-  &.animate-left {
-    z-index: 1;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    display: flex;
+    min-width: 200px;
+    flex-direction: column;
+    // background-color: $system-neutral-80;
     transform: translateX(-100%);
-    transition: transform 0.3s ease-out;
-  }
 
-  &.animate-right {
-    z-index: 1001;
-    transform: translateX(0);
-    transition: transform 0.3s ease-out;
-  }
-
-  @include lg {
-    position: relative;
-    top: auto;
-    bottom: auto;
-    height: auto;
-    display: unset;
-    background-color: transparent;
-
-    &.animate-left,
-    &.animate-right {
-      z-index: 1;
-      transform: unset;
-      transition: transform 0.3s ease-out;
+    &.animate-left {
+        z-index: 1;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-out;
     }
-  }
+
+    &.animate-right {
+        z-index: 1001;
+        transform: translateX(0);
+        transition: transform 0.3s ease-out;
+    }
+
+    @include lg {
+        position: relative;
+        top: auto;
+        bottom: auto;
+        height: auto;
+        display: unset;
+        background-color: transparent;
+
+        &.animate-left,
+        &.animate-right {
+            z-index: 1;
+            transform: unset;
+            transition: transform 0.3s ease-out;
+        }
+    }
 }
 
 .header-menu {
-  @include below($contain-md) {
-    .contain-xxl {
-      margin-right: unset;
-      margin-left: unset;
+    @include below($contain-md) {
+        .contain-xxl {
+            margin-right: unset;
+            margin-left: unset;
+        }
+        .contain-xl {
+            margin-right: unset;
+            margin-left: unset;
+        }
     }
-    .contain-xl {
-      margin-right: unset;
-      margin-left: unset;
-    }
-  }
 }
 
 .header-menu-items {
-  display: flex;
-  padding: 0;
-  margin: 0;
-
-  ul {
-    margin: 0;
     display: flex;
-  }
+    padding: 0;
+    margin: 0;
 
-  @include below($contain-md) {
-    flex-direction: column;
-    justify-content: center;
-  }
+    ul {
+        margin: 0;
+        display: flex;
+    }
 
-  @include lg {
-    flex-direction: row;
-    justify-content: flex-end;
-  }
+    @include below($contain-md) {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    @include lg {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
 }
 
 .header-menu .nav-item {
-  display: flex;
-  flex: 1 0 auto;
-
-  a {
-    @include fontSizing(14px, 30px);
-    font-weight: 700;
-    color: $system-neutral-00;
-    text-transform: uppercase;
-    text-decoration: none;
     display: flex;
-    align-items: center;
-    transition: border-color 0.3s ease-out, background-color 0.3s ease-out;
+    flex: 1 0 auto;
 
-    @include below($contain-md) {
-      justify-content: center;
-      width: 100%;
-      padding-top: $sp-1_5;
-      padding-bottom: $sp-1_5;
-      border-right: 4px solid transparent;
-      border-bottom: 1px solid $system-neutral-60;
-      border-left: 4px solid transparent;
+    a {
+        @include fontSizing(14px, 30px);
+        font-weight: 700;
+        color: $system-neutral-00;
+        text-transform: uppercase;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        transition: border-color 0.3s ease-out, background-color 0.3s ease-out;
 
-      &:hover {
-        border-left: 4px solid $brand-secondary;
-        background-color: rgba(#000, 0.065);
-      }
+        @include below($contain-md) {
+            justify-content: center;
+            width: 100%;
+            padding-top: $sp-1_5;
+            padding-bottom: $sp-1_5;
+            border-right: 4px solid transparent;
+            border-bottom: 1px solid $system-neutral-60;
+            border-left: 4px solid transparent;
 
-      .active & {
-        border-left: 4px solid $brand-secondary;
-        background-color: rgba(#fff, 0.065);
-      }
+            &:hover {
+                border-left: 4px solid $brand-secondary;
+                background-color: rgba(#000, 0.065);
+            }
+
+            .active & {
+                border-left: 4px solid $brand-secondary;
+                background-color: rgba(#fff, 0.065);
+            }
+        }
+
+        @include lg {
+            &:hover {
+                color: $brand-secondary;
+            }
+
+            span {
+                color: $brand-secondary;
+            }
+        }
     }
-
-    @include lg {
-      &:hover {
-        color: $brand-secondary;
-      }
-
-      span {
-        color: $brand-secondary;
-      }
-    }
-  }
 }
 
 .header-menu-admin {
-  display: none;
+    display: none;
 
-  @include lg {
-    background-color: $system-neutral-70;
-    padding-top: $sp-1;
-    padding-bottom: $sp-1;
-  }
-
-  .nav-item a {
     @include lg {
-      @include fontSizing(11px, 32px);
+        background-color: $system-neutral-70;
+        padding-top: $sp-1;
+        padding-bottom: $sp-1;
     }
-  }
+
+    .nav-item a {
+        @include lg {
+            @include fontSizing(11px, 32px);
+        }
+    }
 }
 
 .header-menu-ads {
-  display: none;
+    display: none;
 
-  @include lg {
-    background-color: $system-neutral-80;
+    @include lg {
+        background-color: $system-neutral-80;
 
-    .nav-item a {
-      @include fontSizing(14px, 42px);
+        .nav-item a {
+            @include fontSizing(14px, 42px);
 
-      padding-top: $sp-3;
-      padding-bottom: $sp-3;
+            padding-top: $sp-3;
+            padding-bottom: $sp-3;
+        }
     }
-  }
 }
 
 .header-menu-page {
-  position: relative;
-  z-index: 1;
-  text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+    // height: 65px;
 
-  .nav-item {
-    &::before {
-      content: unset;
-      float: none;
+    .nav-item {
+        &::before {
+            content: unset;
+            float: none;
+        }
+
+        a {
+            @include below($contain-md) {
+                flex: 1 0 auto;
+            }
+
+            @include lg {
+                @include fontSizing(14px, 30px);
+
+                position: relative;
+                z-index: 2;
+                // font-family: var(--font-heading);
+                font-weight: 700;
+                color: $system-neutral-00;
+                padding-top: $sp-1_5;
+                padding-right: $sp-3;
+                padding-left: $sp-3;
+                padding-bottom: $sp-1_5;
+                border-top: 2px solid transparent;
+                border-bottom: 2px solid transparent;
+                border-right: 1px solid $system-neutral-60;
+                transition: background-color 0.3s ease-out, color 0.3s ease-out,
+                    border-color 0.3s ease-out;
+
+                &:first-child {
+                    border-left: 1px solid $system-neutral-60;
+                }
+
+                &:hover,
+                .active & {
+                    border-bottom-color: $brand-primary;
+                    background-color: $system-neutral-80;
+                    color: $system-neutral-00;
+                }
+
+                span {
+                    color: $brand-secondary;
+                }
+            }
+        }
     }
-
-    a {
-      @include below($contain-md) {
-        flex: 1 0 auto;
-      }
-
-      @include lg {
-        @include fontSizing(14px, 30px);
-
-        position: relative;
-        z-index: 2;
-        // font-family: var(--font-heading);
-        font-weight: 700;
-        color: $system-neutral-00;
-        padding-top: $sp-1_5;
-        padding-right: $sp-3;
-        padding-left: $sp-3;
-        padding-bottom: $sp-1_5;
-        border-top: 2px solid transparent;
-        border-bottom: 2px solid transparent;
-        border-right: 1px solid $system-neutral-60;
-        transition: background-color 0.3s ease-out, color 0.3s ease-out,
-          border-color 0.3s ease-out;
-
-        &:first-child {
-          border-left: 1px solid $system-neutral-60;
-        }
-
-        &:hover,
-        .active & {
-          border-bottom-color: $brand-primary;
-          background-color: $system-neutral-80;
-          color: $system-neutral-00;
-        }
-
-        span {
-          color: $brand-secondary;
-        }
-      }
-    }
-  }
-
-  @include lg {
-    background-color: $system-neutral-70;
 
     @include lg {
-      &::after {
-        content: '';
-        background-color: rgba($brand-primary, 0.5);
-        transform: skewX(-13deg);
-        position: absolute;
-        top: 0;
-        left: -1%;
-        width: 3%;
-        height: 100%;
-      }
-    }
+        // background-color: $system-neutral-70;
 
-    @include xxl {
-      &::after {
-        width: 4%;
-      }
+        @include lg {
+            &::after {
+                content: "";
+                background-color: rgba($brand-primary, 0.5);
+                transform: skewX(-13deg);
+                position: absolute;
+                top: 0;
+                left: -1%;
+                width: 3%;
+                height: 100%;
+            }
+        }
+
+        @include xxl {
+            &::after {
+                width: 4%;
+            }
+        }
     }
-  }
 }

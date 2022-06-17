@@ -3,113 +3,6 @@
     "title": "Content Card Grid",
     "fields": [
         {
-            "key": "field_62a3674932c9c",
-            "label": "Section Options",
-            "name": "section_options",
-            "type": "group",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "layout": "row",
-            "sub_fields": [
-                {
-                    "key": "field_62a3586d00cd9",
-                    "label": "Theme Mode",
-                    "name": "theme_mode",
-                    "type": "button_group",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "choices": {
-                        "light": "Light",
-                        "dark": "Dark"
-                    },
-                    "allow_null": 0,
-                    "default_value": "dark",
-                    "layout": "horizontal",
-                    "return_format": "value"
-                },
-                {
-                    "key": "field_62a366fdc58d0",
-                    "label": "Container Width",
-                    "name": "container_width",
-                    "type": "button_group",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "choices": {
-                        "sm": "Small",
-                        "md": "Medium",
-                        "lg": "Large",
-                        "xl": "XL"
-                    },
-                    "allow_null": 0,
-                    "default_value": "xl",
-                    "layout": "horizontal",
-                    "return_format": "value"
-                },
-                {
-                    "key": "field_62a2cc9700cd7",
-                    "label": "Margin Top",
-                    "name": "margin_top",
-                    "type": "button_group",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "choices": {
-                        "yes": "Yes",
-                        "no": "No"
-                    },
-                    "allow_null": 0,
-                    "default_value": "yes",
-                    "layout": "horizontal",
-                    "return_format": "value"
-                },
-                {
-                    "key": "field_62a3585c00cd8",
-                    "label": "Margin Bottom",
-                    "name": "margin_bottom",
-                    "type": "button_group",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "choices": {
-                        "yes": "Yes",
-                        "no": "No"
-                    },
-                    "allow_null": 0,
-                    "default_value": "yes",
-                    "layout": "horizontal",
-                    "return_format": "value"
-                }
-            ]
-        },
-        {
             "key": "field_62a24b93b8e36",
             "label": "Card",
             "name": "card",
@@ -516,5 +409,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1655239969
+    "modified": 1655411719
 }

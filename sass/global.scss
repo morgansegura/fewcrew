@@ -1,60 +1,61 @@
 @charset 'utf-8';
 
 // Reset
-@import 'sanitize.css/sanitize';
-@import 'sanitize.css/reduce-motion';
+@import "sanitize.css/sanitize";
+@import "sanitize.css/reduce-motion";
 
 // Helpers
-@import 'helpers/animations';
-@import 'helpers/utilities';
-@import 'helpers/web';
+@import "helpers/animations";
+@import "helpers/utilities";
+@import "helpers/web";
 
 // Variables
-@import 'variables/forms';
+@import "variables/forms";
 
 // Accessibility
-@import 'base/accessibility';
+@import "base/accessibility";
 
 // Vendors
-@import 'vendor/swiper-bundle';
+@import "vendor/swiper-bundle";
 
 // Style components
-@import 'components/components';
+@import "components/components";
 
 // Navigation
-@import 'navigation/nav-desktop';
-@import 'navigation/nav-mobile';
+@import "navigation/nav-desktop";
+@import "navigation/nav-mobile";
 
 // Structure
-@import 'layout/general';
-@import 'layout/print';
-@import 'layout/typography';
-@import 'layout/site-header';
-@import 'layout/site-footer';
-@import 'layout/forms';
-@import 'layout/blog';
-@import 'layout/wordpress';
+@import "layout/general";
+@import "layout/print";
+@import "layout/typography";
+@import "layout/site-header";
+@import "layout/site-footer";
+@import "layout/forms";
+@import "layout/blog";
+@import "layout/aside";
+@import "layout/wordpress";
 
 // Global features
-@import 'features/top';
-@import 'features/gallery';
-@import 'features/lazyload';
-@import 'features/pagination';
-@import 'features/gravity-forms';
-@import 'features/sticky-nav';
+@import "features/top";
+@import "features/gallery";
+@import "features/lazyload";
+@import "features/pagination";
+@import "features/gravity-forms";
+@import "features/sticky-nav";
 
 // Views
-@import 'views/base';
-@import 'views/front-page';
-@import 'views/search';
-@import 'views/404';
-@import 'views/comments';
+@import "views/base";
+@import "views/front-page";
+@import "views/search";
+@import "views/404";
+@import "views/comments";
 
 // Gutenberg layout outside blocks
-@import 'gutenberg/layout/content';
+@import "gutenberg/layout/content";
 
 // Gutenberg blocks
-@import 'gutenberg/blocks';
+@import "gutenberg/blocks";
 
 // Gutenberg formatting
-@import 'gutenberg/formatting';
+@import "gutenberg/formatting";

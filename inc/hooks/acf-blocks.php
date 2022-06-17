@@ -1,8 +1,8 @@
 <?php
 /**
- * @Author: Timi Wahalahti
+ * @Author: Morgan Segura
  * @Date:   2021-05-11 14:34:14
- * @Last Modified by:   Timi Wahalahti
+ * @Last Modified by:   Morgan Segura
  * @Last Modified time: 2021-05-26 13:06:36
  * @package fewcrew
  */

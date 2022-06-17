@@ -85,7 +85,7 @@
 
 // Add icon to external links
 a.is-external-link::after {
-  background-image: url('../../svg/external-link.svg');
+  // background-image: url('../../svg/external-link.svg');
   background-position: right center;
   background-repeat: no-repeat;
   background-size: 12px 12px;

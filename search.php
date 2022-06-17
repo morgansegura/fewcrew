@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @Date:   2019-10-15 12:30:02
+ * @Date:   2022-6-16 9:27:42
  * @Last Modified by:   Morgan Segura
  * @Last Modified time: 2022-02-08 17:03:23
  *

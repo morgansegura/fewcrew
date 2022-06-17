@@ -1,0 +1,17 @@
+.widget {
+    background-color: $system-neutral-00;
+    border: 1px solid $system-neutral-10;
+    color: $system-neutral-90;
+
+    &:not(:first-of-type) {
+        margin-top: $sp-4;
+    }
+
+    .theme-dark & {
+        background-color: $system-neutral-80;
+        border: 1px solid $system-neutral-70;
+    }
+}
+
+.widget h2 {
+}

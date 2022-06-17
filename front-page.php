@@ -7,7 +7,7 @@
  * and that other 'pages' on your WordPress site may use a
  * different template.
  *
- * @Date:   2019-10-15 12:30:02
+ * @Date:   2022-6-16 9:27:42
  * @Last Modified by:   Morgan Segura
  * @Last Modified time: 2022-02-08 17:03:18
  *
@@ -18,13 +18,36 @@ namespace Few_Crew;
 
 the_post();
 
-get_header(); ?>
+get_header();
+
+// [Page Options]
+require get_theme_file_path( '/inc/blocks/layout_options.php' );
+?>
 
 <main class="site-main">
-  <?php
-    the_content();
-    few_edit_link();
-  ?>
+
+    <section id="home-carouselfullscreen-slider">
+        <?php require get_theme_file_path( '/template-parts/blocks/carouselfullscreen.php' ); ?>
+    </section>
+
+    <div class="contain-xxl">
+        <div class="<?php echo $contain; ?>">
+            <div class="spacing-lg text-light contain-xl">
+                <h2 class="font-size-md">Training Programs</h2>
+            </div>
+            <section id="home-contentcardgrid-slider" class="spacing-sm">
+                <?php require get_theme_file_path( '/template-parts/blocks/contentcardgrid.php' ); ?>
+            </section>
+
+            <div class="layout-container <?php echo $sidebar; ?>">
+                <section class="layout-main">
+                    <?php the_content(); ?>
+                </section>
+                <?php get_sidebar( 'sidebar-1' ); ?>
+            </div>
+            <?php few_edit_link(); ?>
+        </div>
+    </div>
 </main>
 
 <?php get_footer();

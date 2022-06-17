@@ -4,253 +4,335 @@
 .contain-md,
 .contain-lg,
 .contain-xl {
-  margin-right: auto;
-  margin-left: auto;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .contain-xs {
-  max-width: $contain-xs;
+    max-width: $contain-xs;
 }
 
 .contain-sm {
-  max-width: $contain-sm;
+    max-width: $contain-sm;
 }
 
 .contain-md {
-  max-width: $contain-md;
+    max-width: $contain-md;
 }
 
 .contain-lg {
-  max-width: $contain-lg;
+    max-width: $contain-lg;
 }
 
 .contain-xl {
-  @include containXXL();
+    @include containXXL();
 }
 
 .contain-xxl {
-  @include containXXL();
+    @include containXXL();
 }
 
 .decode {
-  &-container {
-    position: relative;
-  }
-  &-main {
-    position: fixed;
-    z-index: 1000;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(black, 0.75);
-    border: solid $system-yellow-50;
-    border-width: 5px 0;
-    color: $system-yellow-50;
-    padding: 1rem 1.5rem;
-    overflow-y: scroll;
-
-    &::-webkit-scrollbar {
-      width: 1em;
+    &-container {
+        position: relative;
     }
+    &-main {
+        position: fixed;
+        z-index: 1000;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: rgba(black, 0.75);
+        border: solid $system-yellow-50;
+        border-width: 5px 0;
+        color: $system-yellow-50;
+        padding: 1rem 1.5rem;
+        overflow-y: scroll;
 
-    &::-webkit-scrollbar-track {
-      box-shadow: inset 0 0 2px $system-yellow-50;
+        &::-webkit-scrollbar {
+            width: 1em;
+        }
+
+        &::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 2px $system-yellow-50;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: rgba($system-yellow-50, 0.85);
+            // outline:  3px solid black;
+            border: inset solid rgba(black, 0.75);
+            border-width: 2px 2px 0 2px;
+            border-radius: 3px;
+        }
+
+        pre {
+            @include fontSizing(14px, 24px);
+
+            font-weight: 600;
+        }
     }
-
-    &::-webkit-scrollbar-thumb {
-      background-color: rgba($system-yellow-50, 0.85);
-      // outline:  3px solid black;
-      border: inset solid rgba(black, 0.75);
-      border-width: 2px 2px 0 2px;
-      border-radius: 3px;
-    }
-
-    pre {
-      @include fontSizing(14px, 24px);
-
-      font-weight: 600;
-    }
-  }
-}
-
-h1 {
-  @include h1;
-}
-
-h2 {
-  @include h2;
-}
-
-h3 {
-  @include h3;
-}
-
-h4 {
-  @include h4;
-}
-
-h5 {
-  @include h5;
 }
 
 .text-light,
 .text-light > *,
 .text-light ~ * {
-  color: $system-neutral-00;
+    color: $system-neutral-00;
 }
 
 .font-size {
-  &-sm {
-    @include fontSizing(18px, 30px);
+    &-sm {
+        @include fontSizing(18px, 30px);
 
-    @include md {
-      @include fontSizing(22px, 40px);
-    }
+        @include md {
+            @include fontSizing(22px, 40px);
+        }
 
-    @include lg {
-      @include fontSizing(28px, 40px);
+        @include lg {
+            @include fontSizing(28px, 40px);
+        }
     }
-  }
-  &-md {
-    @include fontSizing(28px, 40px);
+    &-md {
+        @include fontSizing(28px, 40px);
 
-    @include md {
-      @include fontSizing(36px, 48px);
-    }
+        @include md {
+            @include fontSizing(36px, 48px);
+        }
 
-    @include lg {
-      @include fontSizing(42px, 50px);
+        @include lg {
+            @include fontSizing(42px, 50px);
+        }
     }
-  }
-  &-lg {
-    @include fontSizing(36px, 48px);
+    &-lg {
+        @include fontSizing(36px, 48px);
 
-    @include md {
-      @include fontSizing(42px, 50px);
-    }
+        @include md {
+            @include fontSizing(42px, 50px);
+        }
 
-    @include lg {
-      @include fontSizing(60px, 72px);
+        @include lg {
+            @include fontSizing(60px, 72px);
+        }
     }
-  }
 }
 
 .text-color {
-  &-light {
-    color: $system-neutral-00;
-  }
-  &-dark {
-    color: $system-neutral-90;
-  }
+    &-light {
+        color: $system-neutral-00;
+    }
+    &-dark {
+        color: $system-neutral-90;
+    }
 
-  &-red {
-    color: $system-red-50;
-  }
-  &-orange {
-    color: $system-orange-50;
-  }
-  &-yellow {
-    color: $system-yellow-50;
-  }
-  &-green {
-    color: $system-green-50;
-  }
-  &-blue {
-    color: $system-blue-50;
-  }
-  &-purple {
-    color: $system-purple-50;
-  }
-  &-primary {
-    color: $brand-primary;
-  }
-  &-secondary {
-    color: $brand-secondary;
-  }
-}
-
-.spacing-top {
-  margin-top: $sp-3;
-
-  @include md {
-    margin-top: $sp-5;
-  }
-
-  @include lg {
-    margin-top: $sp-6;
-  }
-
-  @include xxl {
-    margin-top: $sp-8;
-  }
-}
-
-.spacing-bottom {
-  margin-bottom: $sp-3;
-
-  @include md {
-    margin-bottom: $sp-4;
-  }
+    &-red {
+        color: $system-red-50;
+    }
+    &-orange {
+        color: $system-orange-50;
+    }
+    &-yellow {
+        color: $system-yellow-50;
+    }
+    &-green {
+        color: $system-green-50;
+    }
+    &-blue {
+        color: $system-blue-50;
+    }
+    &-purple {
+        color: $system-purple-50;
+    }
+    &-primary {
+        color: $brand-primary;
+    }
+    &-secondary {
+        color: $brand-secondary;
+    }
 }
 
 .colorbar {
-  &-dark {
-    @include shadow-header;
-    position: relative;
-    height: 1px;
-    background-color: black;
-  }
-
-  &-after,
-  &-before {
-    position: relative;
-    height: 1px;
-  }
-
-  &-after::before,
-  &-after::after,
-  &-before::before,
-  &-before::after {
-    content: '';
-    position: absolute;
-    height: 100%;
-    top: 0;
-  }
-
-  &-before::before,
-  &-after::before {
-    left: 0;
-    background-color: rgba($brand-secondary, 1);
-
-    @include lg {
-      background-color: rgba($brand-primary, 1);
+    &-dark {
+        @include shadow-header;
+        position: relative;
+        height: 1px;
+        background-color: black;
     }
-  }
 
-  &-before::after,
-  &-after::after {
-    right: 0;
-    background-color: rgba($brand-primary, 1);
-
-    @include lg {
-      background-color: rgba($brand-secondary, 1);
+    &-after,
+    &-before {
+        position: relative;
+        height: 1px;
     }
-  }
 
-  &-before::before {
-    width: 75%;
-  }
+    &-after::before,
+    &-after::after,
+    &-before::before,
+    &-before::after {
+        content: "";
+        position: absolute;
+        height: 100%;
+        top: 0;
+    }
 
-  &-before::after {
-    width: 25%;
-  }
+    &-before::before,
+    &-after::before {
+        left: 0;
+        background-color: rgba($brand-secondary, 1);
 
-  &-after::before {
-    width: 25%;
-  }
+        @include lg {
+            background-color: rgba($brand-primary, 1);
+        }
+    }
 
-  &-after::after {
-    width: 75%;
-  }
+    &-before::after,
+    &-after::after {
+        right: 0;
+        background-color: rgba($brand-primary, 1);
+
+        @include lg {
+            background-color: rgba($brand-secondary, 1);
+        }
+    }
+
+    &-before::before {
+        width: 75%;
+    }
+
+    &-before::after {
+        width: 25%;
+    }
+
+    &-after::before {
+        width: 25%;
+    }
+
+    &-after::after {
+        width: 75%;
+    }
+}
+
+// [Layout]
+
+.layout-container {
+    @include grid();
+
+    color: $system-neutral-00;
+    gap: $sp-4;
+}
+
+.layout-main,
+.layout-column {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / 13;
+}
+
+.layout-with-left-sidebar {
+    .layout-main {
+        @include lg {
+            order: 1;
+            grid-column: 5 / 13;
+        }
+    }
+    .layout-column {
+        @include lg {
+            order: 0;
+            grid-column: 1 / 5;
+        }
+    }
+}
+
+.layout-with-right-sidebar {
+    .layout-main {
+        @include lg {
+            grid-column: 1 / 9;
+        }
+    }
+
+    .layout-column {
+        @include lg {
+            grid-column: 9 / 13;
+        }
+    }
+}
+
+// [Width]
+.contain-full {
+    width: 100%;
+}
+
+// [Spacing]
+.spacing {
+    &-sm {
+        margin-top: $sp-2;
+
+        @include md {
+            margin-top: $sp-3;
+        }
+
+        @include lg {
+            margin-top: $sp-4;
+        }
+    }
+    &-md {
+        margin-top: $sp-3;
+
+        @include md {
+            margin-top: $sp-4;
+        }
+
+        @include lg {
+            margin-top: $sp-5;
+        }
+    }
+    &-lg {
+        margin-top: $sp-4;
+
+        @include md {
+            margin-top: $sp-5;
+        }
+
+        @include lg {
+            margin-top: $sp-6;
+        }
+    }
+    &-xl {
+        margin-top: $sp-6;
+
+        @include md {
+            margin-top: $sp-7;
+        }
+
+        @include lg {
+            margin-top: $sp-8;
+        }
+    }
+}
+
+.edit-link-container {
+    display: flex;
+}
+
+.edit-link {
+    @include fontSizing(16px, 24px);
+
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: $weight-bold;
+    color: $system-yellow-50;
+    top: $sp-3;
+    right: $sp-3;
+    border: 3px dashed $system-yellow-50;
+    padding: $sp-2 $sp-4;
+    text-decoration: none;
+    opacity: 0.5;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+        color: $system-yellow-50;
+        border-color: $system-yellow-50;
+        opacity: 1;
+    }
 }

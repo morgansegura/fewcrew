@@ -1,6 +1,6 @@
 <?php
 /**
- * @Author: Timi Wahalahti
+ * @Author: Morgan Segura
  * @Date:   2019-12-03 11:03:31
  * @Last Modified by:   Morgan Segura
  * @Last Modified time: 2022-02-08 17:08:22
