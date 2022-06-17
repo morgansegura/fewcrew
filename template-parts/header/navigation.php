@@ -15,14 +15,12 @@ namespace Few_Crew;
 ?>
 
 <nav id="nav" class="header-nav-drawer">
-
+    <div class="pushy-panel__back-btn-block pushy-panel--dark">
+        <div class="pushy-panel__back-btn"></div>
+    </div>
     <div class="header-nav-control">
 
         <div class="header-menu" aria-label="<?php echo esc_html( get_default_localization( 'Main navigation' ) ); ?>">
-            <div class="pushy-panel__back-btn-block pushy-panel--dark">
-                <div class="pushy-panel__back-btn"></div>
-            </div>
-
             <div class="header-menu-items">
                 <?php wp_nav_menu( array(
                     'theme_location' => 'header_tertiary',

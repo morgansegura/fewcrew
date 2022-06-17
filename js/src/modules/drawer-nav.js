@@ -14,20 +14,28 @@ const $ = jQuery;
 function toggleDrawerNav() {
     const body = $("body");
     const navMenu = $(".header-nav-drawer");
-    const menuSelector = $(".pushy-panel__toggle");
-    const menuDeselector = $(".pushy-panel__back-btn-block ");
     const backdrop = $(".layout-backdrop");
+    const menuSelector = $(".pushy-panel__toggle");
+    const menuDeselector = $(".pushy-panel__back-btn-block, .layout-backdrop");
 
-    menuSelector.on("click", () => {
+    const openDrawer = () => {
         body.addClass("no-scroll");
         navMenu.addClass("slide-in").removeClass("slide-out");
         backdrop.addClass("fade-in").removeClass("fade-out");
-    });
+    };
 
-    menuDeselector.on("click", () => {
+    const closeDrawer = () => {
         body.removeClass("no-scroll");
         navMenu.addClass("slide-out").removeClass("slide-in");
         backdrop.addClass("fade-out");
+    };
+
+    menuSelector.on("click", () => {
+        openDrawer();
+    });
+
+    $(menuDeselector).on("click", () => {
+        closeDrawer();
     });
 }
 
