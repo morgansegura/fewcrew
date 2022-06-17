@@ -70,3 +70,19 @@
 //   flex-wrap: wrap;
 //   justify-content: space-between;
 // }
+
+.layout-main {}
+
+.title-tag {}
+
+.title {}
+
+.date-below-title {}
+
+.contact-icons {}
+
+.contact-icons > svg {
+    width: 10px;
+    height: 10px;
+    color: $system-neutral-00;
+}
