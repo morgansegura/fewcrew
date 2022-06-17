@@ -37,9 +37,12 @@ namespace Few_Crew;
                 <div class="header-container contain-xxl">
                     <div class="header-container-inner contain-xl">
                         <?php get_template_part( 'template-parts/header/branding' ); ?>
-                        <?php get_template_part( 'template-parts/header/navigation' ); ?>
+                        <div class="pushy-panel__toggle">
+                            <span class="pushy-panel__line"></span>
+                        </div>
                     </div>
                 </div>
             </header>
+            <?php get_template_part( 'template-parts/header/navigation' ); ?>
 
             <div class="content-wrapper">
