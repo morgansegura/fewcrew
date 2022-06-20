@@ -72,48 +72,120 @@
 // }
 
 .layout-main {
-  position: relative;
+    position: relative;
+    height: 100%;
 }
 
-.singlephp-bgimage {
-  position: absolute;
-  padding-top: 100px;
-  z-index: -1;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-size: cover;
-  width: 100%;
-  height: 100px;
+.page-head:before {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.page-head-overlay {
+    // position: relative;
+    // overflow: hidden;
+}
+
+.singlephp-bg-image {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 115px 0;
 }
 
 .title-tag {
-  font-family: $system-neutral-00;
-  font-family: $font-heading;
-  font-size: 24px;
-  font-style: italic;
+    text-align: center;
+    color: $system-neutral-00;
+    font-family: $font-heading;
+    font-weight: $weight-black;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 10px;
+    line-height: 1;
+    padding: 0.5rem 1.1em;
+
+    display: inline-block;
+    width: 20%;
+    border: solid $system-red-50 10px;
+    background-color: $system-red-50;
+    transform: skewX(-15deg);
 }
 
 .title {
+    font-family: $font-heading;
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 1rem;
+    margin-bottom: 0.475rem;
+    font-style: italic;
+    letter-spacing: -0.02em;
+    font-weight: $weight-bold;
 }
 
 .date-below-title {
-  font-size: 11px;
-  font-family: $font-sans;
+    font-size: 11px;
+    font-family: $font-sans;
 }
 
 .contact-icons {
-  display: flex;
 }
 
 .contact-icons-item {
-  color: $system-neutral-00;
-  font-size: 10px;
+    color: $system-neutral-00;
+    font-size: 10px;
+    box-sizing: content-box;
+    width: 10%;
+    border: solid $system-blue-50 10px;
+    background-color: $system-blue-50;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
 }
 
 .contact-icons-item > svg {
-  width: 20px;
-  height: 20px;
-  color: $system-neutral-00;
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    color: $system-neutral-00;
+}
+
+.page-content {
+}
+
+.lead-text-content {
+    font-size: 16px;
+    font-family: $font-sans;
+    font-weight: $weight-normal;
+    line-height: 1.75em;
+}
+
+.text-content {
+}
+
+.spacer {
+    height: 30px;
+}
+
+.list-rows {
+}
+
+.list {
+}
+
+.ordered-list {
+}
+
+.unordered-list {
 }

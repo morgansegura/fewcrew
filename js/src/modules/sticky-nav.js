@@ -11,21 +11,13 @@ let newValue = 0;
 
 function stickyNav() {
     const header = document.querySelector(".header-container");
-    // const navbar = document.querySelector('.header-nav')
-    const offset1 = 50;
-    const offset2 = 50;
-    // const scrollUpOffset = 300;
 
     newValue = window.pageYOffset;
 
     if (oldValue < newValue) {
-        console.log("Up");
-
         header.classList.remove("is-fixed", "transition-down");
         header.classList.add("is-fixed", "transition-up");
     } else if (oldValue > newValue) {
-        console.log("Down");
-
         header.classList.remove("is-fixed", "transition-up");
         header.classList.add("is-fixed", "transition-down");
     }
