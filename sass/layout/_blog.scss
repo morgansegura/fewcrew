@@ -71,7 +71,7 @@
 //   justify-content: space-between;
 // }
 
-.layout-main {
+.page-layout {
     position: relative;
     height: 100%;
     line-height: 26px;
@@ -85,9 +85,11 @@
     overflow: hidden;
     text-align: center;
     background-size: cover;
-    background-position: 50% 50%;
     background-repeat: no-repeat;
-    padding: 100px 0;
+    // margin-top: 75px;
+    margin-bottom: 50px;
+    padding-top: 120px;
+    padding-bottom: 75px;
 
     &::before {
         content: "";
@@ -110,6 +112,8 @@
 
 .singlephp-bg-image {
     position: absolute;
+    background-position: 100%;
+    background-position-y: center;
     z-index: -1;
     top: 0;
     right: 0;
@@ -150,26 +154,32 @@
     letter-spacing: -0.02em;
 }
 .name-and-date {
-    box-sizing: border-box;
-    background-color: transparent;
     display: flex;
     justify-content: center;
-
+    align-items: center;
+    margin: 0 0 22px;
     font-family: $font-heading;
     font-weight: $weight-bold;
     line-height: 1rem;
     text-transform: uppercase;
     font-style: italic;
     font-size: 20px;
-//     padding-right: 50px;
 
-//     &:not(:first-child) {
-//         margin-right: $sp-3;
-//     }
-// }
+    //     &:not(:first-child) {
+    //         margin-right: $sp-3;
+    //     }
+}
+
+.author-avatar {
+    display: flex;
+    margin: unset;
+    border-radius: $radius-circle;
+    overflow: hidden;
+}
 
 .author-name {
     padding-right: 5px;
+    padding-left: 5px;
 }
 
 .date-below-title {
@@ -179,7 +189,7 @@
 .contact-icons {
     display: flex;
     justify-content: center;
-    margin-top: $sp-2;
+    padding-top: $sp-2_5;
     // gap: $sp-1;
 }
 
@@ -187,23 +197,24 @@
     display: flex;
     justify-content: center;
     color: $system-neutral-00;
-    font-size: 10px;
-    padding: $sp-0_5 $sp-4;
+    font-size: 8px;
     background-color: $system-blue-50;
     border-radius: $sp-5;
+    padding: $sp-1_5 $sp-6;
 
     &:not(:last-child) {
-        margin-right: $sp-1;
+        margin-right: $sp-3;
     }
 }
 
 .contact-icons-item > svg {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     color: $system-neutral-00;
 }
 
 .page-content {
+    font-family: $font-sans;
 }
 
 .lead-text-content {
@@ -214,10 +225,21 @@
 }
 
 .text-content {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: $weight-normal;
 }
 
 .spacer {
     height: 30px;
+}
+
+.h4 {
+    font-size: 24px;
+    font-weight: $weight-normal;
+    line-height: 1.5;
+    color: $brand-primary-white;
+    text-align: left;
 }
 
 .list-rows {

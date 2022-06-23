@@ -45,7 +45,7 @@ get_header(); ?>
         </article>
       </section> -->
 
-            <section class="layout-main">
+            <section class="page-layout">
                 <div class="page-head page-head-overlay">
                     <div class="singlephp-bg-image" style="background-image:
                         url('https://boonika.org/wp-content/uploads/2020/02/ivan-smirnov-f04-1024x547.jpg');">
@@ -60,7 +60,8 @@ get_header(); ?>
                         </div>
                         <div class="name-and-date">
                             <figure class="author-avatar">
-                                <img src="">
+                                <img
+                                    src="https://alchemists.dan-fisher.dev/esports/assets/images/esports/samples/avatar-13-sm.jpg">
                             </figure>
                             <div class="author-name">
                                 <!-- Nang nuan -->
@@ -101,11 +102,11 @@ get_header(); ?>
                 </div>
 
                 <div class="page-content">
-                    <p class="lead-text-content">
+                    <div class="lead-text-content">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus quo distinctio impedit
                         architecto error vero, ex sapiente. Fugit, maxime, dignissimos, consequatur eaque laborum iure
                         magni quia iusto magnam et consequuntur.
-                    </p>
+                    </div>
                     <p class="text-content">
                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                         laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
@@ -119,7 +120,7 @@ get_header(); ?>
                     </p>
                     <div class="spacer"></div>
                     <h4>Mecha-Dragon Improvements</h4>
-                    <p>
+                    <p class="text-content">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium reiciendis officia omnis
                         nemo commodi error alias ab. Voluptatibus incidunt, consectetur recusandae minus illo quaerat
                         doloribus tempora delectus, dolores eaque necessitatibus
@@ -129,7 +130,7 @@ get_header(); ?>
                         <img
                             src="https://conceptartworld.com/wp-content/uploads/2015/03/Ivan_Smirnov_Concept_Art_Illustration_what_a_pleasant_meetin-680x383.jpg">
                         <figcaption>
-                            "Screenshot of the latest mecha-dragon update with all the new weapons"
+                            Screenshot of the latest mecha-dragon update with all the new weapons
                         </figcaption>
                     </figure>
                     <div class="spacer"></div>
@@ -156,7 +157,7 @@ get_header(); ?>
                             </ul>
                         </div>
                     </div>
-                    <p>
+                    <p class="text-content">
                         Excepteur sint occaecat cupidatat non proident, suat in culpa qui officiare deserunt mollit anim
                         id est laborum. Sed ut perspiciatis unde omnis iste denatus error sit voluptatem ntium
                         doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
