@@ -1,0 +1,534 @@
+// @use "sass:math";
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Roboto:wght@400;600;700&display=swap";
+
+$font-family: "Open Sans", "Graphik", "Helvetica Neue", "Helvetica", "Arial",
+  sans-serif;
+$font-headline: "Montserrat", "Graphik", "Helvetica Neue", "Helvetica", "Arial",
+  sans-serif;
+$font-base: 16px;
+$line-base: 4px;
+
+// Spacing
+$sp-1p: 1px;
+$sp-2p: 2px;
+$sp-0_5: 4px;
+$sp-1: 8px;
+$sp-1_5: 12px;
+$sp-2: 16px;
+$sp-2_5: 20px;
+$sp-3: 24px;
+$sp-3_5: 28px;
+$sp-4: 32px;
+$sp-4_5: 36px;
+$sp-5: 40px;
+$sp-5_5: 44px;
+$sp-6: 48px;
+$sp-6_5: 52px;
+$sp-7: 56px;
+$sp-7_5: 60px;
+$sp-8: 64px;
+$sp-9: 72px;
+$sp-9_5: 76px;
+$sp-10: 80px;
+$sp-11: 88px;
+$sp-11_5: 92px;
+$sp-12: 96px;
+$sp-13: 104px;
+$sp-14: 112px;
+$sp-14_5: 116px;
+$sp-15: 120px;
+$sp-16: 128px;
+$sp-17: 136px;
+$sp-19: 152px;
+$sp-20: 160px;
+$sp-25: 200px;
+$sp-30: 240px;
+$sp-40: 320px;
+$sp-60: 480px;
+$sp-80: 640px;
+
+// Contain [max-width]
+$contain-xs: 320px;
+$contain-sm: 639px;
+$contain-md: 1023px;
+$contain-lg: 1366px;
+$contain-xl: 1799px;
+$contain-xxl: 2256px;
+$contain-offset: 2384px;
+
+// Device Contain [min-width]
+$mobile: 414px;
+$tablet: 640px;
+$desktop-sm: 1024px;
+$desktop: 1376px;
+$desktop-lg: 1800px;
+
+// Colors
+// [Brand]
+$brand-black: #000;
+$brand-white: #fff;
+$brand-primary-light: #ea6a82;
+$brand-primary-main: #e12a4c;
+$brand-primary-dark: #a41731;
+$brand-secondary-light: #82bbff;
+$brand-secondary-main: #2e8eff;
+$brand-secondary-dark: #0053b5;
+// System Neutral
+$system-neutral-00: #f6f7f7;
+$system-neutral-05: #edeef0;
+$system-neutral-06: #dbdde1;
+$system-neutral-07: #c9cbd2; // body
+$system-neutral-08: #b8bac3;
+$system-neutral-09: #a6a9b3;
+$system-neutral-10: #9498a4;
+$system-neutral-20: #828795;
+$system-neutral-30: #717685;
+$system-neutral-40: #626673;
+$system-neutral-50: #535661;
+$system-neutral-60: #434650;
+$system-neutral-70: #34373e;
+$system-neutral-80: #25272c;
+$system-neutral-90: #1e2024;
+
+// System Steel
+$system-steel-00: #e2e1ed;
+$system-steel-05: #c5c4db;
+$system-steel-06: #a8a6c9;
+$system-steel-07: #8a89b7;
+$system-steel-08: #6d6ba5;
+$system-steel-09: #57558b;
+$system-steel-10: #44436e;
+$system-steel-20: #323150;
+$system-steel-30: #2c2b46;
+$system-steel-40: #25253c;
+$system-steel-50: #1f1f32;
+$system-steel-60: #191828;
+$system-steel-70: #13121e;
+$system-steel-80: #0c0c14;
+$system-steel-90: #06060a;
+
+// System Red
+$system-red-05: #fef8f4;
+$system-red-10: #f9e3de;
+$system-red-20: #f1b8b5;
+$system-red-30: #ea898c;
+$system-red-40: #dc6878;
+$system-red-50: #be4967;
+$system-red-60: #972a4e;
+$system-red-70: #751f40;
+$system-red-80: #561739;
+$system-red-90: #3c0a27;
+// System Orange
+$system-orange-05: #fefaee;
+$system-orange-10: #fae4c4;
+$system-orange-20: #efba8d;
+$system-orange-30: #e69565;
+$system-orange-40: #d67552;
+$system-orange-50: #b5543a;
+$system-orange-60: #91362e;
+$system-orange-70: #742626;
+$system-orange-80: #57191f;
+$system-orange-90: #3b1113;
+// System Yellow
+$system-yellow-05: #fbf9eb;
+$system-yellow-10: #f5e5bd;
+$system-yellow-20: #e8c281;
+$system-yellow-30: #d99d52;
+$system-yellow-40: #cb7d33;
+$system-yellow-50: #af5922;
+$system-yellow-60: #8d3d17;
+$system-yellow-70: #6c2f14;
+$system-yellow-80: #502211;
+$system-yellow-90: #351609;
+// System Green
+$system-green-05: #f2fef0;
+$system-green-10: #d3f2cd;
+$system-green-20: #97d69c;
+$system-green-30: #60bf87;
+$system-green-40: #4fa478;
+$system-green-50: #3a8060;
+$system-green-60: #2b6146;
+$system-green-70: #204b3c;
+$system-green-80: #173634;
+$system-green-90: #0e2227;
+// System Turquoise
+$system-turquoise-05: #ecfbfe;
+$system-turquoise-10: #b9eff7;
+$system-turquoise-20: #87deea;
+$system-turquoise-30: #4cc1d1;
+$system-turquoise-40: #1f9cad;
+$system-turquoise-50: #097d8d;
+$system-turquoise-60: #00626f;
+$system-turquoise-70: #004d58;
+$system-turquoise-80: #00363e;
+$system-turquoise-90: #002930;
+// System Cyan
+$system-cyan-05: #effcfc;
+$system-cyan-10: #ccf1fa;
+$system-cyan-20: #91d1ea;
+$system-cyan-30: #69b4e2;
+$system-cyan-40: #5496cf;
+$system-cyan-50: #3678b4;
+$system-cyan-60: #245791;
+$system-cyan-70: #1b4575;
+$system-cyan-80: #15314f;
+$system-cyan-90: #0b2131;
+// System Blue
+$system-blue-05: #f5fbff;
+$system-blue-10: #d9ecfd;
+$system-blue-20: #acccfb;
+$system-blue-30: #85aaf1;
+$system-blue-40: #728ce6;
+$system-blue-50: #5869cd;
+$system-blue-60: #404ca6;
+$system-blue-70: #313c86;
+$system-blue-80: #232c61;
+$system-blue-90: #131e3f;
+// System Violet
+$system-violet-05: #f8f9fe;
+$system-violet-10: #e6e6fa;
+$system-violet-20: #c4c3e8;
+$system-violet-30: #aca1dc;
+$system-violet-40: #9882d5;
+$system-violet-50: #7e62bc;
+$system-violet-60: #5d4897;
+$system-violet-70: #47347e;
+$system-violet-80: #332560;
+$system-violet-90: #1d174b;
+// System Purple
+$system-purple-05: #fdf8ff;
+$system-purple-10: #f7e1f5;
+$system-purple-20: #e6b6e1;
+$system-purple-30: #d791d8;
+$system-purple-40: #bd72cb;
+$system-purple-50: #9855af;
+$system-purple-60: #713c92;
+$system-purple-70: #552d7d;
+$system-purple-80: #3b1e66;
+$system-purple-90: #280f52;
+// System Tan
+$system-tan-05: #f9f7f1;
+$system-tan-10: #efe8db;
+$system-tan-20: #d7cab0;
+$system-tan-30: #ba8;
+$system-tan-40: #a3916e;
+$system-tan-50: #816f4d;
+$system-tan-60: #645537;
+$system-tan-70: #504329;
+$system-tan-80: #3b311c;
+$system-tan-90: #251e11;
+
+// State Colors
+// Success
+$system-success-10: $system-green-10;
+$system-success-50: $system-green-50;
+$system-success-70: $system-green-70;
+// Warning
+$system-warning-10: $system-yellow-10;
+$system-warning-50: $system-yellow-50;
+$system-warning-70: $system-yellow-70;
+// Danger
+$system-danger-10: $system-red-10;
+$system-danger-50: $system-red-50;
+$system-danger-70: $system-red-70;
+// Neutral
+$system-neutral-light: $system-neutral-10;
+$system-neutral: $system-neutral-50;
+$system-neutral-dark: $system-neutral-70;
+// Disabled
+$system-disabled-light: $system-neutral-10;
+$system-disabled: $system-neutral-20;
+$system-disabled-dark: $system-neutral-30;
+
+// Radius
+$radius-circle: 50%;
+$radius-sm: 4px;
+$radius-md: 8px;
+$radius-lg: 16px;
+$radius-none: 0;
+
+// Functions
+@function rem($size) {
+  @return calc($size / $font-base) * 1rem;
+}
+
+// Mixins
+
+@mixin above($amount) {
+  // Above inclusive
+  @media screen and (min-width: $amount) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media screen and (min-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media screen and (min-width: $desktop-sm) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media screen and (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media screen and (min-width: $desktop-lg) {
+    @content;
+  }
+}
+
+@mixin base {
+  font-size: $font-base;
+}
+
+// Questionable Methods
+@function toRem($size) {
+  @return ($size / $font-base) * 1rem;
+}
+
+@function lh($line-height, $font-size) {
+  @return calc($line / eight, $font-size);
+}
+
+@mixin fontSizing($size, $lineHeight) {
+  font-size: toRem($size);
+
+  @if $lineHeight {
+    line-height: lh($lineHeight, $size);
+  }
+}
+
+@mixin font-sizing($size, $lineHeight) {
+  @include fontSizing($size, $lineHeight);
+}
+
+@mixin h1 {
+  font-size: rem(32px);
+  line-height: 1.15;
+  font-weight: 600;
+
+  @include md {
+    font-size: rem(48px);
+  }
+
+  @include lg {
+    font-size: rem(52px);
+  }
+}
+
+@mixin h2 {
+  font-size: rem(28px);
+  line-height: 1.15;
+  font-weight: 600;
+
+  @include md {
+    font-size: rem(40px);
+  }
+
+  @include lg {
+    font-size: rem(41px);
+  }
+}
+
+@mixin h3 {
+  font-size: rem(25px);
+  line-height: 1.15;
+  font-weight: 600;
+
+  @include lg {
+    font-size: rem(32px);
+  }
+}
+
+@mixin h4 {
+  font-size: rem(22px);
+  line-height: 1.2;
+  font-weight: 600;
+
+  @include md {
+    font-size: rem(25px);
+  }
+}
+
+@mixin h5 {
+  font-size: rem(18px);
+  line-height: 1.2;
+  font-weight: 600;
+
+  @include md {
+    font-size: rem(20px);
+    line-height: 1.4;
+  }
+}
+
+@mixin body-large {
+  font-size: rem(25px);
+  line-height: 1.5;
+  font-weight: 400;
+
+  @include lg {
+    font-size: rem(28px);
+  }
+}
+
+@mixin body {
+  font-size: rem(16px);
+  line-height: 1.5;
+  font-weight: 400;
+
+  @include md {
+    font-size: rem(18px);
+    line-height: 1.55;
+  }
+
+  @include xxl {
+    font-size: rem(20px);
+    line-height: 1.5;
+  }
+}
+
+@mixin body-bold {
+  font-size: rem(16px);
+  line-height: 1.5;
+  font-weight: 600;
+
+  @include md {
+    font-size: rem(18px);
+    line-height: 1.55;
+  }
+
+  @include xxl {
+    font-size: rem(20px);
+    line-height: 1.5;
+  }
+}
+
+@mixin body-small {
+  font-size: rem(14px);
+  line-height: 1.5;
+  font-weight: 400;
+
+  @include md {
+    font-size: rem(16px);
+  }
+}
+
+@mixin body-small-bold {
+  font-size: rem(14px);
+  line-height: rem(24px);
+  font-weight: 600;
+
+  @include md {
+    font-size: rem(16px);
+    line-height: 1.5;
+  }
+}
+
+@mixin body-href {
+  text-decoration: underline;
+  color: $system-neutral-90;
+  transition: color 0.3s ease-out;
+
+  &:hover,
+  &:active {
+    color: $system-neutral-90-a70;
+  }
+}
+
+// Breadcrumbs, buttons, icon labels, and tabs
+@mixin call-to-action {
+  font-size: rem(15px);
+  line-height: 1.2;
+  font-weight: 600;
+
+  @include md {
+    font-size: rem(16px);
+  }
+}
+
+@mixin label {
+  font-size: rem(14px);
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+@mixin tag-important {
+  font-size: rem(12px);
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+@mixin tag-bold {
+  font-size: rem(14px);
+  line-height: rem(20px);
+  font-weight: 600;
+}
+
+@mixin tag {
+  font-size: rem(14px);
+  line-height: rem(20px);
+  font-weight: 400;
+}
+
+@mixin tab {
+  font-size: rem(16px);
+  line-height: rem(24px);
+  font-weight: 600;
+}
+
+@mixin list {
+  font-size: rem(16px);
+  line-height: rem(24px);
+  font-weight: 400;
+
+  @include md {
+    font-size: rem(18px);
+    line-height: rem(28px);
+  }
+}
+
+@mixin grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: var(--grid-gutter);
+}
+
+@mixin shadow-card {
+  box-shadow: 0 4.581080913543701px 22.905405044555664px 0 #a4abb71f,
+    0 12.216216087341309px 18.324323654174805px 0 #6b738424,
+    0 6.108108043670654px 7.635135173797607px 0 #3e405433;
+}
+
+@mixin shadow-header {
+  box-shadow: 0 2.2905404567718506px 10.689188957214355px 0 #a4abb71f,
+    0 6.108108043670654px 7.635135173797607px 0 #6b738424,
+    0 3.8175675868988037px 3.8175675868988037px 0 #3e405433;
+}
+
+@mixin shadow-form {
+  box-shadow: 0 3.8175675868988037px 16.79729652404785px 0 #a4abb71f,
+    0 9.162161827087402px 12.979729652404785px 0 #6b738424,
+    0 5.344594478607178px 6.108108043670654px 0 #3e405433;
+}
+
+@mixin shadow-dropdown {
+  box-shadow: 0 4.581080913543701px 22.905405044555664px 0 #a4abb71f,
+    0 12.216216087341309px 18.324323654174805px 0 #6b738424,
+    0 6.108108043670654px 7.635135173797607px 0 #3e405433;
+}

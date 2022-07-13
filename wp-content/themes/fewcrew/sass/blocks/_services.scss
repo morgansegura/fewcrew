@@ -1,0 +1,68 @@
+@import "utilities/utilities";
+
+// [Services]
+.servicesInner {
+  display: grid;
+  column-gap: $sp-6;
+  row-gap: $sp-10;
+
+  @include md {
+    grid-template-columns: repeat(2, 1fr);
+
+    &:last-of-type {
+      grid-column: 6 / 11;
+    }
+  }
+  @include lg {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include xxl {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.servicesHeader {
+}
+.servicesSupertitle {
+  @include fontSizing(20px, 30px);
+  margin-top: $sp-1;
+  font-weight: bold;
+}
+.servicesTitle {
+}
+
+.servicesItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.servicesItemIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9999px;
+  border: 2px solid $brand-secondary-dark;
+  padding: $sp-1_5;
+
+  svg {
+    color: $system-neutral-00;
+    @include fontSizing(40px, 20px);
+  }
+}
+
+.servicesItemTitle {
+  @include fontSizing(40px, 60px);
+  margin-top: $sp-2;
+  color: $system-neutral-00;
+}
+
+.servicesItemCopy {
+  @include fontSizing(16px, 24px);
+  margin-top: $sp-1;
+  color: $brand-white;
+  text-align: center;
+}
