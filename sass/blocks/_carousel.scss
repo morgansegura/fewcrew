@@ -1,0 +1,345 @@
+@import "../utilities/utilities";
+
+.carousel {
+  position: relative;
+  text-align: "center";
+}
+
+.container {
+  position: relative;
+  background-color: $system-neutral-80;
+}
+
+.logoShield {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+
+  @include lg {
+    left: unset;
+    top: unset;
+    transform: unset;
+    right: 5%;
+    bottom: 5%;
+  }
+
+  .directionY-top &,
+  .directionY-center & {
+  }
+  .directionY-bottom & {
+  }
+}
+
+.slide {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slideContainer {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  filter: saturate(1.5);
+  background-blend-mode: luminosity;
+
+  &-light {
+    background-color: rgba($system-neutral-00, 0.75);
+  }
+  &-dark {
+    background-color: rgba($system-neutral-90, 0.75);
+  }
+  &-primary {
+    background-color: rgba($brand-primary-main, 0.75);
+  }
+  &-secondary {
+    background-color: rgba($brand-secondary-main, 0.75);
+  }
+
+  @include md {
+    height: 800px;
+  }
+
+  @include lg {
+    height: 600px;
+    background-position: center;
+  }
+
+  @include xxl {
+    height: 1000px;
+    background-position: center;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url("images/worn-dots.png");
+    opacity: 0.3;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(
+      rgba($brand-black, 0.9) 0%,
+      rgba($brand-black, 0) 10%,
+      rgba($brand-black, 0.75) 60%,
+      rgba($brand-black, 0.9) 100%
+    );
+  }
+
+  @include lg {
+    &.directionY-center {
+      &:before {
+        background-image: linear-gradient(
+          rgba($brand-black, 0.5) 0%,
+          rgba($brand-black, 0) 10%,
+          rgba($brand-black, 0.5) 75%,
+          rgba($brand-black, 0.9) 100%
+        );
+      }
+    }
+
+    &.directionX-left {
+      &:before {
+        background-image: linear-gradient(
+          to right,
+          rgba($brand-black, 0.9) 0%,
+          rgba($brand-black, 0.75) 10%,
+          rgba($brand-black, 0) 90%,
+          rgba($brand-black, 0) 100%
+        );
+      }
+    }
+    &.directionX-right {
+      &:before {
+        background-image: linear-gradient(
+          to left,
+          rgba($brand-black, 0.9) 0%,
+          rgba($brand-black, 0.75) 10%,
+          rgba($brand-black, 0) 90%,
+          rgba($brand-black, 0) 100%
+        );
+      }
+    }
+  }
+}
+
+.slide {
+  position: relative;
+  z-index: 1;
+}
+
+.content {
+  position: absolute;
+  text-transform: uppercase;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-10%) translateX(-50%);
+
+  @include md {
+    transform: translateY(-40%) translateX(-50%);
+  }
+
+  @include lg {
+    width: unset;
+    align-items: unset;
+    justify-content: unset;
+    text-align: left;
+    transform: unset;
+    top: unset;
+    left: unset;
+
+    .directionX-right & {
+      align-items: flex-end;
+      text-align: right;
+      right: 5%;
+    }
+
+    .directionX-center & {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .directionX-left & {
+      left: 5%;
+    }
+
+    .directionY-top & {
+      top: 5%;
+    }
+
+    .directionY-bottom & {
+      bottom: 5%;
+    }
+
+    .directionY-center & {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .directionX-left & {
+      left: 5%;
+    }
+
+    .directionX-center.directionY-center & {
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%) translateX(-50%);
+    }
+  }
+}
+
+.titleContainer {
+  .directionX-center.directionY-center & {
+    @include md {
+      display: flex;
+      justify-content: center;
+    }
+
+    @include lg {
+      display: unset;
+      justify-content: unset;
+    }
+  }
+}
+
+.contentContainer {
+  //   display: flex;
+  //   align-items: center;
+}
+
+.supertitle,
+.title,
+.subtitle {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.supertitle {
+  padding-left: 0;
+  @include fontSizing(20px, 30px);
+  margin-bottom: $sp-1;
+  font-weight: 600;
+
+  &-light {
+    color: $system-neutral-00;
+  }
+  &-dark {
+    color: $system-neutral-90;
+  }
+  &-primary {
+    color: $brand-primary-main;
+  }
+  &-secondary {
+    color: $brand-secondary-main;
+  }
+}
+
+.title {
+  @include fontSizing(45px, 45px);
+  font-weight: 600;
+
+  @include md {
+    @include fontSizing(42px, 50px);
+  }
+
+  @include lg {
+    @include fontSizing(70px, 60px);
+  }
+
+  &-light {
+    color: $system-neutral-00;
+  }
+  &-dark {
+    color: $system-neutral-90;
+  }
+  &-primary {
+    color: $brand-primary-main;
+  }
+  &-secondary {
+    color: $brand-secondary-main;
+  }
+}
+
+.subtitle {
+  padding-left: 0 !important;
+  @include fontSizing(45px, 50px);
+  font-weight: 600;
+
+  @include md {
+    @include fontSizing(42px, 50px);
+  }
+
+  @include lg {
+    @include fontSizing(70px, 70px);
+  }
+
+  &-light {
+    color: $system-neutral-00;
+  }
+  &-dark {
+    color: $system-neutral-90;
+  }
+  &-primary {
+    color: $brand-primary-main;
+  }
+  &-secondary {
+    color: $brand-secondary-main;
+  }
+}
+
+.button {
+  @include fontSizing(14px, 17px);
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  padding: $sp-2 $sp-5;
+  margin-top: $sp-3;
+  transition: opacity 0.3s ease-out;
+
+  &-light {
+    background-color: $system-neutral-00;
+    color: $system-neutral-90;
+  }
+  &-dark {
+    background-color: $system-neutral-90;
+    color: $system-neutral-00;
+  }
+  &-primary {
+    background-color: $brand-primary-main;
+    color: $brand-white;
+  }
+  &-secondary {
+    background-color: $brand-secondary-main;
+    color: $brand-white;
+  }
+
+  &:hover {
+    opacity: 0.75;
+  }
+}

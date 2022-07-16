@@ -1,0 +1,66 @@
+@import "../utilities/utilities";
+
+.section-title {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &.center {
+      align-items: center;
+    }
+  }
+  .section-supertitle,
+  .section-title,
+  .section-subtitle,
+  .section-copy {
+    .center & {
+      text-align: center;
+    }
+    .theme-light & {
+      color: $system-neutral-90;
+    }
+    .theme-dark &,
+    .theme-primary &,
+    .theme-secondary & {
+      color: $system-neutral-00;
+    }
+  }
+
+  .section-supertitle,
+  .section-title,
+  .section-subtitle {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+
+  .section-supertitle {
+    @include fontSizing(20px, 24px);
+  }
+
+  .section-title {
+    @include fontSizing(32px, 45px);
+    margin-top: $sp-2_5;
+
+    @include lg {
+      @include fontSizing(45px, 60px);
+      margin-top: $sp-3;
+    }
+  }
+
+  .section-subtitle {
+    @include fontSizing(24px, 32px);
+    margin-top: $sp-2_5;
+
+    @include lg {
+      @include fontSizing(28px, 38px);
+      margin-top: $sp-3;
+    }
+  }
+
+  .section-copy {
+    @include fontSizing(15px, 24px);
+    font-weight: 300;
+  }
+}

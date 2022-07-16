@@ -1,5 +1,11 @@
 @import "../utilities/utilities";
 
+.editor-styles-wrapper {
+  * {
+    line-height: inherit;
+  }
+}
+
 .wp-block {
   max-width: $desktop-lg;
   margin-left: auto;

@@ -35,3 +35,10 @@ function fewcrew_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'fewcrew_pingback_header' );
+
+
+function pretty($data) {
+	echo '<pre>';
+	var_dump($data);
+	echo '</pre>';
+}

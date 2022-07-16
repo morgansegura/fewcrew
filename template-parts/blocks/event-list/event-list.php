@@ -63,7 +63,7 @@
 
 			$carouselJSON = json_encode($sendData);
 
-			// pretty($carouselJSON);
+			pretty($carouselJSON);
 		?>
 
     <div class="slide">
